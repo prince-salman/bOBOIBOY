@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <radialGradient id="tok-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#1e293b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </radialGradient>
+    <linearGradient id="tok-songkok" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#78350f" />
+      <stop offset="60%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#291203" />
+    </linearGradient>
+    <filter id="tok-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#d97706" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Frame Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#tok-bg)" stroke="#d97706" stroke-width="2.5" filter="url(#tok-glow)"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+  <!-- White Hair Tufts at Ears -->
+  <ellipse cx="28" cy="52" rx="5" ry="7" fill="#e2e8f0" />
+  <ellipse cx="72" cy="52" rx="5" ry="7" fill="#e2e8f0" />
+
+  <!-- Face -->
+  <ellipse cx="50" cy="54" rx="21" ry="19" fill="#fcd34d" opacity="0.9" />
+
+  <!-- Traditional Songkok Cap -->
+  <path d="M28 38 C28 24 35 18 50 18 C65 18 72 24 72 38 L70 41 L30 41 Z" fill="url(#tok-songkok)" stroke="#92400e" stroke-width="1.5" />
+  <!-- Songkok Brim Band -->
+  <path d="M27 40 C34 38 66 38 73 40 L73 43 C66 41 34 41 27 43 Z" fill="#92400e" />
+
+  <!-- Round Glasses -->
+  <circle cx="41" cy="50" r="6.5" fill="rgba(255,255,255,0.2)" stroke="#64748b" stroke-width="1.5" />
+  <circle cx="59" cy="50" r="6.5" fill="rgba(255,255,255,0.2)" stroke="#64748b" stroke-width="1.5" />
+  <line x1="47.5" y1="50" x2="52.5" y2="50" stroke="#64748b" stroke-width="1.8" />
+
+  <!-- Kind Eyes -->
+  <ellipse cx="41" cy="50" rx="2.5" ry="3" fill="#0f172a" />
+  <circle cx="42" cy="49" r="0.9" fill="#ffffff" />
+  <ellipse cx="59" cy="50" rx="2.5" ry="3" fill="#0f172a" />
+  <circle cx="60" cy="49" r="0.9" fill="#ffffff" />
+
+  <!-- Iconic Fluffy White Mustache -->
+  <path d="M50 58 C46 54 34 54 36 62 C40 64 47 62 50 64 C53 62 60 64 64 62 C66 54 54 54 50 58 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+
+  <!-- Warm Grin Under Mustache -->
+  <path d="M46 64 Q50 67 54 64" stroke="#92400e" stroke-width="1.5" stroke-linecap="round" fill="none" />
+
+  <!-- Kokotiam Apron & Shirt -->
+  <path d="M26 80 C32 72 40 71 50 71 C60 71 68 72 74 80 L74 88 L26 88 Z" fill="#b45309" stroke="#78350f" stroke-width="1.2" />
+  <path d="M42 71 L50 82 L58 71" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+  <!-- Small Cocoa Bean Emblem -->
+  <circle cx="50" cy="80" r="2.5" fill="#78350f" />
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <radialGradient id="yaya-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#1e293b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </radialGradient>
+    <linearGradient id="yaya-hijab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="60%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#be185d" />
+    </linearGradient>
+    <filter id="yaya-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#ec4899" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Frame Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#yaya-bg)" stroke="#ec4899" stroke-width="2.5" filter="url(#yaya-glow)"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#f472b6" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+  <!-- Yaya Hijab Hood Outer -->
+  <path d="M24 50 C24 28 34 16 50 16 C66 16 76 28 76 50 C76 66 70 76 66 80 L34 80 C30 76 24 66 24 50 Z" fill="url(#yaya-hijab)" stroke="#be185d" stroke-width="1.5" />
+
+  <!-- Inner Hijab / Undercap (White) -->
+  <path d="M32 44 C32 30 40 24 50 24 C60 24 68 30 68 44 C68 56 62 66 50 66 C38 66 32 56 32 44 Z" fill="#f8fafc" />
+
+  <!-- Face -->
+  <ellipse cx="50" cy="48" rx="16" ry="16" fill="#fcd34d" opacity="0.9" />
+
+  <!-- Flower Hairpin / Accessory -->
+  <circle cx="64" cy="30" r="4" fill="#fbbf24" stroke="#d97706" stroke-width="0.8" />
+  <circle cx="64" cy="30" r="1.5" fill="#f43f5e" />
+
+  <!-- Friendly Determined Eyes -->
+  <ellipse cx="43" cy="48" rx="3.5" ry="4" fill="#0f172a" />
+  <circle cx="44" cy="47" r="1.2" fill="#ffffff" />
+  <ellipse cx="57" cy="48" rx="3.5" ry="4" fill="#0f172a" />
+  <circle cx="58" cy="47" r="1.2" fill="#ffffff" />
+
+  <!-- Cheerful Smile -->
+  <path d="M45 56 Q50 61 55 56" stroke="#db2777" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Hijab Drape & Hero Uniform Collar -->
+  <path d="M26 80 C32 72 40 70 50 70 C60 70 68 72 74 80 L74 88 L26 88 Z" fill="#ec4899" />
+  <path d="M42 70 L50 78 L58 70" fill="#fce7f3" stroke="#db2777" stroke-width="1.2" />
+</svg>

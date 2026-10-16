@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <radialGradient id="gopal-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.3" />
+      <stop offset="70%" stop-color="#1e293b" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </radialGradient>
+    <linearGradient id="gopal-vest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="60%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="gopal-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#10b981" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Frame Circle -->
+  <circle cx="50" cy="50" r="46" fill="url(#gopal-bg)" stroke="#10b981" stroke-width="2.5" filter="url(#gopal-glow)"/>
+  <circle cx="50" cy="50" r="41" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 2" opacity="0.5"/>
+
+  <!-- Curly Hair Tufts Back & Top -->
+  <circle cx="36" cy="28" r="9" fill="#1c1917" />
+  <circle cx="50" cy="24" r="10" fill="#1c1917" />
+  <circle cx="64" cy="28" r="9" fill="#1c1917" />
+  <circle cx="28" cy="38" r="8" fill="#1c1917" />
+  <circle cx="72" cy="38" r="8" fill="#1c1917" />
+
+  <!-- Round Face -->
+  <ellipse cx="50" cy="51" rx="22" ry="21" fill="#fcd34d" opacity="0.9" />
+
+  <!-- Hair Sideburns -->
+  <path d="M28 42 C27 48 29 54 31 56 L31 46 Z" fill="#1c1917" />
+  <path d="M72 42 C73 48 71 54 69 56 L69 46 Z" fill="#1c1917" />
+
+  <!-- Friendly Eyebrows -->
+  <path d="M38 41 Q43 38 46 41" stroke="#1c1917" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M54 41 Q57 38 62 41" stroke="#1c1917" stroke-width="2" stroke-linecap="round" fill="none" />
+
+  <!-- Warm Round Eyes -->
+  <ellipse cx="42" cy="49" rx="3.5" ry="4" fill="#0f172a" />
+  <circle cx="43" cy="48" r="1.3" fill="#ffffff" />
+  <ellipse cx="58" cy="49" rx="3.5" ry="4" fill="#0f172a" />
+  <circle cx="59" cy="48" r="1.3" fill="#ffffff" />
+
+  <!-- Cheerful Wide Smile -->
+  <path d="M42 58 Q50 67 58 58 Z" fill="#b91c1c" stroke="#991b1b" stroke-width="1" />
+  <path d="M44 58 Q50 62 56 58 Z" fill="#ffffff" />
+
+  <!-- Green Vest & Orange Collar -->
+  <path d="M26 80 C30 71 39 70 50 70 C61 70 70 71 74 80 L74 88 L26 88 Z" fill="url(#gopal-vest)" stroke="#059669" stroke-width="1.2" />
+  <path d="M41 70 L50 82 L59 70" fill="#f59e0b" stroke="#d97706" stroke-width="1" />
+</svg>
