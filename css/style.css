@@ -1377,6 +1377,45 @@ p:last-child {
   line-height: 1.5;
 }
 
+.form-radio-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.form-radio-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--bg-surface-dark);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.9rem;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.form-radio-wrap:hover {
+  border-color: var(--primary-orange);
+  background-color: #162035;
+}
+
+.form-radio {
+  accent-color: var(--primary-orange);
+  width: 1.05rem;
+  height: 1.05rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.form-radio-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
 .form-hint {
   font-size: 0.8rem;
   color: var(--text-muted);
@@ -1447,14 +1486,16 @@ p:last-child {
   font-weight: 600;
 }
 
-.compliance-list {
+.compliance-list,
+.checklist-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
 }
 
-.compliance-item {
+.compliance-item,
+.checklist-item {
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -1462,7 +1503,8 @@ p:last-child {
   color: var(--text-secondary);
 }
 
-.compliance-check {
+.compliance-check,
+.checklist-check {
   color: var(--color-leaf);
   font-weight: 800;
 }
@@ -1491,7 +1533,8 @@ details.faq-item[open] {
   background-color: var(--bg-surface-elevated);
 }
 
-details.faq-item summary {
+details.faq-item summary,
+details.faq-item .faq-question {
   list-style: none;
   padding: 1.25rem 1.5rem;
   font-size: 1.05rem;
@@ -1505,12 +1548,14 @@ details.faq-item summary {
   transition: color var(--transition-fast);
 }
 
-details.faq-item summary::-webkit-details-marker {
+details.faq-item summary::-webkit-details-marker,
+details.faq-item .faq-question::-webkit-details-marker {
   display: none;
 }
 
 /* Chevron Indicator */
-details.faq-item summary::after {
+details.faq-item summary::after,
+details.faq-item .faq-question::after {
   content: '';
   display: inline-block;
   width: 8px;
@@ -1523,7 +1568,8 @@ details.faq-item summary::after {
   margin-left: 1rem;
 }
 
-details.faq-item[open] summary::after {
+details.faq-item[open] summary::after,
+details.faq-item[open] .faq-question::after {
   transform: rotate(-135deg);
 }
 
@@ -1751,6 +1797,10 @@ details.faq-item[open] summary::after {
   .grid-2, .grid-3 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .form-radio-group {
+    grid-template-columns: 1fr;
   }
 
   .character-grid {
