@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <radialGradient id="wind-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25" />
+      <stop offset="70%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+    <linearGradient id="wind-stream" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="glow-wind" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#38bdf8" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Shield Container -->
+  <circle cx="50" cy="50" r="46" fill="url(#wind-bg)" stroke="#38bdf8" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#bae6fd" stroke-width="1" stroke-dasharray="4 3" opacity="0.5" />
+
+  <!-- Swirling Wind / Cyclone Blades -->
+  <g filter="url(#glow-wind)">
+    <!-- Spiral stream 1 -->
+    <path d="M50 20 C68 20 78 34 72 48 C68 56 58 56 54 50 C50 44 54 36 62 36" 
+          stroke="url(#wind-stream)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Spiral stream 2 -->
+    <path d="M50 80 C32 80 22 66 28 52 C32 44 42 44 46 50 C50 56 46 64 38 64" 
+          stroke="url(#wind-stream)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Center swirling vortex wing -->
+    <path d="M36 34 C44 26 56 28 66 36 C58 44 46 42 36 34 Z" fill="url(#wind-stream)"/>
+    <path d="M64 66 C56 74 44 72 34 64 C42 56 54 58 64 66 Z" fill="url(#wind-stream)"/>
+  </g>
+
+  <!-- Wind particle specks -->
+  <circle cx="26" cy="30" r="2" fill="#e0f2fe" opacity="0.8" />
+  <circle cx="75" cy="70" r="2" fill="#38bdf8" opacity="0.8" />
+  <circle cx="70" cy="24" r="1.5" fill="#e0f2fe" opacity="0.7" />
+  <circle cx="30" cy="76" r="1.5" fill="#38bdf8" opacity="0.7" />
+</svg>
