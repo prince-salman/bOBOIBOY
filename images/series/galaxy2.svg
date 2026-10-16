@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="100%" height="auto" fill="none">
+  <defs>
+    <linearGradient id="galaxy2-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="40%" stop-color="#1e1b4b"/>
+      <stop offset="70%" stop-color="#312e81"/>
+      <stop offset="90%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="windara-clouds" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="palace-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </linearGradient>
+    <linearGradient id="sori-aura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="75%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="glow-sori" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#facc15" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#10b981" flood-opacity="0.75"/>
+    </filter>
+    <filter id="glow-kuputeri" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#f472b6" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas: Planet Windara Celestial Atmosphere -->
+  <rect width="640" height="240" fill="url(#galaxy2-sky)"/>
+
+  <!-- Distant Windara Cloud Banks & Sunset Glow -->
+  <ellipse cx="200" cy="140" rx="220" ry="45" fill="url(#windara-clouds)"/>
+  <ellipse cx="480" cy="130" rx="180" ry="40" fill="url(#windara-clouds)"/>
+
+  <!-- Stars & Wind Currents -->
+  <circle cx="70" cy="35" r="1.5" fill="#fef08a" opacity="0.7"/>
+  <circle cx="160" cy="50" r="1.2" fill="#f8fafc" opacity="0.6"/>
+  <circle cx="280" cy="25" r="1.8" fill="#fef08a" opacity="0.8"/>
+  <circle cx="410" cy="40" r="1.2" fill="#f8fafc" opacity="0.5"/>
+  <circle cx="560" cy="30" r="1.6" fill="#67e8f9" opacity="0.7"/>
+
+  <!-- Gust Wind Streamlines -->
+  <path d="M-20 60 Q120 30 260 55 T540 45 T660 70" fill="none" stroke="#67e8f9" stroke-width="1.2" stroke-dasharray="8 6" opacity="0.5"/>
+  <path d="M-10 90 Q150 70 320 85 T650 75" fill="none" stroke="#e0f2fe" stroke-width="0.8" stroke-dasharray="12 8" opacity="0.4"/>
+
+  <!-- Planet Windara Floating Sky Castle & Spires (Left & Center-Left) -->
+  <g transform="translate(45, 40)">
+    <!-- Floating Island Base Rock -->
+    <path d="M20 120 Q120 105 220 120 Q240 128 210 145 Q120 152 40 145 Z" fill="#064e3b" opacity="0.9"/>
+    <polygon points="30,130 210,130 180,185 140,215 110,175 75,200 45,160" fill="#0f172a" stroke="#134e4a" stroke-width="1"/>
+    <!-- Waterfall falling into clouds from floating island -->
+    <path d="M125 145 L128 210 L132 210 L135 145 Z" fill="#38bdf8" opacity="0.75"/>
+
+    <!-- Windara Palace Grand Spires and Domes -->
+    <!-- Central Tower -->
+    <rect x="105" y="45" width="30" height="75" fill="#1e293b" stroke="#ca8a04" stroke-width="1"/>
+    <path d="M100 45 L120 10 L140 45 Z" fill="url(#palace-gold)"/>
+    <!-- Left Flanking Tower -->
+    <rect x="75" y="65" width="20" height="55" fill="#1e293b" stroke="#ca8a04" stroke-width="1"/>
+    <path d="M70 65 L85 35 L100 65 Z" fill="url(#palace-gold)"/>
+    <!-- Right Flanking Tower -->
+    <rect x="145" y="65" width="20" height="55" fill="#1e293b" stroke="#ca8a04" stroke-width="1"/>
+    <path d="M140 65 L155 35 L170 65 Z" fill="url(#palace-gold)"/>
+    <!-- Arched Connecting Sky Bridges -->
+    <path d="M50 115 Q80 95 110 115" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <path d="M130 115 Q160 95 190 115" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <!-- Floating Winged Wind Windmill Orbs -->
+    <circle cx="120" cy="10" r="3" fill="#67e8f9"/>
+    <line x1="120" y1="10" x2="120" y2="2" stroke="#67e8f9" stroke-width="1.5"/>
+  </g>
+
+  <!-- Empress Kuputeri Butterfly Aura & Monarch Grace (Center) -->
+  <g transform="translate(260, 35)" filter="url(#glow-kuputeri)">
+    <!-- Butterfly Luminous Wings (Empress Kuputeri / Maripos Wind Master) -->
+    <!-- Left Wing -->
+    <path d="M60 70 C20 40 10 10 45 15 C75 20 80 50 65 70 Z" fill="#f472b6" fill-opacity="0.7" stroke="#fb7185" stroke-width="1.5"/>
+    <path d="M60 75 C25 80 15 110 40 115 C65 118 75 95 62 75 Z" fill="#c084fc" fill-opacity="0.6" stroke="#e879f9" stroke-width="1.5"/>
+    <!-- Right Wing -->
+    <path d="M80 70 C120 40 130 10 95 15 C65 20 60 50 75 70 Z" fill="#f472b6" fill-opacity="0.7" stroke="#fb7185" stroke-width="1.5"/>
+    <path d="M80 75 C115 80 125 110 100 115 C75 118 65 95 78 75 Z" fill="#c084fc" fill-opacity="0.6" stroke="#e879f9" stroke-width="1.5"/>
+    <!-- Monarch Royal Silhouette -->
+    <ellipse cx="70" cy="50" rx="7" ry="10" fill="#fdf2f8"/>
+    <path d="M64 60 L76 60 L80 105 L60 105 Z" fill="#831843"/>
+    <!-- Crown / Feathery Tiara -->
+    <polygon points="65,42 70,35 75,42" fill="#fbbf24"/>
+    <circle cx="70" cy="34" r="2" fill="#67e8f9"/>
+  </g>
+
+  <!-- BoBoiBoy SORI Fusion: Solar + Duri Awakening (Right) -->
+  <g transform="translate(425, 30)" filter="url(#glow-sori)">
+    <!-- Solar Flare Burst Core -->
+    <polygon points="80,20 88,48 116,42 96,62 118,80 89,80 80,108 71,80 42,80 64,62 44,42 72,48" fill="#fde047" opacity="0.95"/>
+    <circle cx="80" cy="62" r="18" fill="#ffffff"/>
+    <circle cx="80" cy="62" r="24" fill="none" stroke="#10b981" stroke-width="2.5"/>
+
+    <!-- Duri Thorny Vines Enveloping Solar Core -->
+    <path d="M40 85 Q60 50 80 62 T120 45" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
+    <!-- Thorns on Vine -->
+    <polygon points="56,66 50,56 62,62" fill="#10b981"/>
+    <polygon points="74,56 70,44 80,52" fill="#10b981"/>
+    <polygon points="98,54 108,46 100,60" fill="#10b981"/>
+    
+    <!-- Morning Star Thorns / Spiked Solar Seed Flail -->
+    <g transform="translate(110, 75)">
+      <circle cx="20" cy="20" r="13" fill="#047857" stroke="#facc15" stroke-width="2"/>
+      <polygon points="20,5 23,12 17,12" fill="#facc15"/>
+      <polygon points="35,20 28,23 28,17" fill="#facc15"/>
+      <polygon points="20,35 17,28 23,28" fill="#facc15"/>
+      <polygon points="5,20 12,17 12,23" fill="#facc15"/>
+      <circle cx="20" cy="20" r="4" fill="#fef08a"/>
+    </g>
+
+    <!-- Solar Energy Radiance Rays -->
+    <line x1="80" y1="12" x2="80" y2="2" stroke="#fef08a" stroke-width="2"/>
+    <line x1="125" y1="40" x2="135" y2="35" stroke="#fef08a" stroke-width="1.5"/>
+    <line x1="128" y1="85" x2="138" y2="92" stroke="#fef08a" stroke-width="1.5"/>
+  </g>
+
+  <!-- Foreground Vignette Gradient Overlay -->
+  <rect x="0" y="180" width="640" height="60" fill="url(#galaxy2-sky)" opacity="0.95"/>
+
+  <!-- Typography & Era Tagging -->
+  <g transform="translate(30, 218)">
+    <rect x="-10" y="-18" width="130" height="22" rx="4" fill="#059669" fill-opacity="0.25" stroke="#10b981" stroke-width="1"/>
+    <text x="55" y="-3" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="11" fill="#34d399" text-anchor="middle" letter-spacing="1.5">CURRENT ERA</text>
+  </g>
+  <text x="165" y="215" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="800" font-size="16" fill="#ffffff" letter-spacing="0.5">
+    BoBoiBoy Galaxy S2 <tspan fill="#94a3b8" font-size="12" font-weight="500">(2023+)</tspan>
+  </text>
+  <text x="615" y="216" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="11" fill="#34d399" text-anchor="end" letter-spacing="1">
+    WINDARA &amp; SORI ARCS • ONGOING
+  </text>
+</svg>

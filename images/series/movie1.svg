@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="100%" height="auto" fill="none">
+  <defs>
+    <linearGradient id="movie1-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1035"/>
+      <stop offset="50%" stop-color="#2d124d"/>
+      <stop offset="85%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="fire-burst" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <radialGradient id="klamka-body" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="80%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </radialGradient>
+    <radialGradient id="blackhole-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000"/>
+      <stop offset="60%" stop-color="#3b0764"/>
+      <stop offset="90%" stop-color="#7e22ce"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="island-rock" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="60%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#a855f7" flood-opacity="0.8"/>
+    </filter>
+    <filter id="glow-fire" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ea580c" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas -->
+  <rect width="640" height="240" fill="url(#movie1-sky)"/>
+
+  <!-- Distant Cosmic Clouds & Stars -->
+  <circle cx="80" cy="30" r="1.5" fill="#fbcfe8" opacity="0.6"/>
+  <circle cx="150" cy="55" r="1.2" fill="#fbcfe8" opacity="0.5"/>
+  <circle cx="270" cy="25" r="1.8" fill="#fde047" opacity="0.7"/>
+  <circle cx="430" cy="40" r="1.2" fill="#fbcfe8" opacity="0.5"/>
+  <circle cx="580" cy="25" r="1.5" fill="#fde047" opacity="0.6"/>
+
+  <!-- Floating Island in Deep Atmosphere (Left) -->
+  <g transform="translate(40, 45)">
+    <!-- Smaller Floating Rocks around -->
+    <polygon points="10,120 22,112 30,124 20,132" fill="#334155"/>
+    <polygon points="210,140 225,130 235,145 218,155" fill="#334155"/>
+    <polygon points="15,60 28,52 35,66 22,74" fill="#475569"/>
+
+    <!-- Main Floating Island Body -->
+    <!-- Top Green / Ancient Jungle Canopy -->
+    <path d="M40 95 Q110 82 180 95 Q200 102 170 115 Q110 118 50 115 Q25 105 40 95 Z" fill="#065f46"/>
+    <!-- Rocky Underside & Jagged Stalactites -->
+    <polygon points="35,102 185,102 155,165 130,195 110,160 85,185 60,150 45,135" fill="url(#island-rock)" stroke="#475569" stroke-width="1"/>
+
+    <!-- Ancient Pyramid Temple on the Summit -->
+    <g transform="translate(85, 52)">
+      <!-- Tier 1 Base -->
+      <polygon points="10,43 50,43 45,35 15,35" fill="#475569" stroke="#64748b" stroke-width="0.8"/>
+      <!-- Tier 2 -->
+      <polygon points="16,35 44,35 40,27 20,27" fill="#64748b" stroke="#94a3b8" stroke-width="0.8"/>
+      <!-- Tier 3 Apex / Altar -->
+      <polygon points="22,27 38,27 35,20 25,20" fill="#94a3b8"/>
+      <rect x="28" y="15" width="4" height="5" fill="#f59e0b"/>
+      <!-- Central stairs -->
+      <polygon points="27,43 33,43 31,27 29,27" fill="#1e293b"/>
+      <!-- Golden Ancient Rune Glow from Top -->
+      <circle cx="30" cy="15" r="5" fill="#fbbf24" opacity="0.7" filter="blur(3px)"/>
+    </g>
+
+    <!-- Waterfalls Cascading into the Void -->
+    <path d="M70 108 L68 170 L72 170 L74 108 Z" fill="#38bdf8" opacity="0.6"/>
+    <path d="M140 106 L138 185 L141 185 L143 106 Z" fill="#38bdf8" opacity="0.7"/>
+    <ellipse cx="69" cy="172" rx="4" ry="1.5" fill="#e0f2fe" opacity="0.8"/>
+    <ellipse cx="140" cy="187" rx="5" ry="2" fill="#e0f2fe" opacity="0.8"/>
+  </g>
+
+  <!-- Bora Ra's Dark Black Hole Vortex (Right Side) -->
+  <g transform="translate(520, 105)" filter="url(#glow-purple)">
+    <circle cx="0" cy="0" r="55" fill="url(#blackhole-core)"/>
+    <!-- Gravitational accretion swirl spirals -->
+    <path d="M-40 0 C-40 -30 20 -45 45 -10 C60 15 20 45 -20 35 C-35 30 -30 10 0 10" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M-25 15 C-45 0 -20 -35 15 -25 C35 -15 30 20 0 25" fill="none" stroke="#f472b6" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="0" cy="0" r="16" fill="#000000"/>
+    <circle cx="0" cy="0" r="17" fill="none" stroke="#e879f9" stroke-width="1.5" opacity="0.9"/>
+  </g>
+
+  <!-- Center-Left: Power Sphera Klamkabot -->
+  <g transform="translate(290, 75)">
+    <!-- Mechanical Spherical Body -->
+    <circle cx="35" cy="35" r="30" fill="url(#klamka-body)" stroke="#ca8a04" stroke-width="2"/>
+    <!-- Ancient Gear & Circuit Engravings -->
+    <circle cx="35" cy="35" r="23" fill="none" stroke="#713f12" stroke-width="1" stroke-dasharray="6 3"/>
+    <!-- Power Core / Sensor Eye Screen -->
+    <rect x="20" y="24" width="30" height="18" rx="5" fill="#0f172a" stroke="#ca8a04" stroke-width="1.5"/>
+    <circle cx="28" cy="33" r="4.5" fill="#38bdf8"/>
+    <circle cx="42" cy="33" r="4.5" fill="#38bdf8"/>
+    <circle cx="29" cy="32" r="1.5" fill="#ffffff"/>
+    <circle cx="43" cy="32" r="1.5" fill="#ffffff"/>
+    <!-- Ancient Klamkabot Top Crown / Wing-like Antennae -->
+    <path d="M22 8 L35 15 L48 8 L40 5 L35 10 L30 5 Z" fill="#eab308" stroke="#a16207" stroke-width="1"/>
+    <!-- Side floating mechanical jet thrusters -->
+    <rect x="1" y="28" width="6" height="14" rx="2" fill="#854d0e"/>
+    <rect x="63" y="28" width="6" height="14" rx="2" fill="#854d0e"/>
+    <!-- Yellow Power Core Glow -->
+    <circle cx="35" cy="54" r="3" fill="#fde047"/>
+  </g>
+
+  <!-- BoBoiBoy Fire's Awakening Fireball & Flaming Fist Clash -->
+  <g transform="translate(385, 40)" filter="url(#glow-fire)">
+    <!-- Roaring Fireball aura -->
+    <path d="M20 70 Q0 30 35 15 Q50 40 65 10 Q80 35 100 25 Q95 60 115 75 Q85 85 80 120 Q55 100 40 115 Q30 95 20 70 Z" fill="url(#fire-burst)" opacity="0.9"/>
+    <!-- Inner bright white-hot flame -->
+    <path d="M35 70 Q25 45 45 35 Q55 50 65 30 Q75 50 85 40 Q80 65 95 75 Q75 80 70 95 Q55 85 45 92 Z" fill="#ffffff" opacity="0.85"/>
+    <!-- Fire Sparks -->
+    <circle cx="25" cy="20" r="2.5" fill="#fde047"/>
+    <circle cx="110" cy="35" r="3" fill="#ea580c"/>
+    <circle cx="125" cy="90" r="2" fill="#fde047"/>
+    <circle cx="15" cy="95" r="2.5" fill="#f97316"/>
+  </g>
+
+  <!-- Foreground Vignette Gradient Overlay -->
+  <rect x="0" y="180" width="640" height="60" fill="url(#movie1-sky)" opacity="0.95"/>
+
+  <!-- Typography & Era Tagging -->
+  <g transform="translate(30, 218)">
+    <rect x="-10" y="-18" width="135" height="22" rx="4" fill="#a855f7" fill-opacity="0.25" stroke="#c084fc" stroke-width="1"/>
+    <text x="57" y="-3" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="11" fill="#e879f9" text-anchor="middle" letter-spacing="1.5">FEATURE FILM 1</text>
+  </g>
+  <text x="170" y="215" font-family="'Montserrat', 'Segoe UI', sans-serif" font-weight="800" font-size="16" fill="#ffffff" letter-spacing="0.5">
+    BoBoiBoy: The Movie <tspan fill="#94a3b8" font-size="12" font-weight="500">(2016)</tspan>
+  </text>
+  <text x="615" y="216" font-family="'Segoe UI', sans-serif" font-weight="700" font-size="11" fill="#f97316" text-anchor="end" letter-spacing="1">
+    THEATRICAL • 100 MINS
+  </text>
+</svg>
