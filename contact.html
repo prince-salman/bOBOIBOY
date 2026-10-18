@@ -8,108 +8,42 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* 1. Background Properties Demonstration */
     .cadet-protocol-box {
-      background-color: #f8fafc;
-      background-image: none;
-      background-position: top left;
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-attachment: scroll;
-      border: 1px solid var(--border-color);
-      border-left: 4px solid var(--primary-orange);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-subtle);
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 1.5rem;
+      background-color: #f8fafc; background-image: none; background-position: top left;
+      background-repeat: no-repeat; background-size: auto; background-attachment: scroll;
+      font-family: var(--font-sans); font-size: 1.1rem; font-weight: 700;
+      text-align: left; text-transform: uppercase; line-height: 1.35;
+      width: 100%; min-width: 280px; max-width: 100%; height: auto; min-height: 60px;
+      position: relative; top: 0; left: 0; right: 0; z-index: 2;
+      border: 1px solid var(--border-color); border-left: 4px solid var(--primary-orange);
+      border-radius: var(--radius); box-shadow: var(--shadow-subtle); padding: 1rem 1.25rem;
     }
-
-    /* 2. Text and Font Properties Demonstration */
-    .cadet-protocol-title {
-      font-family: var(--font-sans);
-      font-size: 1.15rem;
-      font-weight: 800;
-      font-style: normal;
-      text-align: left;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      line-height: 1.35;
-      color: var(--text-primary);
-      margin-bottom: 0.5rem;
-    }
-
-    /* 3. Dimension Properties Demonstration */
-    .cadet-enlistment-wrapper {
-      width: 100%;
-      min-width: 280px;
-      max-width: 100%;
-      height: auto;
-      min-height: 350px;
-      max-height: none;
-    }
-
-    /* 4. Positioning Properties Demonstration */
-    .floating-shield-badge {
-      position: relative;
-      top: 0;
-      right: 0;
-      bottom: auto;
-      left: 0;
-      z-index: 5;
-      display: inline-block;
-      margin-bottom: 0.4rem;
-    }
-
-    /* Academic Ordered List Counter */
     .academic-ordered-list {
-      counter-reset: custom-step;
-      list-style: none;
-      padding-left: 0;
-      margin: 0.75rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
+      counter-reset: step; list-style: none; padding-left: 0; margin: 0.75rem 0;
+      display: flex; flex-direction: column; gap: 0.5rem;
     }
-
     .academic-ordered-list > li {
-      counter-increment: custom-step;
-      position: relative;
-      padding-left: 2.75rem;
-      line-height: 1.5;
-      font-size: 0.92rem;
-      color: var(--text-secondary);
+      counter-increment: step; position: relative; padding-left: 2.2rem;
+      line-height: 1.4; font-size: 0.9rem; color: var(--text-secondary);
     }
-
     .academic-ordered-list > li::before {
-      content: counter(custom-step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 1.9rem;
-      height: 1.9rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary-orange), #ea580c);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 0.8rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 5px rgba(234, 88, 12, 0.3);
+      content: counter(step); position: absolute; left: 0; top: 0;
+      width: 1.6rem; height: 1.6rem; border-radius: 50%;
+      background: var(--primary-orange); color: #fff; font-weight: 700;
+      font-size: 0.75rem; display: flex; align-items: center; justify-content: center;
     }
   </style>
 </head>
 <body>
 
   <main>
-
     <section class="hero" aria-labelledby="fanhub-banner-title">
       <div class="container text-center">
-        <h1 class="hero-title" id="fanhub-banner-title" style="max-width: 880px; margin: 0 auto 1rem auto;">
-          TAPOPS Space Academy &amp; <span class="highlight">Cadet Fan Hub</span>
+        <h1 class="hero-title" id="fanhub-banner-title" style="max-width:880px; margin:0 auto 0.75rem auto;">
+          TAPOPS Space Academy &amp; <span class="highlight">Cadet Hub</span>
         </h1>
-        <p class="hero-subtitle" style="max-width: 780px; margin: 0 auto 1.5rem auto;">
-          Step forward to defend the cosmos! Enlist as a TAPOPS cadet, transmit dispatches to galactic command, and review academic project credentials.
+        <p class="hero-subtitle" style="max-width:780px; margin:0 auto 1.25rem auto;">
+          Enlist as an official TAPOPS cadet, transmit dispatches to galactic command, and inspect academic project credentials.
         </p>
         <div class="flex flex-center flex-wrap gap-1">
           <span class="badge badge-lightning">7 Elemental Disciplines</span>
@@ -121,55 +55,37 @@
 
     <section class="section" id="cadet-enlistment" aria-labelledby="enlistment-heading">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" style="margin-bottom: 1.5rem;">
           <h2 class="section-title" id="enlistment-heading">Cadet Recruitment &amp; Academic Dossier</h2>
-          <p class="section-subtitle">
-            Submit your enlistment application to TAPOPS command on the left, or inspect the academic metadata and compliance checklist on the right.
-          </p>
         </div>
 
-        <div class="grid-2 cadet-enlistment-wrapper">
-
+        <div class="grid-2">
           <div class="card" aria-labelledby="form-heading">
             <div class="cadet-protocol-box">
-              <span class="floating-shield-badge badge badge-lightning">Academic Ordered List</span>
-              <h3 class="cadet-protocol-title">4-Step Cadet Clearance Protocol</h3>
+              <span class="badge badge-lightning" style="margin-bottom:0.35rem; display:inline-block;">Academic Ordered List</span>
+              <h3 style="font-size:1.1rem; margin-bottom:0.25rem;">Cadet Clearance Protocol</h3>
               <ol class="academic-ordered-list">
-                <li><strong>Identity Registration:</strong> Enter official cadet name and tactical codename.</li>
-                <li><strong>Security Passcode:</strong> Establish an encrypted 8+ character terminal passcode.</li>
-                <li><strong>Division Calibration:</strong> Select your primary element and fleet division.</li>
-                <li><strong>Sworn Affirmation:</strong> Affirm the cadet oath and transmit to HQ.</li>
+                <li><strong>Identity:</strong> Register official cadet legal name.</li>
+                <li><strong>Passcode:</strong> Create an encrypted 8+ character passcode.</li>
+                <li><strong>Affinity:</strong> Calibrate your primary elemental division.</li>
+                <li><strong>Affirmation:</strong> Swear the TAPOPS oath and transmit packet.</li>
               </ol>
             </div>
 
-            <h3 id="form-heading" class="mb-2" style="font-size: 1.25rem;">TAPOPS Transmission &amp; Enlistment Form</h3>
-
+            <h3 id="form-heading" class="mb-2" style="font-size: 1.15rem;">TAPOPS Enlistment Form</h3>
             <form action="#" method="get" class="cadet-form">
-
               <div class="form-group">
-                <label for="cadet-name" class="form-label">Full Cadet Name <span class="required">*</span></label>
-                <input type="text" id="cadet-name" name="cadet-name" class="form-input" placeholder="e.g. Nur Farhan bin Ahmad" required>
+                <label for="cadet-name" class="form-label">Cadet Name <span class="required">*</span></label>
+                <input type="text" id="cadet-name" name="cadet-name" class="form-input" placeholder="e.g. Nur Farhan" required>
               </div>
-
-              <div class="form-group">
-                <label for="cadet-codename" class="form-label">Cadet Call-sign / Codename <span class="required">*</span></label>
-                <input type="text" id="cadet-codename" name="cadet-codename" class="form-input" placeholder="e.g. NovaSolar_99" required>
-              </div>
-
               <div class="form-group">
                 <label for="cadet-password" class="form-label">Security Passcode <span class="required">*</span></label>
                 <input type="password" id="cadet-password" name="cadet-password" class="form-input" placeholder="Min. 8 characters" minlength="8" required autocomplete="new-password">
               </div>
-
               <div class="form-group">
-                <label for="cadet-email" class="form-label">Subspace Frequency / Email <span class="required">*</span></label>
-                <input type="email" id="cadet-email" name="cadet-email" class="form-input" placeholder="cadet@tapops.galaxy" required>
-              </div>
-
-              <div class="form-group">
-                <label for="elemental-affinity" class="form-label">Primary Elemental Affinity <span class="required">*</span></label>
+                <label for="elemental-affinity" class="form-label">Elemental Affinity <span class="required">*</span></label>
                 <select id="elemental-affinity" name="elemental-affinity" class="form-select" required>
-                  <option value="" disabled selected>-- Select Elemental Affinity --</option>
+                  <option value="" disabled selected>-- Select Affinity --</option>
                   <option value="lightning">Lightning / Halilintar (Supersonic Speed)</option>
                   <option value="wind">Wind / Taufan (Aerial Agility)</option>
                   <option value="earth">Earth / Gempa (Fortress Defense)</option>
@@ -179,260 +95,111 @@
                   <option value="solar">Light / Solar (Photonic Ray)</option>
                 </select>
               </div>
-
               <div class="form-group">
-                <label class="form-label">Fleet Division Preference <span class="required">*</span></label>
+                <label class="form-label">Fleet Division <span class="required">*</span></label>
                 <div class="form-radio-group">
-                  <label class="form-radio-wrap" for="div-vanguard">
-                    <input type="radio" id="div-vanguard" name="division" value="vanguard" class="form-radio" checked required>
-                    <span class="form-radio-label">Planetary Vanguard</span>
-                  </label>
-                  <label class="form-radio-wrap" for="div-recon">
-                    <input type="radio" id="div-recon" name="division" value="recon" class="form-radio">
-                    <span class="form-radio-label">Covert Recon</span>
-                  </label>
-                  <label class="form-radio-wrap" for="div-sphera">
-                    <input type="radio" id="div-sphera" name="division" value="sphera" class="form-radio">
-                    <span class="form-radio-label">Power Sphera Defense</span>
-                  </label>
-                  <label class="form-radio-wrap" for="div-logistics">
-                    <input type="radio" id="div-logistics" name="division" value="logistics" class="form-radio">
-                    <span class="form-radio-label">Tactical Logistics</span>
-                  </label>
+                  <label class="form-radio-wrap" for="div-vanguard"><input type="radio" id="div-vanguard" name="division" value="vanguard" class="form-radio" checked required><span class="form-radio-label">Vanguard</span></label>
+                  <label class="form-radio-wrap" for="div-recon"><input type="radio" id="div-recon" name="division" value="recon" class="form-radio"><span class="form-radio-label">Recon</span></label>
+                  <label class="form-radio-wrap" for="div-defense"><input type="radio" id="div-defense" name="division" value="defense" class="form-radio"><span class="form-radio-label">Defense</span></label>
                 </div>
               </div>
-
               <div class="form-group">
-                <label for="transmission-message" class="form-label">Transmission Dispatch <span class="required">*</span></label>
-                <textarea id="transmission-message" name="transmission-message" class="form-textarea" rows="4" placeholder="State your mission objective or message to TAPOPS High Command..." required></textarea>
+                <label for="transmission-message" class="form-label">Transmission Message <span class="required">*</span></label>
+                <textarea id="transmission-message" name="transmission-message" class="form-textarea" rows="3" placeholder="Message to TAPOPS Command..." required></textarea>
               </div>
-
               <div class="form-group">
                 <label class="form-checkbox-wrap" for="honor-pledge">
                   <input type="checkbox" id="honor-pledge" name="honor-pledge" class="form-checkbox" required>
-                  <span class="form-checkbox-label">
-                    I solemnly pledge to protect Power Spheras, resist alien warlords, and uphold galactic peace. <span class="required">*</span>
-                  </span>
+                  <span class="form-checkbox-label">I pledge to protect Power Spheras and uphold galactic peace. <span class="required">*</span></span>
                 </label>
               </div>
-
-              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                Transmit to TAPOPS HQ
-              </button>
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Transmit to TAPOPS HQ</button>
             </form>
           </div>
 
           <div class="student-card" id="student-profile" aria-labelledby="dossier-heading">
             <div class="student-header">
-              <div class="student-avatar-badge" aria-label="Cadet Avatar Badge">RU</div>
+              <div class="student-avatar-badge" aria-label="Avatar Badge">RU</div>
               <div>
-                <div class="flex items-center gap-1 mb-1">
-                  <span class="badge badge-lightning">RESIDENT UNIVERSITY</span>
-                  <span class="badge badge-earth">Project 1</span>
-                </div>
-                <h3 id="dossier-heading" style="margin: 0; font-size: 1.25rem;">Cadet Academic Dossier</h3>
-                <p class="text-secondary text-xs" style="margin: 0.2rem 0 0 0;">Informatics / Information System &bull; Web Programming</p>
+                <span class="badge badge-lightning">RESIDENT UNIVERSITY</span>
+                <h3 id="dossier-heading" style="margin:0.2rem 0; font-size:1.15rem;">Cadet Academic Dossier</h3>
+                <p class="text-secondary text-xs" style="margin:0;">Informatics / Information System &bull; Web Programming</p>
               </div>
             </div>
 
-            <table class="student-table" aria-label="Student and Project Metadata">
+            <table class="student-table" aria-label="Project Metadata">
               <tbody>
-                <tr>
-                  <td class="label">Project</td>
-                  <td class="value">Project 1: Web Design Project</td>
-                </tr>
-                <tr>
-                  <td class="label">Course / Subject</td>
-                  <td class="value">Web Programming / Web Design</td>
-                </tr>
-                <tr>
-                  <td class="label">Study Program</td>
-                  <td class="value">Informatics / Information System</td>
-                </tr>
-                <tr>
-                  <td class="label">University</td>
-                  <td class="value">RESIDENT UNIVERSITY</td>
-                </tr>
-                <tr>
-                  <td class="label">Theme</td>
-                  <td class="value">BoBoiBoy Universe (Movies &amp; Series)</td>
-                </tr>
-                <tr>
-                  <td class="label">Architecture</td>
-                  <td class="value">Master Frame (mainFrame) with External Nav</td>
-                </tr>
-                <tr>
-                  <td class="label">Student Name</td>
-                  <td class="value">Salman (Group Leader)</td>
-                </tr>
+                <tr><td class="label">Project</td><td class="value">Project 1: Web Design Project</td></tr>
+                <tr><td class="label">Course</td><td class="value">Web Programming / Web Design</td></tr>
+                <tr><td class="label">University</td><td class="value">RESIDENT UNIVERSITY</td></tr>
+                <tr><td class="label">Theme</td><td class="value">BoBoiBoy Universe (Movies &amp; Series)</td></tr>
+                <tr><td class="label">Architecture</td><td class="value">Master Frame (mainFrame) with External Nav</td></tr>
+                <tr><td class="label">Student Name</td><td class="value">Salman (Group Leader)</td></tr>
               </tbody>
             </table>
 
-            <div class="mt-3 mb-3">
-              <h4 style="font-size: 0.95rem; color: var(--primary-orange); margin-bottom: 0.5rem;">
-                Project 1 Group Members
-              </h4>
-              <table class="data-table" style="font-size: 0.82rem; margin: 0;">
-                <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Student Name</th>
-                    <th>NIM / ID</th>
-                    <th>Project Role</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>1</strong></td>
-                    <td><strong>Salman (Leader)</strong></td>
-                    <td>2026-INFORMATICS-01</td>
-                    <td>Lead Architect &amp; Core Layout</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Student Member 2</td>
-                    <td>2026-INFORMATICS-02</td>
-                    <td>HTML5 Frames &amp; Navigation</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Student Member 3</td>
-                    <td>2026-INFORMATICS-03</td>
-                    <td>CSS Styling &amp; Typography</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Student Member 4</td>
-                    <td>2026-INFORMATICS-04</td>
-                    <td>Form Controls &amp; Validation</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Student Member 5</td>
-                    <td>2026-INFORMATICS-05</td>
-                    <td>Documentation &amp; DOCX Report</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div>
-              <h4 class="mb-2" style="font-size: 0.95rem; color: var(--text-primary);">
-                Academic Compliance Verification
-              </h4>
-              <ul class="checklist-list compliance-list" style="font-size: 0.85rem; line-height: 1.5;">
-                <li class="checklist-item"><span class="text-orange" style="font-weight: 700;">&#10004;</span> 5 Interconnected Pages in Master Frame</li>
-                <li class="checklist-item"><span class="text-orange" style="font-weight: 700;">&#10004;</span> 3 CSS Methods (External, Internal, Inline)</li>
-                <li class="checklist-item"><span class="text-orange" style="font-weight: 700;">&#10004;</span> 4 CSS Groups (Background, Text, Dimension, Position)</li>
-                <li class="checklist-item"><span class="text-orange" style="font-weight: 700;">&#10004;</span> All 7 HTML5 Form Controls with Validation</li>
-                <li class="checklist-item"><span class="text-orange" style="font-weight: 700;">&#10004;</span> Data Tables, Ordered &amp; Unordered Lists</li>
+            <div class="mt-3">
+              <h4 style="font-size:0.9rem; color:var(--text-primary); margin-bottom:0.4rem;">Academic Compliance Status</h4>
+              <ul class="checklist-list compliance-list" style="font-size:0.85rem; line-height:1.5;">
+                <li class="checklist-item"><span class="text-orange" style="font-weight:700;">&#10004;</span> 5 Interconnected Pages in Master Frame</li>
+                <li class="checklist-item"><span class="text-orange" style="font-weight:700;">&#10004;</span> 3 CSS Methods (External, Internal, Inline)</li>
+                <li class="checklist-item"><span class="text-orange" style="font-weight:700;">&#10004;</span> 4 CSS Groups (Background, Text, Dimension, Position)</li>
+                <li class="checklist-item"><span class="text-orange" style="font-weight:700;">&#10004;</span> All 7 Form Controls Implemented with HTML5 Validation</li>
+                <li class="checklist-item"><span class="text-orange" style="font-weight:700;">&#10004;</span> Data Tables, Ordered &amp; Unordered Lists Present</li>
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
     <section class="section section-alt" id="faq" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" style="margin-bottom: 1.5rem;">
           <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
-          <p class="section-subtitle">
-            Essential knowledge regarding TAPOPS peacekeeping, Power Spheras, and site engineering.
-          </p>
         </div>
-
         <div class="faq-list">
-
           <details class="faq-item" open>
-            <summary class="faq-question">
-              <span>What is TAPOPS and what is its galactic mission?</span>
-            </summary>
-            <div class="faq-answer">
-              <p>
-                <strong>TAPOPS</strong> (Tracker and Protector of Power Spheras) is an interstellar defense coalition tasked with locating, securing, and safeguarding ancient Power Spheras before they are exploited by mercenary warlords and space conquerors.
-              </p>
-            </div>
+            <summary class="faq-question"><span>What is TAPOPS and its galactic mission?</span></summary>
+            <div class="faq-answer"><p><strong>TAPOPS</strong> (Tracker and Protector of Power Spheras) is an interstellar defense coalition tasked with locating and safeguarding ancient Power Spheras from mercenary warlords and space conquerors.</p></div>
           </details>
-
           <details class="faq-item">
-            <summary class="faq-question">
-              <span>What is the difference between Evolutions and Elemental Fusions?</span>
-            </summary>
-            <div class="faq-answer">
-              <p>
-                <strong>Second-Tier Evolutions</strong> (Halilintar, Taufan, Gempa, Blaze, Ice, Duri, Solar) represent concentrated mastery of a single element. <strong>Elemental Fusions</strong> (FrostFire, Glacier, Supra, SORI) merge two distinct elemental spheres simultaneously into a unified hybrid warrior with exponential power.
-              </p>
-            </div>
+            <summary class="faq-question"><span>What is the difference between Evolutions and Fusions?</span></summary>
+            <div class="faq-answer"><p><strong>Tier 2 Evolutions</strong> (Halilintar, Taufan, Gempa, etc.) are deepened single-element upgrades. <strong>Elemental Fusions</strong> (FrostFire, Glacier, Supra, SORI) merge two distinct elements simultaneously into a hybrid warrior.</p></div>
           </details>
-
           <details class="faq-item">
-            <summary class="faq-question">
-              <span>How is this website engineered with pure semantic HTML5 &amp; CSS3?</span>
-            </summary>
-            <div class="faq-answer">
-              <p>
-                The site uses standard semantic HTML5 elements, pure CSS mobile navigation drawer via the hidden checkbox pattern, accessible form validation, and CSS custom property design tokens without any external JavaScript dependencies.
-              </p>
-            </div>
+            <summary class="faq-question"><span>How is this website engineered with pure HTML5 &amp; CSS3?</span></summary>
+            <div class="faq-answer"><p>The site uses semantic HTML5 elements, pure CSS mobile navigation drawer via the hidden checkbox pattern, accessible form validation, and CSS custom property design tokens with zero JavaScript dependencies.</p></div>
           </details>
-
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
-            <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
-          </a>
-          <p>
-            The comprehensive galactic portal for BoBoiBoy fans, cadets, and scholars. Exploring elemental mastery, Power Spheras, and intergalactic defense chronicles.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Universe</h4>
-          <ul class="footer-links">
-            <li><a href="characters.html" class="footer-link">TAPOPS Heroes</a></li>
-            <li><a href="elements.html" class="footer-link">7 Elemental Tiers</a></li>
-            <li><a href="series.html" class="footer-link">Chronicles &amp; Movies</a></li>
-            <li><a href="contact.html" class="footer-link">Cadet Enlistment</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="home.html" class="footer-link">Galactic Home</a></li>
-            <li><a href="#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
-            <li><a href="#student-profile" class="footer-link">Student Info</a></li>
-            <li><a href="#faq" class="footer-link">Galactic FAQ</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-quote">
-            <span class="quote-badge">Signature Battle Cry</span>
-            <p class="quote-text">"Awesome! Never give up, we must protect this galaxy at all costs!"</p>
-            <p class="quote-author">&mdash; BoBoiBoy, Elemental Master &amp; TAPOPS Leader</p>
-          </div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="home.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
+        <p class="text-secondary" style="font-size:0.85rem; margin-top:0.4rem;">Defending the galaxy with TAPOPS and 7 primal elements.</p>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="home.html" class="footer-link">Galactic Home</a></li>
+          <li><a href="#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
+          <li><a href="#student-profile" class="footer-link">Student Info</a></li>
+          <li><a href="#faq" class="footer-link">Galactic FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-quote">
+          <p class="quote-text">"Awesome! Protect this galaxy at all costs!"</p>
+          <p class="quote-author">&mdash; BoBoiBoy</p>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">
-          &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.
-        </p>
-        <p class="footer-copy">
-          Crafted with Semantic HTML5 &amp; CSS3 &bull; <a href="contact.html">TAPOPS Space Academy</a>
-        </p>
-      </div>
+    </div>
+    <div class="footer-bottom text-center" style="padding-top:0.75rem; border-top:1px solid #e2e8f0; font-size:0.8rem; color:#64748b;">
+      <p>&copy; 2026 BoBoiBoy Universe Portal &bull; Academic Project 1 &bull; Resident University</p>
     </div>
   </footer>
 
