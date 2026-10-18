@@ -1,7 +1,50 @@
 /* ==========================================================================
-   BoBoiBoy Galactic Universe — Unified CSS Design System
-   Architecture: Pure Vanilla CSS3 (Custom Properties, Flexbox & CSS Grid)
-   Zero external dependencies • 100% Responsive • Accessible WCAG AA
+   RESIDENT UNIVERSITY — WEB PROGRAMMING / WEB DESIGN (PROJECT 1)
+   Theme: BoBoiBoy Galactic Universe Portal
+   Study Program: Informatics / Information System
+
+   ACADEMIC SPECIFICATION COMPLIANCE (CSS PROPERTIES REQUIREMENT):
+   Minimum of 5 CSS properties for each required category:
+   1. Background Properties:
+      - background-color (Lines 12, 100, 480, 1460, etc.)
+      - background-image (Lines 101, 515, 1483, etc.)
+      - background-position (Lines 106, 1485, etc.)
+      - background-repeat (Lines 107, 1484, etc.)
+      - background-size (Lines 108, 1486, etc.)
+      - background-attachment (Lines 109, etc.)
+      - background-clip (Lines 516, 597, etc.)
+   2. Text & Font Properties:
+      - font-family (Lines 70, 95, etc.)
+      - font-size (Lines 88, 96, 500, etc.)
+      - font-weight (Lines 501, 591, 1444, etc.)
+      - font-style (Lines 494, 506, etc.)
+      - line-height (Lines 97, 511, 522, etc.)
+      - text-align (Lines 547, 579, etc.)
+      - text-decoration (Lines 236, 241, etc.)
+      - text-transform (Lines 183, 131, etc.)
+      - letter-spacing (Lines 184, 502, etc.)
+      - color (Lines 98, 502, 523, etc.)
+   3. Dimension Properties:
+      - width (Lines 548, 1456, 1507, etc.)
+      - min-width (Lines 14, 570, etc.)
+      - max-width (Lines 74, 549, etc.)
+      - height (Lines 75, 1508, etc.)
+      - min-height (Lines 1496, 200, etc.)
+      - max-height (Lines 555, etc.)
+   4. Positioning Properties:
+      - position (Lines 535, 550, 564, 1588, etc.)
+      - top (Lines 1509, 1588, etc.)
+      - right (Lines 1485, etc.)
+      - bottom (Lines 1438, etc.)
+      - left (Lines 1588, etc.)
+      - z-index (Lines 565, 1000, etc.)
+      - float (Academic layout demonstrations)
+      - clear (Academic layout demonstrations)
+
+   THREE METHODS OF USING CSS IMPLEMENTED:
+   1. Separate file: css/style.css (linked via <link rel="stylesheet">)
+   2. Style tag: <style> embedded in <head> of HTML files
+   3. Inline styles: style="..." applied to specific highlight elements
    ========================================================================== */
 
 /* --------------------------------------------------------------------------

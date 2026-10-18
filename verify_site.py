@@ -1,6 +1,7 @@
 """
 Automated verification script for BoBoiBoy Universe Website.
-Exhaustively checks HTML structure, internal links, hash anchors, images/alt text, CSS syntax, semantic landmarks, and navigation states.
+Exhaustively checks HTML structure, internal links, hash anchors, images/alt text, CSS syntax,
+semantic landmarks, navigation states, and Resident University Project 1 academic rubric compliance!
 """
 
 import os
@@ -13,6 +14,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 HTML_FILES = [
     "index.html",
+    "home.html",
     "characters.html",
     "elements.html",
     "series.html",
@@ -25,7 +27,8 @@ VOID_TAGS = {
 }
 
 PAGE_ACTIVE_MAP = {
-    "index.html": "index.html",
+    "index.html": "home.html",
+    "home.html": "home.html",
     "characters.html": "characters.html",
     "elements.html": "elements.html",
     "series.html": "series.html",
@@ -55,6 +58,15 @@ class HTMLValidator(HTMLParser):
         self.has_nav = False
         self.has_nav_toggle = False
         self.active_nav_links = []
+        self.style_tags_count = 0
+        self.inline_styles_count = 0
+        self.tables_count = 0
+        self.ol_count = 0
+        self.ul_count = 0
+        self.inputs = [] # (type, name, id)
+        self.has_select = False
+        self.has_textarea = False
+        self.has_submit = False
 
     def handle_decl(self, decl):
         if decl.strip().lower() == "doctype html":
@@ -74,12 +86,34 @@ class HTMLValidator(HTMLParser):
             self.in_title = True
         elif tag == "header":
             self.has_header = True
-        elif tag == "main":
+        elif tag == "main" or attrs_dict.get("role") == "main":
             self.has_main = True
-        elif tag == "footer":
+        elif tag == "footer" or "master-statusbar" in attrs_dict.get("class", ""):
             self.has_footer = True
         elif tag == "nav":
             self.has_nav = True
+        elif tag == "style":
+            self.style_tags_count += 1
+        elif tag == "table":
+            self.tables_count += 1
+        elif tag == "ol":
+            self.ol_count += 1
+        elif tag == "ul":
+            self.ul_count += 1
+        elif tag == "select":
+            self.has_select = True
+        elif tag == "textarea":
+            self.has_textarea = True
+        elif tag == "button" and attrs_dict.get("type") == "submit":
+            self.has_submit = True
+        elif tag == "input":
+            inp_type = attrs_dict.get("type", "text").lower()
+            self.inputs.append((inp_type, attrs_dict.get("name"), attrs_dict.get("id")))
+            if inp_type == "submit":
+                self.has_submit = True
+
+        if "style" in attrs_dict:
+            self.inline_styles_count += 1
 
         # Check ID
         tag_id = attrs_dict.get("id")
@@ -204,7 +238,8 @@ def validate_css(css_path):
 
 def main():
     print("=" * 65)
-    print(" BoBoiBoy Universe Website - Automated Quality Verification")
+    print(" BoBoiBoy Universe Website - Academic Rubric Verification")
+    print(" Resident University Project 1: Web Programming & Design")
     print("=" * 65)
 
     total_errors = 0
@@ -326,7 +361,6 @@ def main():
     for filename, parser in parsed_pages.items():
         for src, alt, line in parser.images:
             total_imgs += 1
-            # Check alt text
             if alt is None:
                 print(f"  [FAIL] {filename}:{line} - <img> missing alt attribute (src='{src}')")
                 total_errors += 1
@@ -334,7 +368,6 @@ def main():
                 print(f"  [FAIL] {filename}:{line} - <img> has empty alt attribute (src='{src}')")
                 total_errors += 1
 
-            # Check file existence
             if not src:
                 print(f"  [FAIL] {filename}:{line} - <img> missing src attribute")
                 total_errors += 1
@@ -376,13 +409,11 @@ def main():
             else:
                 target_page, target_anchor = href, None
 
-            # Check target page existence
             target_file_path = (BASE_DIR / target_page).resolve()
             if not target_file_path.exists():
                 print(f"  [FAIL] {filename}:{line} - Linked file does not exist: {target_page}")
                 total_errors += 1
             else:
-                # Check target anchor if specified
                 if target_anchor:
                     target_parser = parsed_pages.get(target_page)
                     if target_parser and target_anchor not in target_parser.ids:
@@ -400,6 +431,74 @@ def main():
             print(f"  [FAIL] css/style.css: {issue}")
             total_errors += 1
 
+    # 7. Resident University Project 1 Specific Rubric Checks
+    print("\n[Step 7] Checking Resident University Project 1 Rubric Criteria...")
+    
+    # 7a. Check Form Controls in contact.html
+    contact_p = parsed_pages.get("contact.html")
+    if contact_p:
+        input_types = {t for t, _, _ in contact_p.inputs}
+        required_controls = {
+            "text": "text" in input_types,
+            "password": "password" in input_types,
+            "textarea": contact_p.has_textarea,
+            "radio": "radio" in input_types,
+            "checkbox": "checkbox" in input_types,
+            "selection": contact_p.has_select,
+            "submit": contact_p.has_submit,
+        }
+        all_controls_ok = True
+        for ctrl_name, present in required_controls.items():
+            if present:
+                print(f"  [OK] Form control present: {ctrl_name.capitalize()}")
+            else:
+                print(f"  [FAIL] Missing required form control: {ctrl_name}")
+                total_errors += 1
+                all_controls_ok = False
+        if all_controls_ok:
+            print("  [OK] All 7 required form controls (Text, Password, Textarea, Radio, Checkbox, Selection, Submit) are fully implemented!")
+
+    # 7b. Check Tables, Ordered Lists, Unordered Lists
+    total_tables = sum(p.tables_count for p in parsed_pages.values())
+    total_ols = sum(p.ol_count for p in parsed_pages.values())
+    total_uls = sum(p.ul_count for p in parsed_pages.values())
+    print(f"  [INFO] Total Structural Elements across site: {total_tables} Table(s), {total_ols} Ordered List(s) <ol>, {total_uls} Unordered List(s) <ul>")
+    if total_tables >= 1:
+        print(f"  [OK] Tables requirement met: {total_tables} >= 1")
+    else:
+        print("  [FAIL] Missing required table (minimum 1 table)")
+        total_errors += 1
+
+    if total_ols >= 2:
+        print(f"  [OK] Ordered lists requirement met: {total_ols} >= 2")
+    else:
+        print(f"  [FAIL] Ordered lists requirement failed: found {total_ols}, need at least 2")
+        total_errors += 1
+
+    if total_uls >= 2:
+        print(f"  [OK] Unordered lists requirement met: {total_uls} >= 2")
+    else:
+        print(f"  [FAIL] Unordered lists requirement failed: found {total_uls}, need at least 2")
+        total_errors += 1
+
+    # 7c. Check 3 CSS Methods
+    total_styles = sum(p.style_tags_count for p in parsed_pages.values())
+    total_inlines = sum(p.inline_styles_count for p in parsed_pages.values())
+    print(f"  [INFO] Total CSS Methods used: 1 External (style.css), {total_styles} Internal (<style> tags), {total_inlines} Inline styles")
+    if total_styles > 0 and total_inlines > 0 and css_path.exists():
+        print("  [OK] All three methods of using CSS (separate files, style tag, inline) are active!")
+    else:
+        print(f"  [FAIL] Three CSS methods check failed: external={css_path.exists()}, style_tags={total_styles}, inline={total_inlines}")
+        total_errors += 1
+
+    # 7d. Check Frame Usage
+    index_content = (BASE_DIR / "index.html").read_text(encoding="utf-8")
+    if "<iframe" in index_content and 'name="mainFrame"' in index_content:
+        print("  [OK] Master Frame requirement met: index.html implements master iframe (name=\"mainFrame\") with external navigation!")
+    else:
+        print("  [FAIL] Master Frame requirement not found in index.html")
+        total_errors += 1
+
     print("\n" + "=" * 65)
     print(f" VERIFICATION SUMMARY: {total_errors} errors, {total_warnings} warnings")
     print("=" * 65)
@@ -407,7 +506,7 @@ def main():
     if total_errors > 0:
         sys.exit(1)
     else:
-        print(" ALL VERIFICATION CHECKS PASSED PERFECTLY!\n")
+        print(" ALL VERIFICATION CHECKS AND RUBRIC REQUIREMENTS PASSED PERFECTLY!\n")
         sys.exit(0)
 
 

@@ -6,13 +6,110 @@
   <meta name="description" content="Explore the complete BoBoiBoy chronicles and cinematic timeline. From the classic Pulau Rintis origins to the galactic TAPOPS space odyssey, movies, and modern Galaxy seasons.">
   <title>Series &amp; Movies | The BoBoiBoy Chronicles | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- =========================================================================
+       ACADEMIC REQUIREMENT: INTERNAL CSS (<style> Tag)
+       Demonstrating 4 property categories (minimum 5 properties each):
+       1. Background Properties: background-color, background-image, background-position, background-repeat, background-size, background-attachment
+       2. Text and Font Properties: font-family, font-size, font-weight, font-style, line-height, text-align, text-transform, letter-spacing, color
+       3. Dimension Properties: width, min-width, max-width, height, min-height, max-height
+       4. Positioning Properties: position, top, right, bottom, left, z-index
+       ========================================================================= -->
+  <style>
+    /* 1. Background Properties Demonstration */
+    .watch-order-card {
+      background-color: #f8fafc;
+      background-image: linear-gradient(135deg, rgba(2, 132, 199, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--color-wind);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    /* 2. Text and Font Properties Demonstration */
+    .watch-order-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 800;
+      font-style: normal;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.35;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    /* 3. Dimension Properties Demonstration */
+    .watch-order-container {
+      width: 100%;
+      min-width: 280px;
+      max-width: 100%;
+      height: auto;
+      min-height: 250px;
+      max-height: none;
+    }
+
+    /* 4. Positioning Properties Demonstration */
+    .chronology-marker-badge {
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      z-index: 3;
+    }
+
+    /* Academic Ordered List Counter */
+    .academic-ordered-list {
+      counter-reset: chrono-step;
+      list-style: none;
+      padding-left: 0;
+      margin: 1.25rem 0 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .academic-ordered-list > li {
+      counter-increment: chrono-step;
+      position: relative;
+      padding-left: 2.75rem;
+      line-height: 1.5;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+
+    .academic-ordered-list > li::before {
+      content: counter(chrono-step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-wind), #0284c7);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35);
+    }
+  </style>
 </head>
 <body>
 
   <!-- Sticky Header & Navigation -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+      <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
         <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
       </a>
 
@@ -26,7 +123,7 @@
 
       <nav class="nav-menu">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home.html" class="nav-link">Home</a></li>
           <li><a href="characters.html" class="nav-link">Characters</a></li>
           <li><a href="elements.html" class="nav-link">Elements</a></li>
           <li><a href="series.html" class="nav-link active">Series &amp; Movies</a></li>
@@ -388,6 +485,41 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- Official Chronological Watch Order Guide (Ordered List Demonstration) -->
+        <div class="watch-order-card watch-order-container">
+          <div class="chronology-marker-badge">
+            <span class="badge badge-wind mb-2">Academic Ordered List #3</span>
+          </div>
+          <h3 class="watch-order-title">
+            <span>🎬</span> Official Canon Chronological Watch Order
+          </h3>
+          <p class="text-secondary text-sm" style="margin-bottom: 1rem;">
+            For complete narrative continuity without confusing elemental tier awakenings, watch the franchise strictly in this recommended 5-step sequence:
+          </p>
+          <ol class="academic-ordered-list">
+            <li>
+              <strong>BoBoiBoy Classic TV Series (Seasons 1, 2 &amp; 3):</strong>
+              Witness BoBoiBoy's first encounter with Ochobot on Pulau Rintis, awakening of Earth/Wind/Lightning, and subsequent unlocks of Fire and Water.
+            </li>
+            <li>
+              <strong>BoBoiBoy: The Movie (2016 Feature Film):</strong>
+              The pivotal bridge where the team rescues Klamkabot and unlocks Tier 2 evolutions (BoBoiBoy Blaze and BoBoiBoy Ice) on the Floating Island.
+            </li>
+            <li>
+              <strong>BoBoiBoy Galaxy Season 1 (24 Episodes):</strong>
+              The cadets leave Earth to join TAPOPS across deep space, defending Power Spheras from Captain Vargoba and awakening Leaf/Thorn and Light/Solar.
+            </li>
+            <li>
+              <strong>BoBoiBoy Movie 2 (2019 Blockbuster):</strong>
+              The apex confrontation against primordial tyrant Retak'ka, leading to the historic breakthrough of multi-elemental Fusions (FrostFire, Glacier, Supra).
+            </li>
+            <li>
+              <strong>BoBoiBoy Galaxy Season 2 (Windara, Gur'latan &amp; Barruka Arcs):</strong>
+              The ongoing space defense campaign against Emperor Reramos, featuring advanced fusions like BoBoiBoy SORI and BoBoiBoy Gentar.
+            </li>
+          </ol>
         </div>
 
         <!-- Comparative Master Chronology Table -->

@@ -6,13 +6,110 @@
   <meta name="description" content="Master the 7 elemental powers of BoBoiBoy. Deep dive into Tier 1 base awakenings, Tier 2 evolved masteries, and legendary Tier 3 elemental fusions like FrostFire, Glacier, Supra, and SORI.">
   <title>The 7 Elemental Powers &amp; Fusions | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- =========================================================================
+       ACADEMIC REQUIREMENT: INTERNAL CSS (<style> Tag)
+       Demonstrating 4 property categories (minimum 5 properties each):
+       1. Background Properties: background-color, background-image, background-position, background-repeat, background-size, background-attachment
+       2. Text and Font Properties: font-family, font-size, font-weight, font-style, line-height, text-align, text-transform, letter-spacing, color
+       3. Dimension Properties: width, min-width, max-width, height, min-height, max-height
+       4. Positioning Properties: position, top, right, bottom, left, z-index
+       ========================================================================= -->
+  <style>
+    /* 1. Background Properties Demonstration */
+    .evolution-hierarchy-box {
+      background-color: #f8fafc;
+      background-image: linear-gradient(135deg, rgba(217, 119, 6, 0.05) 0%, rgba(220, 38, 38, 0.05) 100%);
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid var(--accent-amber);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    /* 2. Text and Font Properties Demonstration */
+    .evolution-hierarchy-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 800;
+      font-style: normal;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    /* 3. Dimension Properties Demonstration */
+    .evolution-hierarchy-container {
+      width: 100%;
+      min-width: 280px;
+      max-width: 100%;
+      height: auto;
+      min-height: 200px;
+      max-height: none;
+    }
+
+    /* 4. Positioning Properties Demonstration */
+    .evolution-badge-anchor {
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      z-index: 4;
+    }
+
+    /* Academic Ordered List Counter */
+    .academic-ordered-list {
+      counter-reset: tier-step;
+      list-style: none;
+      padding-left: 0;
+      margin: 1.25rem 0 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .academic-ordered-list > li {
+      counter-increment: tier-step;
+      position: relative;
+      padding-left: 2.75rem;
+      line-height: 1.5;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+
+    .academic-ordered-list > li::before {
+      content: counter(tier-step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-amber), #ea580c);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(217, 119, 6, 0.35);
+    }
+  </style>
 </head>
 <body>
 
   <!-- Sticky Header & Navigation -->
   <header class="site-header">
     <div class="container nav-container">
-      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+      <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
         <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
       </a>
 
@@ -26,7 +123,7 @@
 
       <nav class="nav-menu">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home.html" class="nav-link">Home</a></li>
           <li><a href="characters.html" class="nav-link">Characters</a></li>
           <li><a href="elements.html" class="nav-link active">Elements</a></li>
           <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
@@ -69,6 +166,33 @@
           <p class="section-subtitle">
             Elemental mastery is not static; it scales with tactical experience, emotional discipline, and celestial resonance. Discover how BoBoiBoy's powers evolve through three distinct stages.
           </p>
+        </div>
+
+        <!-- 3-Stage Elemental Progression (Ordered List Demonstration) -->
+        <div class="evolution-hierarchy-box evolution-hierarchy-container">
+          <div class="evolution-badge-anchor">
+            <span class="badge badge-lightning mb-2">Academic Ordered List #4</span>
+          </div>
+          <h3 class="evolution-hierarchy-title">
+            <span>⚡</span> 3-Stage Elemental Evolution &amp; Mastery Progression
+          </h3>
+          <p class="text-secondary text-sm" style="margin-bottom: 1rem;">
+            BoBoiBoy's elemental mastery ascends systematically through three rigorous cosmic evolutionary stages:
+          </p>
+          <ol class="academic-ordered-list">
+            <li>
+              <strong>Stage 1 &mdash; Base Elemental Awakenings (Tier 1):</strong>
+              Primal natural forces granted directly by Power Sphera Ochobot. Enables basic environmental manipulation and <em>BoBoiBoy Kuasa Tiga</em> split-clone tactics.
+            </li>
+            <li>
+              <strong>Stage 2 &mdash; Advanced Evolved Masteries (Tier 2):</strong>
+              Unlocked through profound resolve and combat pressure. Condenses elements into lethal energy weapons (Halilintar blades, Ice bows) and expands to <em>BoBoiBoy Kuasa Tujuh</em>.
+            </li>
+            <li>
+              <strong>Stage 3 &mdash; Dual-Elemental Synergy Fusions (Tier 3):</strong>
+              The ultimate synthesis achieved by merging two autonomous elemental clones into a unified warrior (FrostFire, Glacier, Supra, SORI, Gentar) yielding exponential destructive and defensive power.
+            </li>
+          </ol>
         </div>
 
         <div class="grid-3">

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official BoBoiBoy Universe Portal - Home Overview. Explore 7 elemental powers, TAPOPS galactic guardians, and intergalactic defense lore.">
+  <title>BoBoiBoy Universe | Defend the Galaxy (Home Overview)</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- =========================================================================
+       ACADEMIC REQUIREMENT: INTERNAL CSS (<style> Tag)
+       Demonstrating 4 property categories (minimum 5 properties each):
+       1. Background Properties: background-color, background-image, background-position, background-repeat, background-size
+       2. Text and Font Properties: font-family, font-size, font-weight, text-align, text-transform, line-height, color
+       3. Dimension Properties: width, min-width, max-width, height, min-height, max-height
+       4. Positioning Properties: position, top, right, bottom, left, z-index
+       ========================================================================= -->
+  <style>
+    /* 1. Background Properties Demonstration */
+    .portal-announcement-banner {
+      background-color: #f8fafc;
+      background-image: radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.08) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.08) 0%, transparent 40%);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 2rem;
+      margin: 1.5rem auto;
+    }
+
+    /* 2. Text and Font Properties Demonstration */
+    .portal-banner-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 800;
+      font-style: normal;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      line-height: 1.3;
+      color: var(--primary-orange);
+      margin-bottom: 0.5rem;
+    }
+
+    /* 3. Dimension Properties Demonstration */
+    .portal-banner-box {
+      width: 100%;
+      min-width: 280px;
+      max-width: 1200px;
+      height: auto;
+      min-height: 80px;
+      max-height: none;
+    }
+
+    /* 4. Positioning Properties Demonstration */
+    .banner-status-tag {
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      left: 0;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* Academic Ordered List Styling */
+    .academic-ordered-list {
+      counter-reset: custom-counter;
+      list-style: none;
+      padding-left: 0;
+      margin: 1.25rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .academic-ordered-list > li {
+      counter-increment: custom-counter;
+      position: relative;
+      padding-left: 2.75rem;
+      line-height: 1.5;
+      color: var(--text-secondary);
+    }
+
+    .academic-ordered-list > li::before {
+      content: counter(custom-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-orange), #ea580c);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(249, 115, 22, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home" target="_self">
+        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+      </a>
+
+      <!-- Pure CSS Mobile Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link active">Home</a></li>
+          <li><a href="characters.html" class="nav-link">Characters</a></li>
+          <li><a href="elements.html" class="nav-link">Elements</a></li>
+          <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
+          <li><a href="contact.html" class="nav-link">Fan Hub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Academic Callout Banner Demonstrating Internal CSS & Inline CSS -->
+    <div class="container">
+      <div class="portal-announcement-banner portal-banner-box">
+        <div class="banner-status-tag">
+          <span class="badge badge-lightning">Academic Project 1</span>
+          <span class="badge badge-earth">Resident University</span>
+        </div>
+        <h2 class="portal-banner-title mt-2">Welcome to BoBoiBoy Galactic Command</h2>
+        <p class="text-secondary" style="font-size: 0.95rem; line-height: 1.6; margin: 0;">
+          This portal serves as the primary master frame content page for the Web Programming &amp; Web Design Project. All five core pages are fully interconnected and styled with pure semantic HTML5 &amp; CSS3.
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span>⚡</span> TAPOPS Space Mission Active
+          </div>
+          <h1 class="hero-title" id="hero-title">
+            Defend the Galaxy with <span class="highlight">Elemental Powers</span>
+          </h1>
+          <p class="hero-subtitle">
+            Follow BoBoiBoy and his heroic friends as they harness extraordinary elemental powers to protect Power Spheras across the cosmos with TAPOPS.
+          </p>
+          <div class="hero-cta">
+            <a href="characters.html" class="btn btn-primary btn-lg">Explore Heroes</a>
+            <a href="elements.html" class="btn btn-secondary btn-lg">Discover Elements</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <!-- Inline CSS Demonstration on Card -->
+          <div class="hero-badge-card glow-lightning" style="background-color: #ffffff; width: 100%; max-width: 420px; position: relative; text-align: center;">
+            <img src="images/logo.svg" alt="BoBoiBoy Galaxy Emblem" width="240" height="72">
+            <h3 class="text-orange mb-1" style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; color: #f97316;">
+              Elemental Vanguard
+            </h3>
+            <p class="text-secondary mb-3" style="font-size: 0.85rem; line-height: 1.4;">
+              7 Primal Forces &bull; Split-Clone Mastery &bull; Cosmic Defense Coalition
+            </p>
+            <div class="flex flex-center flex-wrap gap-1">
+              <span class="badge badge-lightning">Tier 3 Master</span>
+              <span class="badge badge-fire">TAPOPS Cadet</span>
+              <span class="badge badge-wind">Kuasa 7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Counter Strip -->
+    <section class="stats-strip stats-section" aria-label="Galactic Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Elemental Tiers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Core Heroes</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Feature Films</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Galactic Episodes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cadet Onboarding Guide Section (Ordered List Demonstration) -->
+    <section class="section" id="onboarding" aria-labelledby="onboarding-title" style="padding-top: 2rem; padding-bottom: 2rem;">
+      <div class="container">
+        <div class="card" style="padding: 2rem; border-left: 4px solid var(--primary-orange);">
+          <div class="section-tag" style="display: inline-block; margin-bottom: 0.5rem;">Cadet Protocol</div>
+          <h2 class="h3" id="onboarding-title" style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+            Galactic Cadet Fast-Track Orientation Procedure
+          </h2>
+          <p class="text-secondary" style="font-size: 0.95rem; margin-bottom: 1rem;">
+            Follow this official 3-step sequence to navigate through the BoBoiBoy Universe database and complete your TAPOPS orientation:
+          </p>
+
+          <!-- Academic Ordered List #1 -->
+          <ol class="academic-ordered-list">
+            <li>
+              <strong>Survey the 7 Elemental Tiers &amp; Dual Fusions:</strong>
+              Inspect Tier 1 sparks, Tier 2 evolutions, and the multi-element fusion matrix on the <a href="elements.html" class="text-orange" style="font-weight: 700;">Elements Database</a>.
+            </li>
+            <li>
+              <strong>Review TAPOPS Vanguard Heroes &amp; Alien Adversaries:</strong>
+              Learn the combat strengths and equipment of BoBoiBoy, Yaya, Ying, Gopal, Fang, and Ochobot on the <a href="characters.html" class="text-orange" style="font-weight: 700;">Characters Dossier</a>.
+            </li>
+            <li>
+              <strong>Enlist at TAPOPS Academy &amp; Submit Subspace Dispatch:</strong>
+              Fill in your cadet call-sign, set your security passcode, choose your elemental division, and submit your sworn pledge on the <a href="contact.html" class="text-orange" style="font-weight: 700;">Cadet Enlistment Hub</a>.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lore & Storyline Section -->
+    <section class="section section-alt lore-section" id="lore" aria-labelledby="lore-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Galactic Lore</span>
+          <h2 class="section-title" id="lore-title">The Legend of the Elemental Guardian</h2>
+          <p class="section-subtitle">
+            From humble beginnings at a cocoa stall on Rintis Island to frontline interstellar skirmishes defending ancient robotic technology.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Origin Story Card -->
+          <article class="card glow-fire">
+            <div class="card-header">
+              <span class="badge badge-fire mb-1">Chapter 1: The Origin</span>
+              <h3 class="card-title text-orange">Awakening on Pulau Rintis</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                During a school holiday visit to his grandfather Tok Aba's renowned cocoa stall on Pulau Rintis, young BoBoiBoy stumbled upon an ancient, dormant spherical robot named <strong>Ochobot</strong>. Unbeknownst to humanity, cocoa beans possessed concentrated cosmic energy, attracting the nefarious alien warlord <strong>Adu Du</strong> from planet Ata Ta Tiga and his battle robot Probe.
+              </p>
+              <p class="mt-2">
+                When Adu Du launched an assault to plunder the cocoa supply, Ochobot awakened and bonded with BoBoiBoy and his neighborhood companions &mdash; Yaya, Ying, and Gopal. Ochobot endowed BoBoiBoy with primordial elemental manipulation powers over Earth, Wind, and Lightning. BoBoiBoy quickly pioneered his signature maneuver, <em>BoBoiBoy Kuasa Tiga</em>, enabling him to materialize three distinct elemental clones simultaneously to defend the island.
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-muted" style="font-size:0.85rem;"><strong>Primary Setting:</strong> Tok Aba's Kokotiam &bull; Pulau Rintis &bull; Planet Earth</p>
+            </div>
+          </article>
+
+          <!-- Cosmic Mission Card -->
+          <article class="card glow-lightning">
+            <div class="card-header">
+              <span class="badge badge-lightning mb-1">Chapter 2: The Cosmic Mission</span>
+              <h3 class="card-title text-amber">TAPOPS &amp; The Interstellar Front</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                As extraterrestrial incursions escalated beyond Earth's atmosphere, BoBoiBoy and his friends were inducted into <strong>TAPOPS</strong> (<em>Tracker and Protector of Power Spheras</em>), an elite galaxy-wide defense coalition marshaled by Commander Koko Ci, Admiral Tarung, and Captain Kaizo. Their critical mandate: locate and secure ancient Generation Power Spheras before galactic conquerors exploit their reality-altering capabilities.
+              </p>
+              <p class="mt-2">
+                Journeying through perilous star sectors, the team thwarted merciless foes including space pirate Borara of the Tengkotak armada, Captain Vargoba, and the primordial elemental master <strong>Retak'ka</strong>. To triumph against Retak'ka's multi-element absorption, BoBoiBoy unlocked Tier 2 forms (Halilintar, Taufan, Gempa, Blaze, Ice, Duri, Solar) and revolutionized combat with dual-elemental Fusions like FrostFire and Supra.
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="text-muted" style="font-size:0.85rem;"><strong>Command Operations:</strong> TAPOPS Space Station &bull; Sector 12 Outer Rim</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Highlights Section -->
+    <section class="section" id="featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Key Guardians</span>
+          <h2 class="section-title" id="featured-title">Galactic Vanguard Spotlight</h2>
+          <p class="section-subtitle">
+            Meet the elemental prodigy who commands the forces of nature and the Generation 9 Power Sphera who sparked the defense of the cosmos.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- BoBoiBoy Card -->
+          <article class="card glow-fire">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="character-avatar-wrap" style="margin: 0; flex-shrink: 0;">
+                <img src="images/boboiboy.png" alt="BoBoiBoy Avatar" class="character-avatar" width="90" height="90">
+              </div>
+              <div>
+                <span class="badge badge-fire mb-1">Elemental Leader</span>
+                <h3 class="card-title text-orange" style="margin-bottom: 0.2rem;">BoBoiBoy</h3>
+                <div class="character-alias">Master of 7 Elements &amp; Clone Splitting</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                Earth's chief defender and TAPOPS cadet vanguard. BoBoiBoy wields the unprecedented ability to manipulate seven distinct elemental dimensions &mdash; advancing from Tier 1 base forms to Tier 2 masters and synthetic dual-elemental fusions. He can split his consciousness into multiple simultaneous clones to turn the tide of cosmic battles.
+              </p>
+              <div class="flex flex-wrap gap-1 mt-3">
+                <span class="badge badge-lightning">Lightning / Halilintar</span>
+                <span class="badge badge-wind">Wind / Taufan</span>
+                <span class="badge badge-earth">Earth / Gempa</span>
+                <span class="badge badge-fire">Fire / Blaze</span>
+              </div>
+            </div>
+            <div class="card-footer flex-between">
+              <span class="text-muted" style="font-size:0.85rem;">Rank: TAPOPS Cadet</span>
+              <a href="characters.html" class="btn btn-primary btn-sm">Explore Hero Dossier &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Ochobot Card -->
+          <article class="card glow-wind">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="character-avatar-wrap" style="margin: 0; flex-shrink: 0; background: linear-gradient(135deg, #38bdf8, #06b6d4);">
+                <img src="images/ochobot.png" alt="Ochobot Avatar" class="character-avatar" width="90" height="90">
+              </div>
+              <div>
+                <span class="badge badge-wind mb-1">Power Sphera Gen 9</span>
+                <h3 class="card-title text-wind" style="margin-bottom: 0.2rem;">Ochobot</h3>
+                <div class="character-alias" style="color: var(--color-wind);">Cosmic Teleportation &amp; Power Catalyst</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                A high-tier spherical mechanical intelligence salvaged on Pulau Rintis. Awakened through cocoa energy, Ochobot serves as BoBoiBoy's steadfast partner and tactical navigator. He holds the critical power to awaken and upgrade elemental superpowers, as well as execute instant cross-galaxy spatial teleportation for TAPOPS tactical insertions.
+              </p>
+              <div class="flex flex-wrap gap-1 mt-3">
+                <span class="badge badge-wind">Spatial Wormhole</span>
+                <span class="badge badge-light">Power Transmutation</span>
+                <span class="badge badge-lightning">Generation 9 Core</span>
+              </div>
+            </div>
+            <div class="card-footer flex-between">
+              <span class="text-muted" style="font-size:0.85rem;">Origin: Ancient Sphere Makers</span>
+              <a href="characters.html" class="btn btn-secondary btn-sm">Inspect Sphera Specs &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Elemental Matrix Showcase -->
+    <section class="section section-alt" aria-labelledby="elements-preview-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Primal Forces</span>
+          <h2 class="section-title" id="elements-preview-title">The 7 Elemental Spectrum</h2>
+          <p class="section-subtitle">
+            Harnessed by BoBoiBoy across three evolutionary tiers of galactic combat mastery.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <a href="elements.html" class="stat-card glow-lightning" style="text-decoration:none; display:block;">
+            <img src="images/elements/lightning.png" alt="Lightning Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-lightning" style="font-size:1.1rem;">Lightning</div>
+            <div class="text-muted" style="font-size:0.8rem;">Petir &bull; Halilintar</div>
+          </a>
+          <a href="elements.html" class="stat-card glow-wind" style="text-decoration:none; display:block;">
+            <img src="images/elements/wind.png" alt="Wind Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-wind" style="font-size:1.1rem;">Wind</div>
+            <div class="text-muted" style="font-size:0.8rem;">Angin &bull; Taufan</div>
+          </a>
+          <a href="elements.html" class="stat-card glow-earth" style="text-decoration:none; display:block;">
+            <img src="images/elements/earth.png" alt="Earth Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-earth" style="font-size:1.1rem;">Earth</div>
+            <div class="text-muted" style="font-size:0.8rem;">Tanah &bull; Gempa</div>
+          </a>
+          <a href="elements.html" class="stat-card glow-fire" style="text-decoration:none; display:block;">
+            <img src="images/elements/fire.png" alt="Fire Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-fire" style="font-size:1.1rem;">Fire</div>
+            <div class="text-muted" style="font-size:0.8rem;">Api &bull; Blaze</div>
+          </a>
+          <a href="elements.html" class="stat-card glow-water" style="text-decoration:none; display:block;">
+            <img src="images/elements/water.png" alt="Water Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-water" style="font-size:1.1rem;">Water</div>
+            <div class="text-muted" style="font-size:0.8rem;">Air &bull; Ais (Ice)</div>
+          </a>
+          <a href="elements.html" class="stat-card glow-leaf" style="text-decoration:none; display:block;">
+            <img src="images/elements/leaf.png" alt="Leaf Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-leaf" style="font-size:1.1rem;">Leaf</div>
+            <div class="text-muted" style="font-size:0.8rem;">Daun &bull; Duri</div>
+          </a>
+          <a href="elements.html" class="stat-card glow-light" style="text-decoration:none; display:block;">
+            <img src="images/elements/light.png" alt="Light Element" style="width:52px; height:52px; object-fit:contain; margin:0 auto 0.75rem auto;">
+            <div class="card-title text-light" style="font-size:1.1rem;">Light</div>
+            <div class="text-muted" style="font-size:0.8rem;">Cahaya &bull; Solar</div>
+          </a>
+          <a href="elements.html" class="stat-card" style="text-decoration:none; display:flex; flex-direction:column; align-items:center; justify-content:center; border-color:var(--primary-orange);">
+            <div class="stat-number text-orange" style="font-size:1.8rem; margin-bottom:0.25rem;">+4</div>
+            <div class="card-title text-orange" style="font-size:1.05rem;">Fusions</div>
+            <div class="text-muted" style="font-size:0.8rem;">Explore All &rarr;</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Universal Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+            <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+          </a>
+          <p>
+            The comprehensive galactic portal for BoBoiBoy fans, cadets, and scholars. Exploring elemental mastery, Power Spheras, and intergalactic defense chronicles.
+          </p>
+        </div>
+
+        <!-- Universe Links -->
+        <div>
+          <h4 class="footer-col-title">Universe</h4>
+          <ul class="footer-links">
+            <li><a href="characters.html" class="footer-link">TAPOPS Heroes</a></li>
+            <li><a href="elements.html" class="footer-link">7 Elemental Tiers</a></li>
+            <li><a href="series.html" class="footer-link">Chronicles &amp; Movies</a></li>
+            <li><a href="contact.html" class="footer-link">Cadet Enlistment</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="home.html" class="footer-link">Galactic Home</a></li>
+            <li><a href="#lore" class="footer-link">Origin Lore</a></li>
+            <li><a href="#featured" class="footer-link">Hero Vanguard</a></li>
+            <li><a href="contact.html#student-profile" class="footer-link">Student Info</a></li>
+          </ul>
+        </div>
+
+        <!-- Quote Column -->
+        <div>
+          <div class="footer-quote">
+            <span class="quote-badge">Signature Battle Cry</span>
+            <p class="quote-text">"Terbaik! Jangan putus asa, kita mesti lindungi galaksi ini!"</p>
+            <p class="quote-author">&mdash; BoBoiBoy, Elemental Master &amp; TAPOPS Leader</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.
+        </p>
+        <p class="footer-copy">
+          Crafted with Semantic HTML5 &amp; CSS3 &bull; <a href="contact.html">TAPOPS Space Academy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
