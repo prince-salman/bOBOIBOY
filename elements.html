@@ -1,850 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Master the 7 elemental powers of BoBoiBoy. Deep dive into Tier 1 base awakenings, Tier 2 evolved masteries, and legendary Tier 3 elemental fusions like FrostFire, Glacier, Supra, and SORI.">
-  <title>The 7 Elemental Powers &amp; Fusions | BoBoiBoy Universe</title>
-  <link rel="stylesheet" href="css/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Master the 7 elemental powers of BoBoiBoy. Deep dive into Tier 1 base awakenings, Tier 2 evolved masteries, and legendary Tier 3 elemental fusions like FrostFire, Glacier, Supra, and SORI.">
+ <title>The 7 Elemental Powers &amp; Fusions | BoBoiBoy Universe</title>
+ <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    /* 1. Background Properties Demonstration */
-    .evolution-hierarchy-box {
-      background-color: #f8fafc;
-      background-image: none;
-      background-position: center right;
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-attachment: scroll;
-      border: 1px solid var(--border-subtle);
-      border-left: 4px solid var(--accent-amber);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow-sm);
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 2rem;
-    }
+ <style>
+ /* 1. Background Properties Demonstration */
+ .evolution-hierarchy-box {
+ background-color: #f8fafc;
+ background-image: none;
+ background-position: center right;
+ background-repeat: no-repeat;
+ background-size: auto;
+ background-attachment: scroll;
+ border: 1px solid var(--border-subtle);
+ border-left: 4px solid var(--accent-amber);
+ border-radius: var(--radius-sm);
+ box-shadow: var(--shadow-sm);
+ padding: 1.25rem 1.5rem;
+ margin-bottom: 2rem;
+ }
 
-    /* 2. Text and Font Properties Demonstration */
-    .evolution-hierarchy-title {
-      font-family: var(--font-display);
-      font-size: 1.2rem;
-      font-weight: 800;
-      font-style: normal;
-      text-align: left;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      line-height: 1.35;
-      color: var(--text-primary);
-      margin-bottom: 0.5rem;
-    }
+ /* 2. Text and Font Properties Demonstration */
+ .evolution-hierarchy-title {
+ font-family: var(--font-display);
+ font-size: 1.2rem;
+ font-weight: 800;
+ font-style: normal;
+ text-align: left;
+ text-transform: uppercase;
+ letter-spacing: 0.04em;
+ line-height: 1.35;
+ color: var(--text-primary);
+ margin-bottom: 0.5rem;
+ }
 
-    /* 3. Dimension Properties Demonstration */
-    .evolution-hierarchy-container {
-      width: 100%;
-      min-width: 280px;
-      max-width: 100%;
-      height: auto;
-      min-height: 200px;
-      max-height: none;
-    }
+ /* 3. Dimension Properties Demonstration */
+ .evolution-hierarchy-container {
+ width: 100%;
+ min-width: 280px;
+ max-width: 100%;
+ height: auto;
+ min-height: 200px;
+ max-height: none;
+ }
 
-    /* 4. Positioning Properties Demonstration */
-    .evolution-badge-anchor {
-      position: relative;
-      top: 0;
-      right: 0;
-      bottom: auto;
-      left: 0;
-      z-index: 4;
-    }
+ /* 4. Positioning Properties Demonstration */
+ .evolution-badge-anchor {
+ position: relative;
+ top: 0;
+ right: 0;
+ bottom: auto;
+ left: 0;
+ z-index: 4;
+ }
 
-    /* Academic Ordered List Counter */
-    .academic-ordered-list {
-      counter-reset: tier-step;
-      list-style: none;
-      padding-left: 0;
-      margin: 1.25rem 0 0.5rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
+ /* Academic Ordered List Counter */
+ .academic-ordered-list {
+ counter-reset: tier-step;
+ list-style: none;
+ padding-left: 0;
+ margin: 1.25rem 0 0.5rem 0;
+ display: flex;
+ flex-direction: column;
+ gap: 0.85rem;
+ }
 
-    .academic-ordered-list > li {
-      counter-increment: tier-step;
-      position: relative;
-      padding-left: 2.75rem;
-      line-height: 1.5;
-      font-size: 0.92rem;
-      color: var(--text-secondary);
-    }
+ .academic-ordered-list > li {
+ counter-increment: tier-step;
+ position: relative;
+ padding-left: 2.75rem;
+ line-height: 1.5;
+ font-size: 0.92rem;
+ color: var(--text-secondary);
+ }
 
-    .academic-ordered-list > li::before {
-      content: counter(tier-step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent-amber), #ea580c);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 6px rgba(217, 119, 6, 0.35);
-    }
-  </style>
+ .academic-ordered-list > li::before {
+ content: counter(tier-step);
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 2rem;
+ height: 2rem;
+ border-radius: 50%;
+ background: linear-gradient(135deg, var(--accent-amber), #ea580c);
+ color: #ffffff;
+ font-weight: 800;
+ font-size: 0.85rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 2px 6px rgba(217, 119, 6, 0.35);
+ }
+ </style>
 </head>
 <body>
 
-  <main>
-
-    <section class="hero" aria-labelledby="elements-page-title" style="padding: 4rem 0 3rem 0;">
-      <div class="container text-center">
-        <h1 class="hero-title" id="elements-page-title" style="max-width: 860px; margin-left: auto; margin-right: auto;">
-          Mastering the 7 <span class="highlight">Elemental Powers</span>
-        </h1>
-        <p class="hero-subtitle" style="max-width: 760px; margin-left: auto; margin-right: auto; margin-bottom: 1.75rem;">
-          Harnessing the primal forces of the cosmos through his symbiotic bond with Power Sphera Ochobot, BoBoiBoy commands seven primary elements across three evolutionary tiers—progressing from raw natural sparks to cataclysmic dual-sphere fusions.
-        </p>
-        <div class="flex flex-center flex-wrap gap-2">
-          <span class="badge badge-lightning">7 Primal Forces</span>
-          <span class="badge badge-fire">Tier 1 &rarr; Tier 2 Evolutions</span>
-          <span class="badge badge-wind">4 Legendary Fusions</span>
-          <span class="badge badge-water">Kuasa Tiga &bull; Kuasa Tujuh</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="evolution-tiers" aria-labelledby="tiers-overview-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="tiers-overview-heading">The Three Tiers of Elemental Evolution</h2>
-          <p class="section-subtitle">
-            Elemental mastery is not static; it scales with tactical experience, emotional discipline, and celestial resonance. Discover how BoBoiBoy's powers evolve through three distinct stages.
-          </p>
-        </div>
-
-        <div class="evolution-hierarchy-box evolution-hierarchy-container">
-          <div class="evolution-badge-anchor">
-            <span class="badge badge-lightning mb-2">Academic Ordered List #4</span>
-          </div>
-          <h3 class="evolution-hierarchy-title">
-            <span>⚡</span> 3-Stage Elemental Evolution &amp; Mastery Progression
-          </h3>
-          <p class="text-secondary text-sm" style="margin-bottom: 1rem;">
-            BoBoiBoy's elemental mastery ascends systematically through three rigorous cosmic evolutionary stages:
-          </p>
-          <ol class="academic-ordered-list">
-            <li>
-              <strong>Stage 1 &mdash; Base Elemental Awakenings (Tier 1):</strong>
-              Primal natural forces granted directly by Power Sphera Ochobot. Enables basic environmental manipulation and <em>BoBoiBoy Kuasa Tiga</em> split-clone tactics.
-            </li>
-            <li>
-              <strong>Stage 2 &mdash; Advanced Evolved Masteries (Tier 2):</strong>
-              Unlocked through profound resolve and combat pressure. Condenses elements into lethal energy weapons (Halilintar blades, Ice bows) and expands to <em>BoBoiBoy Kuasa Tujuh</em>.
-            </li>
-            <li>
-              <strong>Stage 3 &mdash; Dual-Elemental Synergy Fusions (Tier 3):</strong>
-              The ultimate synthesis achieved by merging two autonomous elemental clones into a unified warrior (FrostFire, Glacier, Supra, SORI, Gentar) yielding exponential destructive and defensive power.
-            </li>
-          </ol>
-        </div>
-
-        <div class="grid-3">
-          
-          <article class="card glow-wind">
-            <div class="card-header">
-              <div class="flex flex-between items-center mb-2">
-                <span class="tier-badge tier-1">Tier 1 &bull; First Form</span>
-                <span class="badge badge-wind">Bentuk Pertama</span>
-              </div>
-              <h3 class="card-title text-wind">Base Elemental Awakenings</h3>
-              <p class="text-secondary text-sm">Primal Discovery &amp; Instinctive Combat</p>
-            </div>
-            <div class="card-body">
-              <p class="mb-3 text-secondary" style="font-size: 0.925rem; line-height: 1.6;">
-                Transferred directly from Power Sphera Ochobot, Tier 1 grants BoBoiBoy fundamental control over the elements in their base natural state. Using <em>BoBoiBoy Kuasa Tiga</em>, he splits his consciousness into three autonomous bodies to execute coordinated pincer attacks.
-              </p>
-              <ul class="text-secondary" style="font-size: 0.875rem; line-height: 1.7; padding-left: 1.25rem;">
-                <li>Instinctive physical strikes &amp; localized energy blasts</li>
-                <li>Kinetic weaponry (Keris Petir, basic air cushions, earthen shields)</li>
-                <li>Split clone threshold initially limited to 3 simultaneous forms</li>
-                <li>Stamina drain increases during prolonged multi-target skirmishes</li>
-              </ul>
-            </div>
-            <div class="card-footer">
-              <div class="text-xs text-muted"><strong>Base Forms:</strong> Petir, Angin, Tanah, Api, Air, Daun, Cahaya</div>
-            </div>
-          </article>
-
-          <article class="card glow-lightning">
-            <div class="card-header">
-              <div class="flex flex-between items-center mb-2">
-                <span class="tier-badge tier-2">Tier 2 &bull; Second Form</span>
-                <span class="badge badge-lightning">Bentuk Kedua</span>
-              </div>
-              <h3 class="card-title text-lightning">Evolved Mastery &amp; Precision</h3>
-              <p class="text-secondary text-sm">Lethal Weaponry &amp; Amplified Output</p>
-            </div>
-            <div class="card-body">
-              <p class="mb-3 text-secondary" style="font-size: 0.925rem; line-height: 1.6;">
-                Awakened under extreme emotional adversity, unwavering resolve, and intense TAPOPS combat training. The elements condense into hyper-dense energy constructs, endowing BoBoiBoy with signature weapons, specialized combat personalities, and high-velocity flight.
-              </p>
-              <ul class="text-secondary" style="font-size: 0.875rem; line-height: 1.7; padding-left: 1.25rem;">
-                <li>Specialized weapons: Thunder Blades, Cyclone Board, Earth Golem, Ice Bow</li>
-                <li>Distinct battle personalities (Thunderstorm's solemn focus, Blaze's fiery zeal)</li>
-                <li>Expansion to <em>BoBoiBoy Kuasa Tujuh</em> (all 7 elements active at once)</li>
-                <li>Orbital-class destructive potential and anti-fleet firepower</li>
-              </ul>
-            </div>
-            <div class="card-footer">
-              <div class="text-xs text-muted"><strong>Evolved Forms:</strong> Halilintar, Taufan, Gempa, Blaze, Ais, Duri, Solar</div>
-            </div>
-          </article>
-
-          <article class="card glow-fire">
-            <div class="card-header">
-              <div class="flex flex-between items-center mb-2">
-                <span class="tier-badge tier-3">Tier 3 &bull; Apex Fusion</span>
-                <span class="badge badge-fire">Kuasa Gabungan</span>
-              </div>
-              <h3 class="card-title text-fire">Elemental Dual Resonance</h3>
-              <p class="text-secondary text-sm">Cosmic Convergence &amp; Multiplicative Force</p>
-            </div>
-            <div class="card-body">
-              <p class="mb-3 text-secondary" style="font-size: 0.925rem; line-height: 1.6;">
-                The absolute pinnacle of elemental science. By harmonizing the distinct vibrational frequencies of two Tier 2 elements simultaneously, BoBoiBoy fuses them into a singular transcendent warrior. First manifested on Planet Quabaq to defeat the ancient conqueror Retak'ka.
-              </p>
-              <ul class="text-secondary" style="font-size: 0.875rem; line-height: 1.7; padding-left: 1.25rem;">
-                <li>Multiplicative hybrid power outputs defying standard physical limits</li>
-                <li>Simultaneous thermodynamic shocks, permafrost seismic mass, and tachyon lasers</li>
-                <li>Intense bio-energy drain requiring immaculate mental equilibrium</li>
-                <li>The ultimate trump card deployed only against existential galaxy threats</li>
-              </ul>
-            </div>
-            <div class="card-footer">
-              <div class="text-xs text-muted"><strong>Legendary Fusions:</strong> FrostFire, Glacier, Supra, SORI</div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="elemental-powers" aria-labelledby="elements-showcase-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="elements-showcase-heading">The 7 Primal Cosmic Elements</h2>
-          <p class="section-subtitle">
-            Each elemental force possesses its own tactical profile, psychological temperament, signature weaponry, and evolutionary path. Explore the complete codex below.
-          </p>
-        </div>
-
-        <div class="elements-grid">
-
-          <article class="element-card glow-lightning">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/lightning.png" alt="BoBoiBoy Halilintar 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-lightning">Speed &bull; Piercing</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-lightning">Lightning &amp; Thunderstorm</h3>
-            <div class="element-malay">BoBoiBoy Petir &rarr; BoBoiBoy Halilintar</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              The embodiment of supersonic velocity and surgical cutting lethality. Thunderstorm is the most disciplined, stoic, and combative of BoBoiBoy's personas. He envelops his body in crimson-gold bio-plasma, executing lightning-fast dashes that outpace optical sensors to sever armored bulkheads in a fraction of a second.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Petir:</strong> Golden lightning surges, twin Keris Petir daggers, and high-frequency shockwaves.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Halilintar:</strong> Crimson-gold plasma currents, dual Pedang Halilintar, and supersonic Gerakan Kilat.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Pedang Halilintar (Dual Thunder Blades)</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Hujan Pedang Halilintar (Thunder Blade Rain)</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Adu Du &amp; Mukalak, vs. Bora Ra, vs. Retak'ka</div>
-            </div>
-          </article>
-
-          <article class="element-card glow-wind">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/wind.png" alt="BoBoiBoy Taufan 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-wind">Mobility &bull; Crowd Control</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-wind">Wind &amp; Cyclone</h3>
-            <div class="element-malay">BoBoiBoy Angin &rarr; BoBoiBoy Taufan</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              The sovereign of atmospheric currents and dynamic aerial dominance. Cyclone maintains a high-spirited, cheerful demeanor that belies his terrifying crowd suppression capabilities. Riding atop his floating cyclone board, he effortlessly glides across battle zones while generating localized category-5 hurricanes to disarm entire enemy battalions.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Angin:</strong> Gentle zephyrs, gale-force knockback gusts, and kinetic air cushions to break falls.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Taufan:</strong> High-altitude hurricane vortexes, Papan Luncur Taufan hoverboard, and Bebola Taufan.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Papan Luncur Taufan (Cyclone Hoverboard)</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Pusaran Taufan Maksima (Maximum Cyclone Whirlwind)</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Ejo Jo &amp; Petai, vs. Separo, vs. Retak'ka Windara</div>
-            </div>
-          </article>
-
-          <article class="element-card glow-earth">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/earth.png" alt="BoBoiBoy Gempa 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-earth">Defense &bull; Command</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-earth">Earth &amp; Earthquake</h3>
-            <div class="element-malay">BoBoiBoy Tanah &rarr; BoBoiBoy Gempa</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              The unshakable cornerstone and tactical field commander of the elemental roster. Earthquake radiates quiet wisdom, steadfast courage, and an ironclad protective instinct. He manipulates subterranean tectonic plates, erecting towering fortress ramparts and animating colossal living stone golems to defend his squad under heavy siege.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Tanah:</strong> Fortified earthen walls, stone projectile throws, and subterranean tremor sensing.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Gempa:</strong> Catastrophic tectonic fissures, colossal Golem Gempa constructs, and boulder gauntlets.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Golem Gempa (Animated Living Earth Golem)</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Tumbukan Bertubi-tubi Gempa (Seismic Quake Barrage)</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Adu Du Robot, vs. Panto, vs. Retak'ka Gur'latan</div>
-            </div>
-          </article>
-
-          <article class="element-card glow-fire">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/fire.png" alt="BoBoiBoy Blaze 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-fire">Explosive &bull; Vanguard</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-fire">Fire &amp; Blaze</h3>
-            <div class="element-malay">BoBoiBoy Api &rarr; BoBoiBoy Blaze</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              The unbridled avatar of pyrotechnic aggression, fiery passion, and relentless frontline pressure. Blaze thrives in chaotic close-quarters brawls, projecting scorching magma flares and hurling blazing chakrams that ricochet across the battlefield. His explosive zeal melts through heavily fortified extraterrestrial alloy armor.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Api:</strong> Spontaneous combustion blasts, flaming soccer strikes, and high emotional volatility.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Blaze:</strong> Controlled thermite incineration, twin Cakera Api (Fire Chakrams), and meteor storms.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Cakera Api Kembar (Dual Blazing Chakrams)</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Bebola Api Raksasa &amp; Hujan Meteor Api</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Borara, vs. Jugglenaut, vs. Retak'ka Api</div>
-            </div>
-          </article>
-
-          <article class="element-card glow-water">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/water.png" alt="BoBoiBoy Ais 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-water">Lockdown &bull; Precision</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-water">Water &amp; Ice</h3>
-            <div class="element-malay">BoBoiBoy Air &rarr; BoBoiBoy Ais</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              A profound metamorphosis from relaxed, hydrodynamic fluidity to absolute-zero crystalline lockdown. Ice represents calm, calculating sniper precision. With an unshakeable zen demeanor, he draws his glacial bow to fire sub-zero cryo-arrows, flash-freezing kinetic projectiles and immobilizing enemy flagships mid-orbit.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Air:</strong> Gentle aqueous currents, water sphere confinement, and fluid defensive cushions.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Ais:</strong> Sub-zero cryo-projection, Panah Ais sharpshooting, and impenetrable permafrost barriers.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Panah Ais (Glacial Bow &amp; Cryo-Arrows)</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Hujan Panah Pembeku &amp; Meriam Glasiar Sub-Zero</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Captain Vargoba, vs. Jugglenaut, vs. Retak'ka Ais</div>
-            </div>
-          </article>
-
-          <article class="element-card glow-leaf">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/leaf.png" alt="BoBoiBoy Duri 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-leaf">Snare &bull; Bio-Energy</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-leaf">Leaf &amp; Thorn</h3>
-            <div class="element-malay">BoBoiBoy Daun &rarr; BoBoiBoy Duri</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              A deceptive harmony of innocent botanical playfulness and vicious thorny entanglement. While Daun is sweet and inquisitive, his evolved Thorn form is a nimble, tactical combatant. He manipulates subterranean bio-roots, lashes adversaries with barbed ivy whips, and deploys toxin-tipped thorn traps that paralyze heavily armored war droids.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Daun:</strong> Botanical healing energy, foliage camouflage, and elastic vine swings.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Duri:</strong> Barbed ivy whips, venomous thorn barrages, and colossal entangling root snares.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Tetakan Duri (Barbed Ivy Whip / Thorn Flail)</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Jeratan Akar Berbisa &amp; Libasan Duri Bertubi</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Jugglenaut, vs. Pirate Miner Armada, vs. Retak'ka Balak</div>
-            </div>
-          </article>
-
-          <article class="element-card glow-light">
-            <div class="element-header">
-              <div class="element-icon-wrap">
-                <img src="images/elements/light.png" alt="BoBoiBoy Solar 3D Render" width="72" height="72">
-              </div>
-              <div class="flex flex-col items-end gap-1">
-                <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
-                <span class="badge badge-light">Photonic &bull; Devastation</span>
-              </div>
-            </div>
-
-            <h3 class="element-name text-light">Light &amp; Solar</h3>
-            <div class="element-malay">BoBoiBoy Cahaya &rarr; BoBoiBoy Solar</div>
-
-            <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
-              The radiant zenith of raw destructive photon firepower. Solar radiates intellectual brilliance, supreme confidence, and aristocratic combat poise. Wearing his signature orange optic visor, he focuses concentrated solar radiation into relativistic particle beams capable of punching clean through galactic dreadnought armor.
-            </p>
-
-            <div class="tier-evolution">
-              <div class="tier-step">
-                <span class="tier-label">Tier 1</span>
-                <div><strong>BoBoiBoy Cahaya:</strong> Blinding luminescence, photon laser refractions, and optical flash illusions.</div>
-              </div>
-              <div class="tier-step">
-                <span class="tier-label">Tier 2</span>
-                <div><strong>BoBoiBoy Solar:</strong> Relativistic solar beams, Meriam Solar Gerhana, and orbital photonic obliteration.</div>
-              </div>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Solar Eclipse Cannon</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Maximum Solar Optical Blast</div>
-              <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Captain Vargoba, vs. Bora Ra, vs. Retak'ka Gamma</div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="elemental-fusions" aria-labelledby="fusions-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="fusions-heading">The 4 Legendary Elemental Fusions</h2>
-          <p class="section-subtitle">
-            When confronted with apocalyptic cosmic threats that outmatch single-element mastery, BoBoiBoy merges two Tier 2 elemental frequencies into an extraordinary dual-sphere hyper-form.
-          </p>
-        </div>
-
-        <div class="fusion-grid">
-
-          <article class="fusion-card glow-fire">
-            <div class="fusion-pills">
-              <span class="badge badge-fire">Blaze 🔥</span>
-              <span class="badge badge-water">Ice ❄️</span>
-              <span class="tier-badge tier-3">Tier 3 Fusion</span>
-              <span class="badge badge-lightning">Movie 2 Debut</span>
-            </div>
-
-            <div class="fusion-visual-wrap">
-              <img src="images/elements/frostfire.png" alt="BoBoiBoy FrostFire 3D Render" class="fusion-visual" loading="lazy">
-            </div>
-
-            <h3 class="card-title text-fire" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy FrostFire</h3>
-            <div class="text-secondary text-sm mb-3" style="font-weight: 600;">The Thermodynamic Paradox &bull; Api + Ais Convergence</div>
-
-            <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
-              First manifested atop the glacial peaks of Planet Quabaq during the desperate showdown against Retak'ka in <em>BoBoiBoy Movie 2</em>. Confronted by an enemy who had absorbed five of his powers, BoBoiBoy synchronized the opposing thermodynamic poles of fire and ice into a single harmonious matrix.
-            </p>
-
-            <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
-              <p class="text-secondary text-sm" style="line-height: 1.6;">
-                FrostFire channels raging volcanic magma through his right arm and absolute-zero cryogenic frost through his left. Alternating sudden extremes of thermal shock disintegrates the structural integrity of ultra-dense extraterrestrial alloy armor.
-              </p>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Tumbukan FrostFire Kembar, Bebola Magma Beku</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Hujan Panah Berapi Ais &amp; Letupan Termal Maksima</div>
-              <div class="text-xs text-muted"><strong>Key Exploits:</strong> Shattered Retak'ka's elemental defense barrier on Quabaq</div>
-            </div>
-          </article>
-
-          <article class="fusion-card glow-water">
-            <div class="fusion-pills">
-              <span class="badge badge-earth">Earthquake 🪨</span>
-              <span class="badge badge-water">Ice ❄️</span>
-              <span class="tier-badge tier-3">Tier 3 Fusion</span>
-              <span class="badge badge-water">Movie 2 Debut</span>
-            </div>
-
-            <div class="fusion-visual-wrap">
-              <img src="images/elements/glacier.png" alt="BoBoiBoy Glacier 3D Render" class="fusion-visual" loading="lazy">
-            </div>
-
-            <h3 class="card-title text-water" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy Glacier</h3>
-            <div class="text-secondary text-sm mb-3" style="font-weight: 600;">The Immovable Arctic Fortress &bull; Gempa + Ais Convergence</div>
-
-            <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
-              Awakened when BoBoiBoy required an impenetrable defense to withstand Retak'ka's planet-shattering kinetic assaults. By combining the tectonic bedrock mass of Gempa with the permafrost crystallization of Ais, Glacier embodies the ultimate synthesis of physical bulk and sub-zero crowd suppression.
-            </p>
-
-            <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
-              <p class="text-secondary text-sm" style="line-height: 1.6;">
-                Glacier possesses the highest mass, kinetic impact absorption, and defensive fortification in the entire elemental spectrum. He wields a massive diamond-hard glacial warhammer and animates towering permafrost golems that can freeze whole fault lines.
-              </p>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Tumbukan Pukul Glacier, Kubah Artik Pertahanan</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Golem Permafrost Raksasa &amp; Firus Gempa Ais</div>
-              <div class="text-xs text-muted"><strong>Key Exploits:</strong> Blocked Retak'ka Voltra's direct planet-cracking kinetic blitz</div>
-            </div>
-          </article>
-
-          <article class="fusion-card glow-lightning">
-            <div class="fusion-pills">
-              <span class="badge badge-lightning">Thunderstorm ⚡</span>
-              <span class="badge badge-light">Solar ☀️</span>
-              <span class="tier-badge tier-3">Tier 3 Fusion</span>
-              <span class="badge badge-fire">Apex Destroyer</span>
-            </div>
-
-            <div class="fusion-visual-wrap">
-              <img src="images/elements/supra.png" alt="BoBoiBoy Supra 3D Render" class="fusion-visual" loading="lazy">
-            </div>
-
-            <h3 class="card-title text-lightning" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy Supra</h3>
-            <div class="text-secondary text-sm mb-3" style="font-weight: 600;">Relativistic Speed of Light &bull; Halilintar + Solar Convergence</div>
-
-            <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
-              The undisputed apex of velocity and destructive energy in BoBoiBoy's arsenal. When Retak'ka activated his catastrophic 7-element Voltra synthesis, BoBoiBoy reached into the deepest reserves of his spirit to merge Halilintar's supersonic Crimson lightning with Solar's relativistic photonic laser radiation.
-            </p>
-
-            <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
-              <p class="text-secondary text-sm" style="line-height: 1.6;">
-                Accelerating into relativistic tachyon speeds, Supra wields dual translucent Supra Blades crackling with golden-crimson plasma arcs. He moves as pure coherent light, delivering orbital-class laser strikes that vaporize matter at atomic levels.
-              </p>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Twin Supra Blades, Supra Flash-Step Blitz</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Maximum Supra Beam (Solar-Lightning Ray)</div>
-              <div class="text-xs text-muted"><strong>Key Exploits:</strong> Obliterated Retak'ka Voltra in the finale of Movie 2</div>
-            </div>
-          </article>
-
-          <article class="fusion-card glow-leaf">
-            <div class="fusion-pills">
-              <span class="badge badge-light">Solar ☀️</span>
-              <span class="badge badge-leaf">Thorn 🌿</span>
-              <span class="tier-badge tier-3">Tier 3 Fusion</span>
-              <span class="badge badge-leaf">Galaxy S2 Debut</span>
-            </div>
-
-            <div class="fusion-visual-wrap">
-              <img src="images/elements/sori.png" alt="BoBoiBoy SORI 3D Render" class="fusion-visual" loading="lazy">
-            </div>
-
-            <h3 class="card-title text-leaf" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy SORI</h3>
-            <div class="text-secondary text-sm mb-3" style="font-weight: 600;">The Photosynthetic Supernova &bull; Solar + Duri Convergence</div>
-
-            <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
-              Debuted in the acclaimed <em>BoBoiBoy Galaxy Season 2</em> (Reruntuhan Kadrux / Windara Arc). When confronting biomechanical horrors in deep space, Duri's botanical bio-structures absorbed Solar's ultra-concentrated ultraviolet radiation, triggering explosive photosynthetic energy blooms.
-            </p>
-
-            <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-              <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
-              <p class="text-secondary text-sm" style="line-height: 1.6;">
-                SORI combines eccentric botanical maneuverability with intense solar thermals. He wields a massive solar-spiked morningstar flail and commands phototropic ivy vines that track enemy heat signatures and detonate with solar-bloom bursts upon contact.
-              </p>
-            </div>
-
-            <div class="card-footer" style="padding-top: 1rem;">
-              <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Thorned SORI Flail, Blazing SORI Strike</div>
-              <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Solar Thorn Supernova (Solar Thorn Nova)</div>
-              <div class="text-xs text-muted"><strong>Key Exploits:</strong> Neutralized Kadrux biomechanical defenses in Galaxy S2</div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="combat-matrix" aria-labelledby="matrix-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="matrix-heading">Elemental Dynamics &amp; Synergy Matrix</h2>
-          <p class="section-subtitle">
-            A comprehensive field guide for TAPOPS cadets detailing combat roles, signature weapons, and optimal fusion resonance pairings across all seven elements.
-          </p>
-        </div>
-
-        <div class="table-responsive">
-          <table class="data-table" aria-label="Elemental Powers Comparison Matrix">
-            <thead>
-              <tr>
-                <th scope="col">Element</th>
-                <th scope="col">Malay Names</th>
-                <th scope="col">Tier 1 Form</th>
-                <th scope="col">Tier 2 Form</th>
-                <th scope="col">Signature Weapon</th>
-                <th scope="col">Tactical Specialty</th>
-                <th scope="col">Prime Fusion Partner</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/lightning.svg" alt="Lightning Element Icon" width="24" height="24">
-                    <strong class="text-lightning">Lightning</strong>
-                  </div>
-                </td>
-                <td>Petir &rarr; Halilintar</td>
-                <td>BoBoiBoy Petir</td>
-                <td>BoBoiBoy Halilintar</td>
-                <td>Pedang Halilintar (Thunder Blades)</td>
-                <td>Supersonic Blitz &amp; Armor Piercing</td>
-                <td><span class="badge badge-light">Solar (Supra)</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/wind.svg" alt="Wind Element Icon" width="24" height="24">
-                    <strong class="text-wind">Wind</strong>
-                  </div>
-                </td>
-                <td>Angin &rarr; Taufan</td>
-                <td>BoBoiBoy Angin</td>
-                <td>BoBoiBoy Taufan</td>
-                <td>Papan Luncur Taufan (Cyclone Board)</td>
-                <td>Aerial Superiority &amp; Crowd Disruption</td>
-                <td><span class="badge badge-fire">Fire (Beliung Arc)</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/earth.svg" alt="Earth Element Icon" width="24" height="24">
-                    <strong class="text-earth">Earth</strong>
-                  </div>
-                </td>
-                <td>Tanah &rarr; Gempa</td>
-                <td>BoBoiBoy Tanah</td>
-                <td>BoBoiBoy Gempa</td>
-                <td>Golem Gempa (Seismic Living Golem)</td>
-                <td>Fortress Defense &amp; Tectonic Control</td>
-                <td><span class="badge badge-water">Ice (Glacier)</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/fire.svg" alt="Fire Element Icon" width="24" height="24">
-                    <strong class="text-fire">Fire</strong>
-                  </div>
-                </td>
-                <td>Api &rarr; Blaze</td>
-                <td>BoBoiBoy Api</td>
-                <td>BoBoiBoy Blaze</td>
-                <td>Cakera Api (Fire Chakrams)</td>
-                <td>Explosive Pyrotechnics &amp; Vanguard Assault</td>
-                <td><span class="badge badge-water">Ice (FrostFire)</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/water.svg" alt="Water Element Icon" width="24" height="24">
-                    <strong class="text-water">Water</strong>
-                  </div>
-                </td>
-                <td>Air &rarr; Ais</td>
-                <td>BoBoiBoy Air</td>
-                <td>BoBoiBoy Ais</td>
-                <td>Panah Ais (Glacial Bow &amp; Cryo-Arrows)</td>
-                <td>Sub-Zero Freeze &amp; Sharpshooting</td>
-                <td><span class="badge badge-fire">Fire (FrostFire) / Earth (Glacier)</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/leaf.svg" alt="Leaf Element Icon" width="24" height="24">
-                    <strong class="text-leaf">Leaf</strong>
-                  </div>
-                </td>
-                <td>Daun &rarr; Duri</td>
-                <td>BoBoiBoy Daun</td>
-                <td>BoBoiBoy Duri</td>
-                <td>Tetakan Duri (Barbed Ivy Whip)</td>
-                <td>Bio-Entanglement &amp; Area Control</td>
-                <td><span class="badge badge-light">Solar (SORI)</span></td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="flex items-center gap-1">
-                    <img src="images/elements/light.svg" alt="Light Element Icon" width="24" height="24">
-                    <strong class="text-light">Light</strong>
-                  </div>
-                </td>
-                <td>Cahaya &rarr; Solar</td>
-                <td>BoBoiBoy Cahaya</td>
-                <td>BoBoiBoy Solar</td>
-                <td>Meriam Solar Gerhana (Eclipse Cannon)</td>
-                <td>Orbital Photonic Devastation</td>
-                <td><span class="badge badge-lightning">Thunderstorm (Supra) / Thorn (SORI)</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" aria-labelledby="cta-heading" style="padding: 3.5rem 0;">
-      <div class="container text-center">
-        <h2 class="section-title" id="cta-heading" style="max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 1rem;">
-          Ready to Train at the <span class="highlight">TAPOPS Space Academy?</span>
-        </h2>
-        <p class="section-subtitle" style="max-width: 620px; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
-          Explore the heroic squadron wielding these powers or follow their chronological battles across TV series, feature films, and galactic seasons.
-        </p>
-        <div class="flex flex-center flex-wrap gap-2">
-          <a href="characters.html" class="btn btn-primary btn-lg">Explore Hero Squad</a>
-          <a href="series.html" class="btn btn-secondary btn-lg">Series &amp; Film Timeline</a>
-          <a href="contact.html" class="btn btn-outline btn-lg">Enlist as Cadet</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        
-        <div class="footer-brand">
-          <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
-            <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
-          </a>
-          <p>
-            The comprehensive galactic portal for BoBoiBoy fans, cadets, and scholars. Exploring elemental mastery, Power Spheras, and intergalactic defense chronicles.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Universe</h4>
-          <ul class="footer-links">
-            <li><a href="characters.html" class="footer-link">TAPOPS Heroes</a></li>
-            <li><a href="elements.html" class="footer-link">7 Elemental Tiers</a></li>
-            <li><a href="series.html" class="footer-link">Chronicles &amp; Movies</a></li>
-            <li><a href="contact.html" class="footer-link">Cadet Enlistment</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Galactic Home</a></li>
-            <li><a href="#evolution-tiers" class="footer-link">Evolution Tiers</a></li>
-            <li><a href="#elemental-powers" class="footer-link">The 7 Elements</a></li>
-            <li><a href="#elemental-fusions" class="footer-link">Elemental Fusions</a></li>
-            <li><a href="#combat-matrix" class="footer-link">Tactical Matrix</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <div class="footer-quote">
-            <span class="quote-badge">Signature Battle Cry</span>
-            <p class="quote-text">"Awesome! Never give up, we must protect this galaxy at all costs!"</p>
-            <p class="quote-author">&mdash; BoBoiBoy, Elemental Master &amp; TAPOPS Leader</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="footer-copy">
-          &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.
-        </p>
-        <p class="footer-copy">
-          Crafted with Semantic HTML5 &amp; CSS3 &bull; <a href="contact.html">TAPOPS Space Academy</a>
-        </p>
-      </div>
-    </div>
-  </footer>
+ <main>
+
+ <section class="hero" aria-labelledby="elements-page-title" style="padding: 4rem 0 3rem 0;">
+ <div class="container text-center">
+ <h1 class="hero-title" id="elements-page-title" style="max-width: 860px; margin-left: auto; margin-right: auto;">
+ Mastering the 7 <span class="highlight">Elemental Powers</span>
+ </h1>
+ <p class="hero-subtitle" style="max-width: 760px; margin-left: auto; margin-right: auto; margin-bottom: 1.75rem;">
+ Harnessing the primal forces of the cosmos through his symbiotic bond with Power Sphera Ochobot, BoBoiBoy commands seven primary elements across three evolutionary tiers—progressing from raw natural sparks to cataclysmic dual-sphere fusions.
+ </p>
+ <div class="flex flex-center flex-wrap gap-2">
+ <span class="badge badge-lightning">7 Primal Forces</span>
+ <span class="badge badge-fire">Tier 1 &rarr; Tier 2 Evolutions</span>
+ <span class="badge badge-wind">4 Legendary Fusions</span>
+ <span class="badge badge-water">Kuasa Tiga &bull; Kuasa Tujuh</span>
+ </div>
+ </div>
+ </section>
+
+ <section class="section section-alt" id="evolution-tiers" aria-labelledby="tiers-overview-heading">
+ <div class="container">
+ <div class="section-header">
+ <h2 class="section-title" id="tiers-overview-heading">The Three Tiers of Elemental Evolution</h2>
+ <p class="section-subtitle">
+ Elemental mastery is not static; it scales with tactical experience, emotional discipline, and celestial resonance. Discover how BoBoiBoy's powers evolve through three distinct stages.
+ </p>
+ </div>
+
+ <div class="evolution-hierarchy-box evolution-hierarchy-container">
+ <div class="evolution-badge-anchor">
+ <span class="badge badge-lightning mb-2">Academic Ordered List #4</span>
+ </div>
+ <h3 class="evolution-hierarchy-title">
+ 3-Stage Elemental Evolution &amp; Mastery Progression
+ </h3>
+ <p class="text-secondary text-sm" style="margin-bottom: 1rem;">
+ BoBoiBoy's elemental mastery ascends systematically through three rigorous cosmic evolutionary stages:
+ </p>
+ <ol class="academic-ordered-list">
+ <li>
+ <strong>Stage 1 &mdash; Base Elemental Awakenings (Tier 1):</strong>
+ Primal natural forces granted directly by Power Sphera Ochobot. Enables basic environmental manipulation and <em>BoBoiBoy Kuasa Tiga</em> split-clone tactics.
+ </li>
+ <li>
+ <strong>Stage 2 &mdash; Advanced Evolved Masteries (Tier 2):</strong>
+ Unlocked through profound resolve and combat pressure. Condenses elements into lethal energy weapons (Halilintar blades, Ice bows) and expands to <em>BoBoiBoy Kuasa Tujuh</em>.
+ </li>
+ <li>
+ <strong>Stage 3 &mdash; Dual-Elemental Synergy Fusions (Tier 3):</strong>
+ The ultimate synthesis achieved by merging two autonomous elemental clones into a unified warrior (FrostFire, Glacier, Supra, SORI, Gentar) yielding exponential destructive and defensive power.
+ </li>
+ </ol>
+ </div>
+
+ <div class="grid-3">
+ 
+ <article class="card glow-wind">
+ <div class="card-header">
+ <div class="flex flex-between items-center mb-2">
+ <span class="tier-badge tier-1">Tier 1 &bull; First Form</span>
+ <span class="badge badge-wind">Bentuk Pertama</span>
+ </div>
+ <h3 class="card-title text-wind">Base Elemental Awakenings</h3>
+ <p class="text-secondary text-sm">Primal Discovery &amp; Instinctive Combat</p>
+ </div>
+ <div class="card-body">
+ <p class="mb-3 text-secondary" style="font-size: 0.925rem; line-height: 1.6;">
+ Transferred directly from Power Sphera Ochobot, Tier 1 grants BoBoiBoy fundamental control over the elements in their base natural state. Using <em>BoBoiBoy Kuasa Tiga</em>, he splits his consciousness into three autonomous bodies to execute coordinated pincer attacks.
+ </p>
+ <ul class="text-secondary" style="font-size: 0.875rem; line-height: 1.7; padding-left: 1.25rem;">
+ <li>Instinctive physical strikes &amp; localized energy blasts</li>
+ <li>Kinetic weaponry (Keris Petir, basic air cushions, earthen shields)</li>
+ <li>Split clone threshold initially limited to 3 simultaneous forms</li>
+ <li>Stamina drain increases during prolonged multi-target skirmishes</li>
+ </ul>
+ </div>
+ <div class="card-footer">
+ <div class="text-xs text-muted"><strong>Base Forms:</strong> Petir, Angin, Tanah, Api, Air, Daun, Cahaya</div>
+ </div>
+ </article>
+
+ <article class="card glow-lightning">
+ <div class="card-header">
+ <div class="flex flex-between items-center mb-2">
+ <span class="tier-badge tier-2">Tier 2 &bull; Second Form</span>
+ <span class="badge badge-lightning">Bentuk Kedua</span>
+ </div>
+ <h3 class="card-title text-lightning">Evolved Mastery &amp; Precision</h3>
+ <p class="text-secondary text-sm">Lethal Weaponry &amp; Amplified Output</p>
+ </div>
+ <div class="card-body">
+ <p class="mb-3 text-secondary" style="font-size: 0.925rem; line-height: 1.6;">
+ Awakened under extreme emotional adversity, unwavering resolve, and intense TAPOPS combat training. The elements condense into hyper-dense energy constructs, endowing BoBoiBoy with signature weapons, specialized combat personalities, and high-velocity flight.
+ </p>
+ <ul class="text-secondary" style="font-size: 0.875rem; line-height: 1.7; padding-left: 1.25rem;">
+ <li>Specialized weapons: Thunder Blades, Cyclone Board, Earth Golem, Ice Bow</li>
+ <li>Distinct battle personalities (Thunderstorm's solemn focus, Blaze's fiery zeal)</li>
+ <li>Expansion to <em>BoBoiBoy Kuasa Tujuh</em> (all 7 elements active at once)</li>
+ <li>Orbital-class destructive potential and anti-fleet firepower</li>
+ </ul>
+ </div>
+ <div class="card-footer">
+ <div class="text-xs text-muted"><strong>Evolved Forms:</strong> Halilintar, Taufan, Gempa, Blaze, Ais, Duri, Solar</div>
+ </div>
+ </article>
+
+ <article class="card glow-fire">
+ <div class="card-header">
+ <div class="flex flex-between items-center mb-2">
+ <span class="tier-badge tier-3">Tier 3 &bull; Apex Fusion</span>
+ <span class="badge badge-fire">Kuasa Gabungan</span>
+ </div>
+ <h3 class="card-title text-fire">Elemental Dual Resonance</h3>
+ <p class="text-secondary text-sm">Cosmic Convergence &amp; Multiplicative Force</p>
+ </div>
+ <div class="card-body">
+ <p class="mb-3 text-secondary" style="font-size: 0.925rem; line-height: 1.6;">
+ The absolute pinnacle of elemental science. By harmonizing the distinct vibrational frequencies of two Tier 2 elements simultaneously, BoBoiBoy fuses them into a singular transcendent warrior. First manifested on Planet Quabaq to defeat the ancient conqueror Retak'ka.
+ </p>
+ <ul class="text-secondary" style="font-size: 0.875rem; line-height: 1.7; padding-left: 1.25rem;">
+ <li>Multiplicative hybrid power outputs defying standard physical limits</li>
+ <li>Simultaneous thermodynamic shocks, permafrost seismic mass, and tachyon lasers</li>
+ <li>Intense bio-energy drain requiring immaculate mental equilibrium</li>
+ <li>The ultimate trump card deployed only against existential galaxy threats</li>
+ </ul>
+ </div>
+ <div class="card-footer">
+ <div class="text-xs text-muted"><strong>Legendary Fusions:</strong> FrostFire, Glacier, Supra, SORI</div>
+ </div>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="section" id="elemental-powers" aria-labelledby="elements-showcase-heading">
+ <div class="container">
+ <div class="section-header">
+ <h2 class="section-title" id="elements-showcase-heading">The 7 Primal Cosmic Elements</h2>
+ <p class="section-subtitle">
+ Each elemental force possesses its own tactical profile, psychological temperament, signature weaponry, and evolutionary path. Explore the complete codex below.
+ </p>
+ </div>
+
+ <div class="elements-grid">
+
+ <article class="element-card glow-lightning">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/lightning.png" alt="BoBoiBoy Halilintar 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-lightning">Speed &bull; Piercing</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-lightning">Lightning &amp; Thunderstorm</h3>
+ <div class="element-malay">BoBoiBoy Petir &rarr; BoBoiBoy Halilintar</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ The embodiment of supersonic velocity and surgical cutting lethality. Thunderstorm is the most disciplined, stoic, and combative of BoBoiBoy's personas. He envelops his body in crimson-gold bio-plasma, executing lightning-fast dashes that outpace optical sensors to sever armored bulkheads in a fraction of a second.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Petir:</strong> Golden lightning surges, twin Keris Petir daggers, and high-frequency shockwaves.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Halilintar:</strong> Crimson-gold plasma currents, dual Pedang Halilintar, and supersonic Gerakan Kilat.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Pedang Halilintar (Dual Thunder Blades)</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Hujan Pedang Halilintar (Thunder Blade Rain)</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Adu Du &amp; Mukalak, vs. Bora Ra, vs. Retak'ka</div>
+ </div>
+ </article>
+
+ <article class="element-card glow-wind">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/wind.png" alt="BoBoiBoy Taufan 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-wind">Mobility &bull; Crowd Control</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-wind">Wind &amp; Cyclone</h3>
+ <div class="element-malay">BoBoiBoy Angin &rarr; BoBoiBoy Taufan</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ The sovereign of atmospheric currents and dynamic aerial dominance. Cyclone maintains a high-spirited, cheerful demeanor that belies his terrifying crowd suppression capabilities. Riding atop his floating cyclone board, he effortlessly glides across battle zones while generating localized category-5 hurricanes to disarm entire enemy battalions.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Angin:</strong> Gentle zephyrs, gale-force knockback gusts, and kinetic air cushions to break falls.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Taufan:</strong> High-altitude hurricane vortexes, Papan Luncur Taufan hoverboard, and Bebola Taufan.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Papan Luncur Taufan (Cyclone Hoverboard)</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Pusaran Taufan Maksima (Maximum Cyclone Whirlwind)</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Ejo Jo &amp; Petai, vs. Separo, vs. Retak'ka Windara</div>
+ </div>
+ </article>
+
+ <article class="element-card glow-earth">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/earth.png" alt="BoBoiBoy Gempa 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-earth">Defense &bull; Command</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-earth">Earth &amp; Earthquake</h3>
+ <div class="element-malay">BoBoiBoy Tanah &rarr; BoBoiBoy Gempa</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ The unshakable cornerstone and tactical field commander of the elemental roster. Earthquake radiates quiet wisdom, steadfast courage, and an ironclad protective instinct. He manipulates subterranean tectonic plates, erecting towering fortress ramparts and animating colossal living stone golems to defend his squad under heavy siege.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Tanah:</strong> Fortified earthen walls, stone projectile throws, and subterranean tremor sensing.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Gempa:</strong> Catastrophic tectonic fissures, colossal Golem Gempa constructs, and boulder gauntlets.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Golem Gempa (Animated Living Earth Golem)</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Tumbukan Bertubi-tubi Gempa (Seismic Quake Barrage)</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Adu Du Robot, vs. Panto, vs. Retak'ka Gur'latan</div>
+ </div>
+ </article>
+
+ <article class="element-card glow-fire">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/fire.png" alt="BoBoiBoy Blaze 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-fire">Explosive &bull; Vanguard</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-fire">Fire &amp; Blaze</h3>
+ <div class="element-malay">BoBoiBoy Api &rarr; BoBoiBoy Blaze</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ The unbridled avatar of pyrotechnic aggression, fiery passion, and relentless frontline pressure. Blaze thrives in chaotic close-quarters brawls, projecting scorching magma flares and hurling blazing chakrams that ricochet across the battlefield. His explosive zeal melts through heavily fortified extraterrestrial alloy armor.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Api:</strong> Spontaneous combustion blasts, flaming soccer strikes, and high emotional volatility.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Blaze:</strong> Controlled thermite incineration, twin Cakera Api (Fire Chakrams), and meteor storms.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Cakera Api Kembar (Dual Blazing Chakrams)</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Bebola Api Raksasa &amp; Hujan Meteor Api</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Borara, vs. Jugglenaut, vs. Retak'ka Api</div>
+ </div>
+ </article>
+
+ <article class="element-card glow-water">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/water.png" alt="BoBoiBoy Ais 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-water">Lockdown &bull; Precision</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-water">Water &amp; Ice</h3>
+ <div class="element-malay">BoBoiBoy Air &rarr; BoBoiBoy Ais</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ A profound metamorphosis from relaxed, hydrodynamic fluidity to absolute-zero crystalline lockdown. Ice represents calm, calculating sniper precision. With an unshakeable zen demeanor, he draws his glacial bow to fire sub-zero cryo-arrows, flash-freezing kinetic projectiles and immobilizing enemy flagships mid-orbit.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Air:</strong> Gentle aqueous currents, water sphere confinement, and fluid defensive cushions.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Ais:</strong> Sub-zero cryo-projection, Panah Ais sharpshooting, and impenetrable permafrost barriers.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Panah Ais (Glacial Bow &amp; Cryo-Arrows)</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Hujan Panah Pembeku &amp; Meriam Glasiar Sub-Zero</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Captain Vargoba, vs. Jugglenaut, vs. Retak'ka Ais</div>
+ </div>
+ </article>
+
+ <article class="element-card glow-leaf">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/leaf.png" alt="BoBoiBoy Duri 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-leaf">Snare &bull; Bio-Energy</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-leaf">Leaf &amp; Thorn</h3>
+ <div class="element-malay">BoBoiBoy Daun &rarr; BoBoiBoy Duri</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ A deceptive harmony of innocent botanical playfulness and vicious thorny entanglement. While Daun is sweet and inquisitive, his evolved Thorn form is a nimble, tactical combatant. He manipulates subterranean bio-roots, lashes adversaries with barbed ivy whips, and deploys toxin-tipped thorn traps that paralyze heavily armored war droids.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Daun:</strong> Botanical healing energy, foliage camouflage, and elastic vine swings.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Duri:</strong> Barbed ivy whips, venomous thorn barrages, and colossal entangling root snares.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Tetakan Duri (Barbed Ivy Whip / Thorn Flail)</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Jeratan Akar Berbisa &amp; Libasan Duri Bertubi</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Jugglenaut, vs. Pirate Miner Armada, vs. Retak'ka Balak</div>
+ </div>
+ </article>
+
+ <article class="element-card glow-light">
+ <div class="element-header">
+ <div class="element-icon-wrap">
+ <img src="images/elements/light.png" alt="BoBoiBoy Solar 3D Render" width="72" height="72">
+ </div>
+ <div class="flex flex-col items-end gap-1">
+ <span class="tier-badge tier-2">Tier 1 &rarr; Tier 2</span>
+ <span class="badge badge-light">Photonic &bull; Devastation</span>
+ </div>
+ </div>
+
+ <h3 class="element-name text-light">Light &amp; Solar</h3>
+ <div class="element-malay">BoBoiBoy Cahaya &rarr; BoBoiBoy Solar</div>
+
+ <p class="text-secondary mt-2 mb-3" style="font-size: 0.925rem; line-height: 1.6;">
+ The radiant zenith of raw destructive photon firepower. Solar radiates intellectual brilliance, supreme confidence, and aristocratic combat poise. Wearing his signature orange optic visor, he focuses concentrated solar radiation into relativistic particle beams capable of punching clean through galactic dreadnought armor.
+ </p>
+
+ <div class="tier-evolution">
+ <div class="tier-step">
+ <span class="tier-label">Tier 1</span>
+ <div><strong>BoBoiBoy Cahaya:</strong> Blinding luminescence, photon laser refractions, and optical flash illusions.</div>
+ </div>
+ <div class="tier-step">
+ <span class="tier-label">Tier 2</span>
+ <div><strong>BoBoiBoy Solar:</strong> Relativistic solar beams, Meriam Solar Gerhana, and orbital photonic obliteration.</div>
+ </div>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem; margin-top: 1.25rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Weapon:</strong> Solar Eclipse Cannon</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Move:</strong> Maximum Solar Optical Blast</div>
+ <div class="text-xs text-muted"><strong>Key Battles:</strong> vs. Captain Vargoba, vs. Bora Ra, vs. Retak'ka Gamma</div>
+ </div>
+ </article>
+
+ </div>
+ </div>
+ </section>
+
+ <section class="section section-alt" id="elemental-fusions" aria-labelledby="fusions-heading">
+ <div class="container">
+ <div class="section-header">
+ <h2 class="section-title" id="fusions-heading">The 4 Legendary Elemental Fusions</h2>
+ <p class="section-subtitle">
+ When confronted with apocalyptic cosmic threats that outmatch single-element mastery, BoBoiBoy merges two Tier 2 elemental frequencies into an extraordinary dual-sphere hyper-form.
+ </p>
+ </div>
+
+ <div class="fusion-grid">
+
+ <article class="fusion-card glow-fire">
+ <div class="fusion-pills">
+ <span class="badge badge-fire">Blaze </span>
+ <span class="badge badge-water">Ice </span>
+ <span class="tier-badge tier-3">Tier 3 Fusion</span>
+ <span class="badge badge-lightning">Movie 2 Debut</span>
+ </div>
+
+ <div class="fusion-visual-wrap">
+ <img src="images/elements/frostfire.png" alt="BoBoiBoy FrostFire 3D Render" class="fusion-visual" loading="lazy">
+ </div>
+
+ <h3 class="card-title text-fire" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy FrostFire</h3>
+ <div class="text-secondary text-sm mb-3" style="font-weight: 600;">The Thermodynamic Paradox &bull; Api + Ais Convergence</div>
+
+ <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
+ First manifested atop the glacial peaks of Planet Quabaq during the desperate showdown against Retak'ka in <em>BoBoiBoy Movie 2</em>. Confronted by an enemy who had absorbed five of his powers, BoBoiBoy synchronized the opposing thermodynamic poles of fire and ice into a single harmonious matrix.
+ </p>
+
+ <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+ <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
+ <p class="text-secondary text-sm" style="line-height: 1.6;">
+ FrostFire channels raging volcanic magma through his right arm and absolute-zero cryogenic frost through his left. Alternating sudden extremes of thermal shock disintegrates the structural integrity of ultra-dense extraterrestrial alloy armor.
+ </p>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Tumbukan FrostFire Kembar, Bebola Magma Beku</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Hujan Panah Berapi Ais &amp; Letupan Termal Maksima</div>
+ <div class="text-xs text-muted"><strong>Key Exploits:</strong> Shattered Retak'ka's elemental defense barrier on Quabaq</div>
+ </div>
+ </article>
+
+ <article class="fusion-card glow-water">
+ <div class="fusion-pills">
+ <span class="badge badge-earth">Earthquake </span>
+ <span class="badge badge-water">Ice </span>
+ <span class="tier-badge tier-3">Tier 3 Fusion</span>
+ <span class="badge badge-water">Movie 2 Debut</span>
+ </div>
+
+ <div class="fusion-visual-wrap">
+ <img src="images/elements/glacier.png" alt="BoBoiBoy Glacier 3D Render" class="fusion-visual" loading="lazy">
+ </div>
+
+ <h3 class="card-title text-water" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy Glacier</h3>
+ <div class="text-secondary text-sm mb-3" style="font-weight: 600;">The Immovable Arctic Fortress &bull; Gempa + Ais Convergence</div>
+
+ <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
+ Awakened when BoBoiBoy required an impenetrable defense to withstand Retak'ka's planet-shattering kinetic assaults. By combining the tectonic bedrock mass of Gempa with the permafrost crystallization of Ais, Glacier embodies the ultimate synthesis of physical bulk and sub-zero crowd suppression.
+ </p>
+
+ <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+ <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
+ <p class="text-secondary text-sm" style="line-height: 1.6;">
+ Glacier possesses the highest mass, kinetic impact absorption, and defensive fortification in the entire elemental spectrum. He wields a massive diamond-hard glacial warhammer and animates towering permafrost golems that can freeze whole fault lines.
+ </p>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Tumbukan Pukul Glacier, Kubah Artik Pertahanan</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Golem Permafrost Raksasa &amp; Firus Gempa Ais</div>
+ <div class="text-xs text-muted"><strong>Key Exploits:</strong> Blocked Retak'ka Voltra's direct planet-cracking kinetic blitz</div>
+ </div>
+ </article>
+
+ <article class="fusion-card glow-lightning">
+ <div class="fusion-pills">
+ <span class="badge badge-lightning">Thunderstorm </span>
+ <span class="badge badge-light">Solar </span>
+ <span class="tier-badge tier-3">Tier 3 Fusion</span>
+ <span class="badge badge-fire">Apex Destroyer</span>
+ </div>
+
+ <div class="fusion-visual-wrap">
+ <img src="images/elements/supra.png" alt="BoBoiBoy Supra 3D Render" class="fusion-visual" loading="lazy">
+ </div>
+
+ <h3 class="card-title text-lightning" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy Supra</h3>
+ <div class="text-secondary text-sm mb-3" style="font-weight: 600;">Relativistic Speed of Light &bull; Halilintar + Solar Convergence</div>
+
+ <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
+ The undisputed apex of velocity and destructive energy in BoBoiBoy's arsenal. When Retak'ka activated his catastrophic 7-element Voltra synthesis, BoBoiBoy reached into the deepest reserves of his spirit to merge Halilintar's supersonic Crimson lightning with Solar's relativistic photonic laser radiation.
+ </p>
+
+ <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+ <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
+ <p class="text-secondary text-sm" style="line-height: 1.6;">
+ Accelerating into relativistic tachyon speeds, Supra wields dual translucent Supra Blades crackling with golden-crimson plasma arcs. He moves as pure coherent light, delivering orbital-class laser strikes that vaporize matter at atomic levels.
+ </p>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Twin Supra Blades, Supra Flash-Step Blitz</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Maximum Supra Beam (Solar-Lightning Ray)</div>
+ <div class="text-xs text-muted"><strong>Key Exploits:</strong> Obliterated Retak'ka Voltra in the finale of Movie 2</div>
+ </div>
+ </article>
+
+ <article class="fusion-card glow-leaf">
+ <div class="fusion-pills">
+ <span class="badge badge-light">Solar </span>
+ <span class="badge badge-leaf">Thorn </span>
+ <span class="tier-badge tier-3">Tier 3 Fusion</span>
+ <span class="badge badge-leaf">Galaxy S2 Debut</span>
+ </div>
+
+ <div class="fusion-visual-wrap">
+ <img src="images/elements/sori.png" alt="BoBoiBoy SORI 3D Render" class="fusion-visual" loading="lazy">
+ </div>
+
+ <h3 class="card-title text-leaf" style="font-size: 1.6rem; margin-bottom: 0.25rem;">BoBoiBoy SORI</h3>
+ <div class="text-secondary text-sm mb-3" style="font-weight: 600;">The Photosynthetic Supernova &bull; Solar + Duri Convergence</div>
+
+ <p class="text-secondary mb-3" style="font-size: 0.925rem; line-height: 1.65;">
+ Debuted in the acclaimed <em>BoBoiBoy Galaxy Season 2</em> (Reruntuhan Kadrux / Windara Arc). When confronting biomechanical horrors in deep space, Duri's botanical bio-structures absorbed Solar's ultra-concentrated ultraviolet radiation, triggering explosive photosynthetic energy blooms.
+ </p>
+
+ <div class="mb-3" style="background: var(--bg-surface-dark); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+ <h4 class="text-xs uppercase text-orange mb-2" style="letter-spacing: 0.05em;">Combat Mechanics &amp; Physics</h4>
+ <p class="text-secondary text-sm" style="line-height: 1.6;">
+ SORI combines eccentric botanical maneuverability with intense solar thermals. He wields a massive solar-spiked morningstar flail and commands phototropic ivy vines that track enemy heat signatures and detonate with solar-bloom bursts upon contact.
+ </p>
+ </div>
+
+ <div class="card-footer" style="padding-top: 1rem;">
+ <div class="text-xs text-muted mb-1"><strong>Signature Moves:</strong> Thorned SORI Flail, Blazing SORI Strike</div>
+ <div class="text-xs text-muted mb-1"><strong>Ultimate Attack:</strong> Solar Thorn Supernova (Solar Thorn Nova)</div>
+ <div class="text-xs text-muted"><strong>Key Exploits:</strong> Neutralized Kadrux biomechanical defenses in Galaxy S2</div>
+ </div>
+ </article>
+
+ </div>
+ </div>
+ </section>
+
+ <section class="section" id="combat-matrix" aria-labelledby="matrix-heading">
+ <div class="container">
+ <div class="section-header">
+ <h2 class="section-title" id="matrix-heading">Elemental Dynamics &amp; Synergy Matrix</h2>
+ <p class="section-subtitle">
+ A comprehensive field guide for TAPOPS cadets detailing combat roles, signature weapons, and optimal fusion resonance pairings across all seven elements.
+ </p>
+ </div>
+
+ <div class="table-responsive">
+ <table class="data-table" aria-label="Elemental Powers Comparison Matrix">
+ <thead>
+ <tr>
+ <th scope="col">Element</th>
+ <th scope="col">Malay Names</th>
+ <th scope="col">Tier 1 Form</th>
+ <th scope="col">Tier 2 Form</th>
+ <th scope="col">Signature Weapon</th>
+ <th scope="col">Tactical Specialty</th>
+ <th scope="col">Prime Fusion Partner</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/lightning.svg" alt="Lightning Element Icon" width="24" height="24">
+ <strong class="text-lightning">Lightning</strong>
+ </div>
+ </td>
+ <td>Petir &rarr; Halilintar</td>
+ <td>BoBoiBoy Petir</td>
+ <td>BoBoiBoy Halilintar</td>
+ <td>Pedang Halilintar (Thunder Blades)</td>
+ <td>Supersonic Blitz &amp; Armor Piercing</td>
+ <td><span class="badge badge-light">Solar (Supra)</span></td>
+ </tr>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/wind.svg" alt="Wind Element Icon" width="24" height="24">
+ <strong class="text-wind">Wind</strong>
+ </div>
+ </td>
+ <td>Angin &rarr; Taufan</td>
+ <td>BoBoiBoy Angin</td>
+ <td>BoBoiBoy Taufan</td>
+ <td>Papan Luncur Taufan (Cyclone Board)</td>
+ <td>Aerial Superiority &amp; Crowd Disruption</td>
+ <td><span class="badge badge-fire">Fire (Beliung Arc)</span></td>
+ </tr>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/earth.svg" alt="Earth Element Icon" width="24" height="24">
+ <strong class="text-earth">Earth</strong>
+ </div>
+ </td>
+ <td>Tanah &rarr; Gempa</td>
+ <td>BoBoiBoy Tanah</td>
+ <td>BoBoiBoy Gempa</td>
+ <td>Golem Gempa (Seismic Living Golem)</td>
+ <td>Fortress Defense &amp; Tectonic Control</td>
+ <td><span class="badge badge-water">Ice (Glacier)</span></td>
+ </tr>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/fire.svg" alt="Fire Element Icon" width="24" height="24">
+ <strong class="text-fire">Fire</strong>
+ </div>
+ </td>
+ <td>Api &rarr; Blaze</td>
+ <td>BoBoiBoy Api</td>
+ <td>BoBoiBoy Blaze</td>
+ <td>Cakera Api (Fire Chakrams)</td>
+ <td>Explosive Pyrotechnics &amp; Vanguard Assault</td>
+ <td><span class="badge badge-water">Ice (FrostFire)</span></td>
+ </tr>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/water.svg" alt="Water Element Icon" width="24" height="24">
+ <strong class="text-water">Water</strong>
+ </div>
+ </td>
+ <td>Air &rarr; Ais</td>
+ <td>BoBoiBoy Air</td>
+ <td>BoBoiBoy Ais</td>
+ <td>Panah Ais (Glacial Bow &amp; Cryo-Arrows)</td>
+ <td>Sub-Zero Freeze &amp; Sharpshooting</td>
+ <td><span class="badge badge-fire">Fire (FrostFire) / Earth (Glacier)</span></td>
+ </tr>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/leaf.svg" alt="Leaf Element Icon" width="24" height="24">
+ <strong class="text-leaf">Leaf</strong>
+ </div>
+ </td>
+ <td>Daun &rarr; Duri</td>
+ <td>BoBoiBoy Daun</td>
+ <td>BoBoiBoy Duri</td>
+ <td>Tetakan Duri (Barbed Ivy Whip)</td>
+ <td>Bio-Entanglement &amp; Area Control</td>
+ <td><span class="badge badge-light">Solar (SORI)</span></td>
+ </tr>
+ <tr>
+ <td>
+ <div class="flex items-center gap-1">
+ <img src="images/elements/light.svg" alt="Light Element Icon" width="24" height="24">
+ <strong class="text-light">Light</strong>
+ </div>
+ </td>
+ <td>Cahaya &rarr; Solar</td>
+ <td>BoBoiBoy Cahaya</td>
+ <td>BoBoiBoy Solar</td>
+ <td>Meriam Solar Gerhana (Eclipse Cannon)</td>
+ <td>Orbital Photonic Devastation</td>
+ <td><span class="badge badge-lightning">Thunderstorm (Supra) / Thorn (SORI)</span></td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </section>
+
+ <section class="section section-alt" aria-labelledby="cta-heading" style="padding: 3.5rem 0;">
+ <div class="container text-center">
+ <h2 class="section-title" id="cta-heading" style="max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 1rem;">
+ Ready to Train at the <span class="highlight">TAPOPS Space Academy?</span>
+ </h2>
+ <p class="section-subtitle" style="max-width: 620px; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+ Explore the heroic squadron wielding these powers or follow their chronological battles across TV series, feature films, and galactic seasons.
+ </p>
+ <div class="flex flex-center flex-wrap gap-2">
+ <a href="characters.html" class="btn btn-primary btn-lg">Explore Hero Squad</a>
+ <a href="series.html" class="btn btn-secondary btn-lg">Series &amp; Film Timeline</a>
+ <a href="contact.html" class="btn btn-outline btn-lg">Enlist as Cadet</a>
+ </div>
+ </div>
+ </section>
+
+ </main>
+
+ <footer class="site-footer">
+ <div class="container">
+ <div class="footer-grid">
+ 
+ <div class="footer-brand">
+ <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+ <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+ </a>
+ <p>
+ The comprehensive galactic portal for BoBoiBoy fans, cadets, and scholars. Exploring elemental mastery, Power Spheras, and intergalactic defense chronicles.
+ </p>
+ </div>
+
+ <div>
+ <h4 class="footer-col-title">Universe</h4>
+ <ul class="footer-links">
+ <li><a href="characters.html" class="footer-link">TAPOPS Heroes</a></li>
+ <li><a href="elements.html" class="footer-link">7 Elemental Tiers</a></li>
+ <li><a href="series.html" class="footer-link">Chronicles &amp; Movies</a></li>
+ <li><a href="contact.html" class="footer-link">Cadet Enlistment</a></li>
+ </ul>
+ </div>
+
+ <div>
+ <h4 class="footer-col-title">Navigation</h4>
+ <ul class="footer-links">
+ <li><a href="index.html" class="footer-link">Galactic Home</a></li>
+ <li><a href="#evolution-tiers" class="footer-link">Evolution Tiers</a></li>
+ <li><a href="#elemental-powers" class="footer-link">The 7 Elements</a></li>
+ <li><a href="#elemental-fusions" class="footer-link">Elemental Fusions</a></li>
+ <li><a href="#combat-matrix" class="footer-link">Tactical Matrix</a></li>
+ </ul>
+ </div>
+
+ <div>
+ <div class="footer-quote">
+ <span class="quote-badge">Signature Battle Cry</span>
+ <p class="quote-text">"Awesome! Never give up, we must protect this galaxy at all costs!"</p>
+ <p class="quote-author">&mdash; BoBoiBoy, Elemental Master &amp; TAPOPS Leader</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="footer-bottom">
+ <p class="footer-copy">
+ &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.
+ </p>
+ <p class="footer-copy">
+ Crafted with Semantic HTML5 &amp; CSS3 &bull; <a href="contact.html">TAPOPS Space Academy</a>
+ </p>
+ </div>
+ </div>
+ </footer>
 
 </body>
 </html>

@@ -1304,8 +1304,8 @@ p:last-child {
 }
 
 .chronicle-milestones-list li::before {
-  content: '⚡';
-  font-size: 0.75rem;
+  content: '•';
+  font-size: 1rem;
   color: var(--primary-orange);
   flex-shrink: 0;
 }

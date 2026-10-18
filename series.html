@@ -1,632 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the complete BoBoiBoy chronicles and cinematic timeline. From the classic Pulau Rintis origins to the galactic TAPOPS space odyssey, movies, and modern Galaxy seasons.">
-  <title>Series &amp; Movies | The BoBoiBoy Chronicles | BoBoiBoy Universe</title>
-  <link rel="stylesheet" href="css/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Explore the complete BoBoiBoy chronicles and cinematic timeline. From the classic Pulau Rintis origins to the galactic TAPOPS space odyssey, movies, and modern Galaxy seasons.">
+ <title>Series &amp; Movies | The BoBoiBoy Chronicles | BoBoiBoy Universe</title>
+ <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    /* 1. Background Properties Demonstration */
-    .watch-order-card {
-      background-color: #f8fafc;
-      background-image: none;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-attachment: scroll;
-      border: 1px solid var(--border-subtle);
-      border-left: 4px solid var(--color-wind);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow-sm);
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 2rem;
-    }
+ <style>
+ /* 1. Background Properties Demonstration */
+ .watch-order-card {
+ background-color: #f8fafc;
+ background-image: none;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: auto;
+ background-attachment: scroll;
+ border: 1px solid var(--border-subtle);
+ border-left: 4px solid var(--color-wind);
+ border-radius: var(--radius-sm);
+ box-shadow: var(--shadow-sm);
+ padding: 1.25rem 1.5rem;
+ margin-bottom: 2rem;
+ }
 
-    /* 2. Text and Font Properties Demonstration */
-    .watch-order-title {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 800;
-      font-style: normal;
-      text-align: left;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      line-height: 1.35;
-      color: var(--text-primary);
-      margin-bottom: 0.5rem;
-    }
+ /* 2. Text and Font Properties Demonstration */
+ .watch-order-title {
+ font-family: var(--font-display);
+ font-size: 1.25rem;
+ font-weight: 800;
+ font-style: normal;
+ text-align: left;
+ text-transform: uppercase;
+ letter-spacing: 0.03em;
+ line-height: 1.35;
+ color: var(--text-primary);
+ margin-bottom: 0.5rem;
+ }
 
-    /* 3. Dimension Properties Demonstration */
-    .watch-order-container {
-      width: 100%;
-      min-width: 280px;
-      max-width: 100%;
-      height: auto;
-      min-height: 250px;
-      max-height: none;
-    }
+ /* 3. Dimension Properties Demonstration */
+ .watch-order-container {
+ width: 100%;
+ min-width: 280px;
+ max-width: 100%;
+ height: auto;
+ min-height: 250px;
+ max-height: none;
+ }
 
-    /* 4. Positioning Properties Demonstration */
-    .chronology-marker-badge {
-      position: relative;
-      top: 0;
-      right: 0;
-      bottom: auto;
-      left: 0;
-      z-index: 3;
-    }
+ /* 4. Positioning Properties Demonstration */
+ .chronology-marker-badge {
+ position: relative;
+ top: 0;
+ right: 0;
+ bottom: auto;
+ left: 0;
+ z-index: 3;
+ }
 
-    /* Academic Ordered List Counter */
-    .academic-ordered-list {
-      counter-reset: chrono-step;
-      list-style: none;
-      padding-left: 0;
-      margin: 1.25rem 0 0.5rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
+ /* Academic Ordered List Counter */
+ .academic-ordered-list {
+ counter-reset: chrono-step;
+ list-style: none;
+ padding-left: 0;
+ margin: 1.25rem 0 0.5rem 0;
+ display: flex;
+ flex-direction: column;
+ gap: 0.85rem;
+ }
 
-    .academic-ordered-list > li {
-      counter-increment: chrono-step;
-      position: relative;
-      padding-left: 2.75rem;
-      line-height: 1.5;
-      font-size: 0.92rem;
-      color: var(--text-secondary);
-    }
+ .academic-ordered-list > li {
+ counter-increment: chrono-step;
+ position: relative;
+ padding-left: 2.75rem;
+ line-height: 1.5;
+ font-size: 0.92rem;
+ color: var(--text-secondary);
+ }
 
-    .academic-ordered-list > li::before {
-      content: counter(chrono-step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 2rem;
-      height: 2rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--color-wind), #0284c7);
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35);
-    }
-  </style>
+ .academic-ordered-list > li::before {
+ content: counter(chrono-step);
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 2rem;
+ height: 2rem;
+ border-radius: 50%;
+ background: linear-gradient(135deg, var(--color-wind), #0284c7);
+ color: #ffffff;
+ font-weight: 800;
+ font-size: 0.85rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 2px 6px rgba(2, 132, 199, 0.35);
+ }
+ </style>
 </head>
 <body>
 
-  <main>
+ <main>
 
-    <section class="hero" aria-labelledby="chronicles-title" style="padding: 4rem 0 3.25rem 0;">
-      <div class="container text-center">
-        <h1 class="hero-title" id="chronicles-title" style="max-width: 880px; margin-left: auto; margin-right: auto;">
-          The Cosmic Saga: <span class="highlight">BoBoiBoy Galaxy</span>
-        </h1>
-        <p class="hero-subtitle" style="max-width: 780px; margin-left: auto; margin-right: auto; margin-bottom: 1.75rem;">
-          Explore BoBoiBoy's cosmic odyssey alongside TAPOPS across the stars! Experience deep-space Power Sphera salvage expeditions, the cataclysmic showdown against primordial tyrant Retak'ka, the awakening of legendary Elemental Fusions, and the high-stakes campaign to reclaim the throne of Planet Windara.
-        </p>
-        <div class="flex flex-center flex-wrap gap-2">
-          <span class="badge badge-year">2016–2026+ Galaxy Era</span>
-          <span class="badge badge-lightning">🌌 TAPOPS Space Odyssey</span>
-          <span class="badge badge-fire">🎬 Theatrical Climax: Movie 2</span>
-          <span class="badge badge-wind">🪐 Planet Windara &amp; Knight Arc</span>
-          <span class="badge badge-rating">⭐ 9.5+ Global Acclaim</span>
-        </div>
-      </div>
-    </section>
+ <section class="hero" aria-labelledby="chronicles-title" style="padding: 4rem 0 3.25rem 0;">
+ <div class="container text-center">
+ <h1 class="hero-title" id="chronicles-title" style="max-width: 880px; margin-left: auto; margin-right: auto;">
+ The Cosmic Saga: <span class="highlight">BoBoiBoy Galaxy</span>
+ </h1>
+ <p class="hero-subtitle" style="max-width: 780px; margin-left: auto; margin-right: auto; margin-bottom: 1.75rem;">
+ Explore BoBoiBoy's cosmic odyssey alongside TAPOPS across the stars! Experience deep-space Power Sphera salvage expeditions, the cataclysmic showdown against primordial tyrant Retak'ka, the awakening of legendary Elemental Fusions, and the high-stakes campaign to reclaim the throne of Planet Windara.
+ </p>
+ <div class="flex flex-center flex-wrap gap-2">
+ <span class="badge badge-year">2016–2026+ Galaxy Era</span>
+ <span class="badge badge-lightning"> TAPOPS Space Odyssey</span>
+ <span class="badge badge-fire"> Theatrical Climax: Movie 2</span>
+ <span class="badge badge-wind"> Planet Windara &amp; Knight Arc</span>
+ <span class="badge badge-rating"> 9.5+ Global Acclaim</span>
+ </div>
+ </div>
+ </section>
 
-    <section class="section section-alt" id="chronicle-timeline" aria-labelledby="timeline-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="timeline-heading">The BoBoiBoy Galaxy Epic Trilogy</h2>
-          <p class="section-subtitle">
-            Select an era below to interactively explore each cosmic chapter of BoBoiBoy Galaxy—from TAPOPS cadet enlistment missions and the epic clash on Planet Quabaq to the planetary campaign on Windara.
-          </p>
-        </div>
+ <section class="section section-alt" id="chronicle-timeline" aria-labelledby="timeline-heading">
+ <div class="container">
+ <div class="section-header">
+ <h2 class="section-title" id="timeline-heading">The BoBoiBoy Galaxy Epic Trilogy</h2>
+ <p class="section-subtitle">
+ Select an era below to interactively explore each cosmic chapter of BoBoiBoy Galaxy—from TAPOPS cadet enlistment missions and the epic clash on Planet Quabaq to the planetary campaign on Windara.
+ </p>
+ </div>
 
-        <input type="radio" name="galaxy-filter" id="tab-galaxy-all" class="galaxy-radio" checked>
-        <input type="radio" name="galaxy-filter" id="tab-galaxy-s1" class="galaxy-radio">
-        <input type="radio" name="galaxy-filter" id="tab-galaxy-movie" class="galaxy-radio">
-        <input type="radio" name="galaxy-filter" id="tab-galaxy-s2" class="galaxy-radio">
+ <input type="radio" name="galaxy-filter" id="tab-galaxy-all" class="galaxy-radio" checked>
+ <input type="radio" name="galaxy-filter" id="tab-galaxy-s1" class="galaxy-radio">
+ <input type="radio" name="galaxy-filter" id="tab-galaxy-movie" class="galaxy-radio">
+ <input type="radio" name="galaxy-filter" id="tab-galaxy-s2" class="galaxy-radio">
 
-        <div class="galaxy-tabs" role="tablist" aria-label="Filter BoBoiBoy Galaxy eras">
-          <label for="tab-galaxy-all" class="galaxy-tab-btn">
-            <span>🌟</span> All Galaxy Eras
-          </label>
-          <label for="tab-galaxy-s1" class="galaxy-tab-btn">
-            <span>🚀</span> Galaxy Season 1
-          </label>
-          <label for="tab-galaxy-movie" class="galaxy-tab-btn">
-            <span>🎬</span> Movie 2 (Retak'ka)
-          </label>
-          <label for="tab-galaxy-s2" class="galaxy-tab-btn">
-            <span>🌌</span> Galaxy Season 2
-          </label>
-        </div>
+ <div class="galaxy-tabs" role="tablist" aria-label="Filter BoBoiBoy Galaxy eras">
+ <label for="tab-galaxy-all" class="galaxy-tab-btn">
+ All Galaxy Eras
+ </label>
+ <label for="tab-galaxy-s1" class="galaxy-tab-btn">
+ Galaxy Season 1
+ </label>
+ <label for="tab-galaxy-movie" class="galaxy-tab-btn">
+ Movie 2 (Retak'ka)
+ </label>
+ <label for="tab-galaxy-s2" class="galaxy-tab-btn">
+ Galaxy Season 2
+ </label>
+ </div>
 
-        <div class="galaxy-filter-indicator indicator-galaxy-all">
-          <span>🌟</span> Displaying <strong>Complete BoBoiBoy Galaxy Saga</strong> (Season 1, Movie 2, and Season 2)
-        </div>
-        <div class="galaxy-filter-indicator indicator-galaxy-s1">
-          <span>🚀</span> Displaying <strong>BoBoiBoy Galaxy Season 1 (2016–2018)</strong>: TAPOPS Expeditions &amp; All 7 Elements
-        </div>
-        <div class="galaxy-filter-indicator indicator-galaxy-movie">
-          <span>🎬</span> Displaying <strong>BoBoiBoy Movie 2 (2019)</strong>: Wrath of Retak'ka &amp; Birth of Elemental Fusions
-        </div>
-        <div class="galaxy-filter-indicator indicator-galaxy-s2">
-          <span>🌌</span> Displaying <strong>BoBoiBoy Galaxy Season 2 (2023–Present)</strong>: Knight Arcs, Planet Windara &amp; SORI Power
-        </div>
+ <div class="galaxy-filter-indicator indicator-galaxy-all">
+ Displaying <strong>Complete BoBoiBoy Galaxy Saga</strong> (Season 1, Movie 2, and Season 2)
+ </div>
+ <div class="galaxy-filter-indicator indicator-galaxy-s1">
+ Displaying <strong>BoBoiBoy Galaxy Season 1 (2016–2018)</strong>: TAPOPS Expeditions &amp; All 7 Elements
+ </div>
+ <div class="galaxy-filter-indicator indicator-galaxy-movie">
+ Displaying <strong>BoBoiBoy Movie 2 (2019)</strong>: Wrath of Retak'ka &amp; Birth of Elemental Fusions
+ </div>
+ <div class="galaxy-filter-indicator indicator-galaxy-s2">
+ Displaying <strong>BoBoiBoy Galaxy Season 2 (2023–Present)</strong>: Knight Arcs, Planet Windara &amp; SORI Power
+ </div>
 
-        <div class="timeline">
+ <div class="timeline">
 
-          <article class="timeline-item item-galaxy-s1" aria-labelledby="era-galaxy1-title">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="chronicle-card">
+ <article class="timeline-item item-galaxy-s1" aria-labelledby="era-galaxy1-title">
+ <div class="timeline-marker" aria-hidden="true"></div>
+ <div class="chronicle-card">
 
-              <div class="chronicle-banner">
-                <img src="images/series/galaxy1.jpg" alt="Official BoBoiBoy Galaxy Season 1 poster featuring the TAPOPS cadet squad" width="640" height="240" loading="lazy">
-              </div>
+ <div class="chronicle-banner">
+ <img src="images/series/galaxy1.jpg" alt="Official BoBoiBoy Galaxy Season 1 poster featuring the TAPOPS cadet squad" width="640" height="240" loading="lazy">
+ </div>
 
-              <div class="chronicle-meta">
-                <span class="badge badge-year">2016–2018</span>
-                <span class="badge badge-wind">🚀 Galaxy Season 1</span>
-                <span class="badge badge-episodes">24 Episodes &bull; TAPOPS Missions</span>
-                <span class="badge badge-rating">⭐ 9.2 / 10 IMDb</span>
-              </div>
+ <div class="chronicle-meta">
+ <span class="badge badge-year">2016–2018</span>
+ <span class="badge badge-wind"> Galaxy Season 1</span>
+ <span class="badge badge-episodes">24 Episodes &bull; TAPOPS Missions</span>
+ <span class="badge badge-rating"> 9.2 / 10 IMDb</span>
+ </div>
 
-              <h3 class="chronicle-title" id="era-galaxy1-title">
-                BoBoiBoy Galaxy Season 1: TAPOPS Space Expeditions &amp; The 7 Elements
-              </h3>
-              <p class="chronicle-lead">
-                Venturing far beyond Earth's atmosphere, BoBoiBoy alongside Gopal, Yaya, Ying, and Fang are recruited as cadets into TAPOPS (Tracker and Protector of Power Spheras) under the leadership of Commander Koko Ci and Admiral Tarung. Aboard the Sunnova starship, these young heroes traverse the cosmos to safeguard stranded Power Spheras before galactic criminal syndicates exploit their powers.
-              </p>
+ <h3 class="chronicle-title" id="era-galaxy1-title">
+ BoBoiBoy Galaxy Season 1: TAPOPS Space Expeditions &amp; The 7 Elements
+ </h3>
+ <p class="chronicle-lead">
+ Venturing far beyond Earth's atmosphere, BoBoiBoy alongside Gopal, Yaya, Ying, and Fang are recruited as cadets into TAPOPS (Tracker and Protector of Power Spheras) under the leadership of Commander Koko Ci and Admiral Tarung. Aboard the Sunnova starship, these young heroes traverse the cosmos to safeguard stranded Power Spheras before galactic criminal syndicates exploit their powers.
+ </p>
 
-              <p class="text-secondary mb-3">
-                <strong>Main Conflict:</strong> Feared space pirate Captain Vargoba, master of Dark Magnetism, launches a devastating assault on the TAPOPS Space Station. With his teammates incapacitated and station shields shattered, BoBoiBoy must fight alone in deep space and awaken the ultimate form of the seventh element to save the galaxy.
-              </p>
+ <p class="text-secondary mb-3">
+ <strong>Main Conflict:</strong> Feared space pirate Captain Vargoba, master of Dark Magnetism, launches a devastating assault on the TAPOPS Space Station. With his teammates incapacitated and station shields shattered, BoBoiBoy must fight alone in deep space and awaken the ultimate form of the seventh element to save the galaxy.
+ </p>
 
-              <div class="chronicle-milestones">
-                <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Elemental Milestones &amp; Key Breakthroughs
-                </h4>
-                <ul class="chronicle-milestones-list">
-                  <li><strong>Awakening of Leaf &amp; Thorn:</strong> BoBoiBoy awakens the gentle Leaf element on Planet Gurunda, which later evolves into the deadly thorn-whip specialist BoBoiBoy Thorn.</li>
-                  <li><strong>Awakening of Light &amp; Solar:</strong> The seventh and final primal element Light is unlocked, rapidly evolving into the apex form <em>BoBoiBoy Solar</em> during the climactic duel.</li>
-                  <li><strong>Solar Maximum Shot:</strong> The most devastating beam cannon attack in the TV series, obliterating Captain Vargoba's gravitational black hole singularity.</li>
-                </ul>
-              </div>
+ <div class="chronicle-milestones">
+ <h4 class="chronicle-milestones-title">
+ Elemental Milestones &amp; Key Breakthroughs
+ </h4>
+ <ul class="chronicle-milestones-list">
+ <li><strong>Awakening of Leaf &amp; Thorn:</strong> BoBoiBoy awakens the gentle Leaf element on Planet Gurunda, which later evolves into the deadly thorn-whip specialist BoBoiBoy Thorn.</li>
+ <li><strong>Awakening of Light &amp; Solar:</strong> The seventh and final primal element Light is unlocked, rapidly evolving into the apex form <em>BoBoiBoy Solar</em> during the climactic duel.</li>
+ <li><strong>Solar Maximum Shot:</strong> The most devastating beam cannon attack in the TV series, obliterating Captain Vargoba's gravitational black hole singularity.</li>
+ </ul>
+ </div>
 
-              <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Primary Antagonists:</span>
-                <span class="villain-tag">Captain Vargoba</span>
-                <span class="villain-tag">Jugglenaut</span>
-                <span class="villain-tag">Panto</span>
-                <span class="villain-tag">Roktaroka</span>
-                <span class="villain-tag">Jokertu</span>
-                <span class="villain-tag">Adu Du (Bounty Hunter)</span>
-              </div>
+ <div class="villain-list">
+ <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Primary Antagonists:</span>
+ <span class="villain-tag">Captain Vargoba</span>
+ <span class="villain-tag">Jugglenaut</span>
+ <span class="villain-tag">Panto</span>
+ <span class="villain-tag">Roktaroka</span>
+ <span class="villain-tag">Jokertu</span>
+ <span class="villain-tag">Adu Du (Bounty Hunter)</span>
+ </div>
 
-            </div>
-          </article>
+ </div>
+ </article>
 
-          <article class="timeline-item item-galaxy-movie" aria-labelledby="era-movie2-title">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="chronicle-card">
+ <article class="timeline-item item-galaxy-movie" aria-labelledby="era-movie2-title">
+ <div class="timeline-marker" aria-hidden="true"></div>
+ <div class="chronicle-card">
 
-              <div class="chronicle-banner">
-                <img src="images/series/movie2.jpg" alt="Official BoBoiBoy Movie 2 poster depicting the climactic battle against Retak'ka" width="640" height="240" loading="lazy">
-              </div>
+ <div class="chronicle-banner">
+ <img src="images/series/movie2.jpg" alt="Official BoBoiBoy Movie 2 poster depicting the climactic battle against Retak'ka" width="640" height="240" loading="lazy">
+ </div>
 
-              <div class="chronicle-meta">
-                <span class="badge badge-year">2019</span>
-                <span class="badge badge-fire">🎬 Theatrical Bridge S1 &amp; S2</span>
-                <span class="badge badge-episodes">117 Minutes Feature Film</span>
-                <span class="badge badge-rating">⭐ 8.6 / 10 IMDb &bull; RM 30M Box Office Record</span>
-              </div>
+ <div class="chronicle-meta">
+ <span class="badge badge-year">2019</span>
+ <span class="badge badge-fire"> Theatrical Bridge S1 &amp; S2</span>
+ <span class="badge badge-episodes">117 Minutes Feature Film</span>
+ <span class="badge badge-rating"> 8.6 / 10 IMDb &bull; RM 30M Box Office Record</span>
+ </div>
 
-              <h3 class="chronicle-title" id="era-movie2-title">
-                BoBoiBoy Movie 2: Wrath of Retak'ka &amp; The Birth of Elemental Fusions
-              </h3>
-              <p class="chronicle-lead">
-                Retak'ka, an ancient cosmic tyrant from millennia past and original wielder of the seven elemental powers, escapes from an asteroid crystal prison. Seeking to reclaim his stolen dominion from BoBoiBoy, Retak'ka hunts down and forcibly extracts four core elements (Halilintar, Solar, Gempa, Taufan). Depleted and desperate, BoBoiBoy retreats to Planet Quabaq to train under legendary master Hang Kasa.
-              </p>
+ <h3 class="chronicle-title" id="era-movie2-title">
+ BoBoiBoy Movie 2: Wrath of Retak'ka &amp; The Birth of Elemental Fusions
+ </h3>
+ <p class="chronicle-lead">
+ Retak'ka, an ancient cosmic tyrant from millennia past and original wielder of the seven elemental powers, escapes from an asteroid crystal prison. Seeking to reclaim his stolen dominion from BoBoiBoy, Retak'ka hunts down and forcibly extracts four core elements (Halilintar, Solar, Gempa, Taufan). Depleted and desperate, BoBoiBoy retreats to Planet Quabaq to train under legendary master Hang Kasa.
+ </p>
 
-              <p class="text-secondary mb-3">
-                <strong>Main Conflict:</strong> Retak'ka evolves into a godlike titan on Planet Quabaq. Facing the brink of extinction and Ochobot's ultimate sacrifice, BoBoiBoy transcends his classic clone-splitting technique to invent simultaneous dual-elemental synthesis (Elemental Fusion)—an unprecedented milestone in cosmic history.
-              </p>
+ <p class="text-secondary mb-3">
+ <strong>Main Conflict:</strong> Retak'ka evolves into a godlike titan on Planet Quabaq. Facing the brink of extinction and Ochobot's ultimate sacrifice, BoBoiBoy transcends his classic clone-splitting technique to invent simultaneous dual-elemental synthesis (Elemental Fusion)—an unprecedented milestone in cosmic history.
+ </p>
 
-              <div class="chronicle-milestones">
-                <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Elemental Milestones &amp; Key Breakthroughs
-                </h4>
-                <ul class="chronicle-milestones-list">
-                  <li><strong>BoBoiBoy FrostFire (Fire + Ice):</strong> First recorded dual-fusion, synthesizing volcanic lava blasts with absolute-zero arctic shockwaves.</li>
-                  <li><strong>BoBoiBoy Glacier (Ice + Earthquake):</strong> Colossal titan fusion wielding glacial crystal constructs and impenetrable tectonic shields.</li>
-                  <li><strong>BoBoiBoy Supra (Solar + Thunderstorm):</strong> The ultimate fusion warrior wielding dual supersonic light-lance strikes that shattered Retak'ka's armor.</li>
-                </ul>
-              </div>
+ <div class="chronicle-milestones">
+ <h4 class="chronicle-milestones-title">
+ Elemental Milestones &amp; Key Breakthroughs
+ </h4>
+ <ul class="chronicle-milestones-list">
+ <li><strong>BoBoiBoy FrostFire (Fire + Ice):</strong> First recorded dual-fusion, synthesizing volcanic lava blasts with absolute-zero arctic shockwaves.</li>
+ <li><strong>BoBoiBoy Glacier (Ice + Earthquake):</strong> Colossal titan fusion wielding glacial crystal constructs and impenetrable tectonic shields.</li>
+ <li><strong>BoBoiBoy Supra (Solar + Thunderstorm):</strong> The ultimate fusion warrior wielding dual supersonic light-lance strikes that shattered Retak'ka's armor.</li>
+ </ul>
+ </div>
 
-              <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Primary Antagonists:</span>
-                <span class="villain-tag">Retak'ka (Voltra / Gamma / Beliung / Balak)</span>
-                <span class="villain-tag">Captain Separo</span>
-                <span class="villain-tag">Mining Scavenger Guild</span>
-              </div>
+ <div class="villain-list">
+ <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Primary Antagonists:</span>
+ <span class="villain-tag">Retak'ka (Voltra / Gamma / Beliung / Balak)</span>
+ <span class="villain-tag">Captain Separo</span>
+ <span class="villain-tag">Mining Scavenger Guild</span>
+ </div>
 
-            </div>
-          </article>
+ </div>
+ </article>
 
-          <article class="timeline-item item-galaxy-s2" aria-labelledby="era-galaxy2-title">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="chronicle-card">
+ <article class="timeline-item item-galaxy-s2" aria-labelledby="era-galaxy2-title">
+ <div class="timeline-marker" aria-hidden="true"></div>
+ <div class="chronicle-card">
 
-              <div class="chronicle-banner">
-                <img src="images/series/galaxy2.jpg" alt="Official BoBoiBoy Galaxy Season 2 poster depicting the battle on Planet Windara" width="640" height="240" loading="lazy">
-              </div>
+ <div class="chronicle-banner">
+ <img src="images/series/galaxy2.jpg" alt="Official BoBoiBoy Galaxy Season 2 poster depicting the battle on Planet Windara" width="640" height="240" loading="lazy">
+ </div>
 
-              <div class="chronicle-meta">
-                <span class="badge badge-year">2023–Present</span>
-                <span class="badge badge-leaf">🌌 Galaxy Season 2</span>
-                <span class="badge badge-episodes">Windara Arc, SORI &amp; Gentar</span>
-                <span class="badge badge-rating">⭐ 9.5 / 10 Community Score</span>
-              </div>
+ <div class="chronicle-meta">
+ <span class="badge badge-year">2023–Present</span>
+ <span class="badge badge-leaf"> Galaxy Season 2</span>
+ <span class="badge badge-episodes">Windara Arc, SORI &amp; Gentar</span>
+ <span class="badge badge-rating"> 9.5 / 10 Community Score</span>
+ </div>
 
-              <h3 class="chronicle-title" id="era-galaxy2-title">
-                BoBoiBoy Galaxy Season 2: The Planetary Knights &amp; Windara Arc
-              </h3>
-              <p class="chronicle-lead">
-                Following Retak'ka's fall, the balance of power across the cosmos undergoes seismic shifts. Ancient elemental empires re-emerge. In the Windara Arc, BoBoiBoy and his vanguard journey to Planet Windara—a majestic skyborne realm suspended above eternal storm clouds—to help legitimate Empress Kuputeri reclaim her rightful throne and Wind emblem from usurper Emperor Reramos.
-              </p>
+ <h3 class="chronicle-title" id="era-galaxy2-title">
+ BoBoiBoy Galaxy Season 2: The Planetary Knights &amp; Windara Arc
+ </h3>
+ <p class="chronicle-lead">
+ Following Retak'ka's fall, the balance of power across the cosmos undergoes seismic shifts. Ancient elemental empires re-emerge. In the Windara Arc, BoBoiBoy and his vanguard journey to Planet Windara—a majestic skyborne realm suspended above eternal storm clouds—to help legitimate Empress Kuputeri reclaim her rightful throne and Wind emblem from usurper Emperor Reramos.
+ </p>
 
-              <p class="text-secondary mb-3">
-                <strong>Main Conflict:</strong> Emperor Reramos mind-controls planetary citizens and guards using hypnotic flower spores while bolstering his legions with synthetic wind armor. Meanwhile, a subterranean swarm of giant beetles threatens to collapse the planetary root pillars of Windara.
-              </p>
+ <p class="text-secondary mb-3">
+ <strong>Main Conflict:</strong> Emperor Reramos mind-controls planetary citizens and guards using hypnotic flower spores while bolstering his legions with synthetic wind armor. Meanwhile, a subterranean swarm of giant beetles threatens to collapse the planetary root pillars of Windara.
+ </p>
 
-              <div class="chronicle-milestones">
-                <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Elemental Milestones &amp; Key Breakthroughs
-                </h4>
-                <ul class="chronicle-milestones-list">
-                  <li><strong>BoBoiBoy SORI (Solar + Thorn):</strong> An agile tactical fusion armed with solar-charged thorned flails capable of blinding, rapid strikes.</li>
-                  <li><strong>BoBoiBoy Gentar (Earthquake + Thunderstorm):</strong> A heavyweight tectonic brute wielding dual seismic warhammers supercharged with high-voltage electricity.</li>
-                  <li><strong>Tier 3 Elemental Resonance:</strong> Foreshadowing BoBoiBoy Beliung (Tier 3 Wind Evolution) aligning in harmony with Kuputeri's royal crest.</li>
-                </ul>
-              </div>
+ <div class="chronicle-milestones">
+ <h4 class="chronicle-milestones-title">
+ Elemental Milestones &amp; Key Breakthroughs
+ </h4>
+ <ul class="chronicle-milestones-list">
+ <li><strong>BoBoiBoy SORI (Solar + Thorn):</strong> An agile tactical fusion armed with solar-charged thorned flails capable of blinding, rapid strikes.</li>
+ <li><strong>BoBoiBoy Gentar (Earthquake + Thunderstorm):</strong> A heavyweight tectonic brute wielding dual seismic warhammers supercharged with high-voltage electricity.</li>
+ <li><strong>Tier 3 Elemental Resonance:</strong> Foreshadowing BoBoiBoy Beliung (Tier 3 Wind Evolution) aligning in harmony with Kuputeri's royal crest.</li>
+ </ul>
+ </div>
 
-              <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Primary Antagonists:</span>
-                <span class="villain-tag">Emperor Reramos</span>
-                <span class="villain-tag">General Maripos (Rival turned Ally)</span>
-                <span class="villain-tag">Windara Beetle Swarm</span>
-                <span class="villain-tag">Ancient Kadrux Cult</span>
-              </div>
+ <div class="villain-list">
+ <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Primary Antagonists:</span>
+ <span class="villain-tag">Emperor Reramos</span>
+ <span class="villain-tag">General Maripos (Rival turned Ally)</span>
+ <span class="villain-tag">Windara Beetle Swarm</span>
+ <span class="villain-tag">Ancient Kadrux Cult</span>
+ </div>
 
-            </div>
-          </article>
+ </div>
+ </article>
 
-        </div>
-      </div>
-    </section>
+ </div>
+ </div>
+ </section>
 
-    <section class="section" id="viewing-roadmap" aria-labelledby="roadmap-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="roadmap-heading">Canon Viewing Roadmap &amp; Chronology</h2>
-          <p class="section-subtitle">
-            Whether you are a new cadet embarking on your first mission or a seasoned scholar revisiting the franchise, follow this definitive chronological sequence curated by the TAPOPS Academy.
-          </p>
-        </div>
+ <section class="section" id="viewing-roadmap" aria-labelledby="roadmap-heading">
+ <div class="container">
+ <div class="section-header">
+ <h2 class="section-title" id="roadmap-heading">Canon Viewing Roadmap &amp; Chronology</h2>
+ <p class="section-subtitle">
+ Whether you are a new cadet embarking on your first mission or a seasoned scholar revisiting the franchise, follow this definitive chronological sequence curated by the TAPOPS Academy.
+ </p>
+ </div>
 
-        <div class="roadmap-grid">
+ <div class="roadmap-grid">
 
-          <div class="roadmap-card">
-            <span class="roadmap-step-badge">Phase 01</span>
-            <h4 class="roadmap-title">Classic Foundation</h4>
-            <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Seasons 1–3 (2011–2016)</div>
-            <p class="roadmap-desc">
-              Essential starting point. Witness BoBoiBoy receiving Ochobot, assembling the core five squad members, and unlocking the fundamental Tier 1 and Tier 2 elemental powers.
-            </p>
-            <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-              <span>Focus: Origin &amp; Trio Split</span>
-              <span class="text-orange">Essential</span>
-            </div>
-          </div>
+ <div class="roadmap-card">
+ <span class="roadmap-step-badge">Phase 01</span>
+ <h4 class="roadmap-title">Classic Foundation</h4>
+ <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Seasons 1–3 (2011–2016)</div>
+ <p class="roadmap-desc">
+ Essential starting point. Witness BoBoiBoy receiving Ochobot, assembling the core five squad members, and unlocking the fundamental Tier 1 and Tier 2 elemental powers.
+ </p>
+ <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+ <span>Focus: Origin &amp; Trio Split</span>
+ <span class="text-orange">Essential</span>
+ </div>
+ </div>
 
-          <div class="roadmap-card">
-            <span class="roadmap-step-badge">Phase 02</span>
-            <h4 class="roadmap-title">The First Theatrical Bridge</h4>
-            <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy: The Movie (2016)</div>
-            <p class="roadmap-desc">
-              Direct narrative bridge between Classic and Galaxy. Explains Klamkabot's ancient legacy, introduces upgraded Ochobot, and debuts BoBoiBoy Blaze and BoBoiBoy Ice.
-            </p>
-            <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-              <span>Focus: Klamkabot &amp; Blaze/Ice</span>
-              <span class="text-orange">Mandatory</span>
-            </div>
-          </div>
+ <div class="roadmap-card">
+ <span class="roadmap-step-badge">Phase 02</span>
+ <h4 class="roadmap-title">The First Theatrical Bridge</h4>
+ <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy: The Movie (2016)</div>
+ <p class="roadmap-desc">
+ Direct narrative bridge between Classic and Galaxy. Explains Klamkabot's ancient legacy, introduces upgraded Ochobot, and debuts BoBoiBoy Blaze and BoBoiBoy Ice.
+ </p>
+ <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+ <span>Focus: Klamkabot &amp; Blaze/Ice</span>
+ <span class="text-orange">Mandatory</span>
+ </div>
+ </div>
 
-          <div class="roadmap-card">
-            <span class="roadmap-step-badge">Phase 03</span>
-            <h4 class="roadmap-title">Cosmic Enlistment</h4>
-            <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Galaxy Season 1 (2016–2018)</div>
-            <p class="roadmap-desc">
-              The squad joins TAPOPS and voyages into deep space. Documents the cosmic recovery of Power Spheras and the complete re-awakening of all 7 primal elements, ending with Solar.
-            </p>
-            <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-              <span>Focus: 7 Elements &amp; Vargoba</span>
-              <span class="text-orange">Essential</span>
-            </div>
-          </div>
+ <div class="roadmap-card">
+ <span class="roadmap-step-badge">Phase 03</span>
+ <h4 class="roadmap-title">Cosmic Enlistment</h4>
+ <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Galaxy Season 1 (2016–2018)</div>
+ <p class="roadmap-desc">
+ The squad joins TAPOPS and voyages into deep space. Documents the cosmic recovery of Power Spheras and the complete re-awakening of all 7 primal elements, ending with Solar.
+ </p>
+ <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+ <span>Focus: 7 Elements &amp; Vargoba</span>
+ <span class="text-orange">Essential</span>
+ </div>
+ </div>
 
-          <div class="roadmap-card">
-            <span class="roadmap-step-badge">Phase 04</span>
-            <h4 class="roadmap-title">The Retak'ka Cataclysm</h4>
-            <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Movie 2 (2019)</div>
-            <p class="roadmap-desc">
-              The absolute apex of the animated franchise. Directly continues Galaxy S1, revealing Hang Kasa's ancient lore, Retak'ka's origin, and the birth of FrostFire, Glacier, and Supra.
-            </p>
-            <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-              <span>Focus: Retak'ka &amp; Dual Fusions</span>
-              <span class="text-orange">Peak Canon</span>
-            </div>
-          </div>
+ <div class="roadmap-card">
+ <span class="roadmap-step-badge">Phase 04</span>
+ <h4 class="roadmap-title">The Retak'ka Cataclysm</h4>
+ <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Movie 2 (2019)</div>
+ <p class="roadmap-desc">
+ The absolute apex of the animated franchise. Directly continues Galaxy S1, revealing Hang Kasa's ancient lore, Retak'ka's origin, and the birth of FrostFire, Glacier, and Supra.
+ </p>
+ <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+ <span>Focus: Retak'ka &amp; Dual Fusions</span>
+ <span class="text-orange">Peak Canon</span>
+ </div>
+ </div>
 
-          <div class="roadmap-card">
-            <span class="roadmap-step-badge">Phase 05</span>
-            <h4 class="roadmap-title">Planetary Knights Era</h4>
-            <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Galaxy Season 2 (2023+)</div>
-            <p class="roadmap-desc">
-              Follows the liberation of Quabaq. The team investigates ancient royal lines on Planet Windara, unveiling Empress Kuputeri, Emperor Reramos, and brand-new tactical fusions SORI and Gentar.
-            </p>
-            <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-              <span>Focus: Windara, SORI &amp; Gentar</span>
-              <span class="text-orange">Current Era</span>
-            </div>
-          </div>
+ <div class="roadmap-card">
+ <span class="roadmap-step-badge">Phase 05</span>
+ <h4 class="roadmap-title">Planetary Knights Era</h4>
+ <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Galaxy Season 2 (2023+)</div>
+ <p class="roadmap-desc">
+ Follows the liberation of Quabaq. The team investigates ancient royal lines on Planet Windara, unveiling Empress Kuputeri, Emperor Reramos, and brand-new tactical fusions SORI and Gentar.
+ </p>
+ <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+ <span>Focus: Windara, SORI &amp; Gentar</span>
+ <span class="text-orange">Current Era</span>
+ </div>
+ </div>
 
-          <div class="roadmap-card">
-            <span class="roadmap-step-badge">Phase 06</span>
-            <h4 class="roadmap-title">Future Horizon</h4>
-            <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Movie 3: Gur'latan (Upcoming)</div>
-            <p class="roadmap-desc">
-              The next theatrical chapter announced by Monsta. Teased to explore deeper galactic empires, the origin of Power Sphera creators, and Tier 3 elemental evolutions across the universe.
-            </p>
-            <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-              <span>Focus: Planetary Expansions</span>
-              <span class="text-muted">In Development</span>
-            </div>
-          </div>
+ <div class="roadmap-card">
+ <span class="roadmap-step-badge">Phase 06</span>
+ <h4 class="roadmap-title">Future Horizon</h4>
+ <div class="text-orange" style="font-size: 0.82rem; font-weight: 700; margin-bottom: 0.5rem;">BoBoiBoy Movie 3: Gur'latan (Upcoming)</div>
+ <p class="roadmap-desc">
+ The next theatrical chapter announced by Monsta. Teased to explore deeper galactic empires, the origin of Power Sphera creators, and Tier 3 elemental evolutions across the universe.
+ </p>
+ <div class="flex flex-between align-center" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+ <span>Focus: Planetary Expansions</span>
+ <span class="text-muted">In Development</span>
+ </div>
+ </div>
 
-        </div>
+ </div>
 
-        <div class="watch-order-card watch-order-container">
-          <div class="chronology-marker-badge">
-            <span class="badge badge-wind mb-2">Academic Ordered List #3</span>
-          </div>
-          <h3 class="watch-order-title">
-            <span>🎬</span> Official Canon Chronological Watch Order
-          </h3>
-          <p class="text-secondary text-sm" style="margin-bottom: 1rem;">
-            For complete narrative continuity without confusing elemental tier awakenings, watch the franchise strictly in this recommended 5-step sequence:
-          </p>
-          <ol class="academic-ordered-list">
-            <li>
-              <strong>BoBoiBoy Classic TV Series (Seasons 1, 2 &amp; 3):</strong>
-              Witness BoBoiBoy's first encounter with Ochobot on Pulau Rintis, awakening of Earth/Wind/Lightning, and subsequent unlocks of Fire and Water.
-            </li>
-            <li>
-              <strong>BoBoiBoy: The Movie (2016 Feature Film):</strong>
-              The pivotal bridge where the team rescues Klamkabot and unlocks Tier 2 evolutions (BoBoiBoy Blaze and BoBoiBoy Ice) on the Floating Island.
-            </li>
-            <li>
-              <strong>BoBoiBoy Galaxy Season 1 (24 Episodes):</strong>
-              The cadets leave Earth to join TAPOPS across deep space, defending Power Spheras from Captain Vargoba and awakening Leaf/Thorn and Light/Solar.
-            </li>
-            <li>
-              <strong>BoBoiBoy Movie 2 (2019 Blockbuster):</strong>
-              The apex confrontation against primordial tyrant Retak'ka, leading to the historic breakthrough of multi-elemental Fusions (FrostFire, Glacier, Supra).
-            </li>
-            <li>
-              <strong>BoBoiBoy Galaxy Season 2 (Windara, Gur'latan &amp; Barruka Arcs):</strong>
-              The ongoing space defense campaign against Emperor Reramos, featuring advanced fusions like BoBoiBoy SORI and BoBoiBoy Gentar.
-            </li>
-          </ol>
-        </div>
+ <div class="watch-order-card watch-order-container">
+ <div class="chronology-marker-badge">
+ <span class="badge badge-wind mb-2">Academic Ordered List #3</span>
+ </div>
+ <h3 class="watch-order-title">
+ Official Canon Chronological Watch Order
+ </h3>
+ <p class="text-secondary text-sm" style="margin-bottom: 1rem;">
+ For complete narrative continuity without confusing elemental tier awakenings, watch the franchise strictly in this recommended 5-step sequence:
+ </p>
+ <ol class="academic-ordered-list">
+ <li>
+ <strong>BoBoiBoy Classic TV Series (Seasons 1, 2 &amp; 3):</strong>
+ Witness BoBoiBoy's first encounter with Ochobot on Pulau Rintis, awakening of Earth/Wind/Lightning, and subsequent unlocks of Fire and Water.
+ </li>
+ <li>
+ <strong>BoBoiBoy: The Movie (2016 Feature Film):</strong>
+ The pivotal bridge where the team rescues Klamkabot and unlocks Tier 2 evolutions (BoBoiBoy Blaze and BoBoiBoy Ice) on the Floating Island.
+ </li>
+ <li>
+ <strong>BoBoiBoy Galaxy Season 1 (24 Episodes):</strong>
+ The cadets leave Earth to join TAPOPS across deep space, defending Power Spheras from Captain Vargoba and awakening Leaf/Thorn and Light/Solar.
+ </li>
+ <li>
+ <strong>BoBoiBoy Movie 2 (2019 Blockbuster):</strong>
+ The apex confrontation against primordial tyrant Retak'ka, leading to the historic breakthrough of multi-elemental Fusions (FrostFire, Glacier, Supra).
+ </li>
+ <li>
+ <strong>BoBoiBoy Galaxy Season 2 (Windara, Gur'latan &amp; Barruka Arcs):</strong>
+ The ongoing space defense campaign against Emperor Reramos, featuring advanced fusions like BoBoiBoy SORI and BoBoiBoy Gentar.
+ </li>
+ </ol>
+ </div>
 
-        <div class="mt-4">
-          <h3 class="h3 mb-2" style="font-size: 1.35rem; font-weight: 800;">
-            Master Franchise Chronology &amp; Media Matrix
-          </h3>
-          <p class="text-secondary mb-3">
-            Comprehensive reference table detailing release years, chronological timeline index, formats, runtimes, primary antagonists, and core elemental evolutions.
-          </p>
+ <div class="mt-4">
+ <h3 class="h3 mb-2" style="font-size: 1.35rem; font-weight: 800;">
+ Master Franchise Chronology &amp; Media Matrix
+ </h3>
+ <p class="text-secondary mb-3">
+ Comprehensive reference table detailing release years, chronological timeline index, formats, runtimes, primary antagonists, and core elemental evolutions.
+ </p>
 
-          <div class="table-container">
-            <table class="data-table" aria-label="BoBoiBoy Master Chronology Table">
-              <thead>
-                <tr>
-                  <th>Era / Title</th>
-                  <th>Year</th>
-                  <th>Format</th>
-                  <th>Episodes / Runtime</th>
-                  <th>Primary Antagonist</th>
-                  <th>Key Power Milestone</th>
-                  <th>Canon Priority</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>BoBoiBoy Classic Season 1</strong></td>
-                  <td>2011</td>
-                  <td>TV Series</td>
-                  <td>13 Episodes</td>
-                  <td>Adu Du &amp; Probe</td>
-                  <td>Petir, Angin, Tanah (Kuasa Tiga)</td>
-                  <td><span class="badge badge-year">Core Origin</span></td>
-                </tr>
-                <tr>
-                  <td><strong>BoBoiBoy Classic Season 2</strong></td>
-                  <td>2012–2013</td>
-                  <td>TV Series</td>
-                  <td>13 Episodes</td>
-                  <td>Ejo Jo &amp; Petai</td>
-                  <td>Halilintar, Taufan, Gempa (Tier 2)</td>
-                  <td><span class="badge badge-year">Core Canon</span></td>
-                </tr>
-                <tr>
-                  <td><strong>BoBoiBoy Classic Season 3</strong></td>
-                  <td>2014–2016</td>
-                  <td>TV Series</td>
-                  <td>26 Episodes</td>
-                  <td>Ejo Jo &amp; Rob/Robert</td>
-                  <td>BoBoiBoy Api &amp; BoBoiBoy Air</td>
-                  <td><span class="badge badge-year">Core Canon</span></td>
-                </tr>
-                <tr>
-                  <td><strong>BoBoiBoy: The Movie</strong></td>
-                  <td>2016</td>
-                  <td>Feature Film</td>
-                  <td>100 Minutes</td>
-                  <td>Captain Bora Ra</td>
-                  <td>BoBoiBoy Blaze &amp; BoBoiBoy Ice</td>
-                  <td><span class="badge badge-lightning">Essential Bridge</span></td>
-                </tr>
-                <tr>
-                  <td><strong>BoBoiBoy Galaxy Season 1</strong></td>
-                  <td>2016–2018</td>
-                  <td>TV Series</td>
-                  <td>24 Episodes</td>
-                  <td>Captain Vargoba</td>
-                  <td>Leaf, Thorn, Light &amp; Solar</td>
-                  <td><span class="badge badge-wind">Galactic Canon</span></td>
-                </tr>
-                <tr>
-                  <td><strong>BoBoiBoy Movie 2</strong></td>
-                  <td>2019</td>
-                  <td>Feature Film</td>
-                  <td>117 Minutes</td>
-                  <td>Retak'ka (Ancient Tyrant)</td>
-                  <td>FrostFire, Glacier, Supra Fusions</td>
-                  <td><span class="badge badge-fire">Apex Canon</span></td>
-                </tr>
-                <tr>
-                  <td><strong>BoBoiBoy Galaxy Season 2</strong></td>
-                  <td>2023+</td>
-                  <td>Series Arcs</td>
-                  <td>Ongoing</td>
-                  <td>Emperor Reramos</td>
-                  <td>SORI &amp; Gentar Fusions; Beliung</td>
-                  <td><span class="badge badge-leaf">Current Arc</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+ <div class="table-container">
+ <table class="data-table" aria-label="BoBoiBoy Master Chronology Table">
+ <thead>
+ <tr>
+ <th>Era / Title</th>
+ <th>Year</th>
+ <th>Format</th>
+ <th>Episodes / Runtime</th>
+ <th>Primary Antagonist</th>
+ <th>Key Power Milestone</th>
+ <th>Canon Priority</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>BoBoiBoy Classic Season 1</strong></td>
+ <td>2011</td>
+ <td>TV Series</td>
+ <td>13 Episodes</td>
+ <td>Adu Du &amp; Probe</td>
+ <td>Petir, Angin, Tanah (Kuasa Tiga)</td>
+ <td><span class="badge badge-year">Core Origin</span></td>
+ </tr>
+ <tr>
+ <td><strong>BoBoiBoy Classic Season 2</strong></td>
+ <td>2012–2013</td>
+ <td>TV Series</td>
+ <td>13 Episodes</td>
+ <td>Ejo Jo &amp; Petai</td>
+ <td>Halilintar, Taufan, Gempa (Tier 2)</td>
+ <td><span class="badge badge-year">Core Canon</span></td>
+ </tr>
+ <tr>
+ <td><strong>BoBoiBoy Classic Season 3</strong></td>
+ <td>2014–2016</td>
+ <td>TV Series</td>
+ <td>26 Episodes</td>
+ <td>Ejo Jo &amp; Rob/Robert</td>
+ <td>BoBoiBoy Api &amp; BoBoiBoy Air</td>
+ <td><span class="badge badge-year">Core Canon</span></td>
+ </tr>
+ <tr>
+ <td><strong>BoBoiBoy: The Movie</strong></td>
+ <td>2016</td>
+ <td>Feature Film</td>
+ <td>100 Minutes</td>
+ <td>Captain Bora Ra</td>
+ <td>BoBoiBoy Blaze &amp; BoBoiBoy Ice</td>
+ <td><span class="badge badge-lightning">Essential Bridge</span></td>
+ </tr>
+ <tr>
+ <td><strong>BoBoiBoy Galaxy Season 1</strong></td>
+ <td>2016–2018</td>
+ <td>TV Series</td>
+ <td>24 Episodes</td>
+ <td>Captain Vargoba</td>
+ <td>Leaf, Thorn, Light &amp; Solar</td>
+ <td><span class="badge badge-wind">Galactic Canon</span></td>
+ </tr>
+ <tr>
+ <td><strong>BoBoiBoy Movie 2</strong></td>
+ <td>2019</td>
+ <td>Feature Film</td>
+ <td>117 Minutes</td>
+ <td>Retak'ka (Ancient Tyrant)</td>
+ <td>FrostFire, Glacier, Supra Fusions</td>
+ <td><span class="badge badge-fire">Apex Canon</span></td>
+ </tr>
+ <tr>
+ <td><strong>BoBoiBoy Galaxy Season 2</strong></td>
+ <td>2023+</td>
+ <td>Series Arcs</td>
+ <td>Ongoing</td>
+ <td>Emperor Reramos</td>
+ <td>SORI &amp; Gentar Fusions; Beliung</td>
+ <td><span class="badge badge-leaf">Current Arc</span></td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
 
-        <div class="mt-4 pt-2">
-          <h3 class="h3 mb-2" style="font-size: 1.35rem; font-weight: 800;">
-            Cadet Viewing FAQ &amp; Quick Tips
-          </h3>
-          
-          <div class="grid-3" style="margin-top: 1.5rem;">
-            <div class="card">
-              <h4 class="card-title text-orange" style="font-size: 1.05rem;">Can I start with BoBoiBoy Galaxy?</h4>
-              <p class="card-text">
-                Yes! <em>BoBoiBoy Galaxy</em> acts as a soft franchise reboot designed to welcome new international viewers. However, watching <em>BoBoiBoy: The Movie (2016)</em> first provides crucial context regarding Klamkabot and Ochobot's upgrades.
-              </p>
-            </div>
-            <div class="card">
-              <h4 class="card-title text-orange" style="font-size: 1.05rem;">Are the Movies Official Canon?</h4>
-              <p class="card-text">
-                100% Yes. Unlike anime feature films that are often non-canonical spin-offs, Monsta's movies are primary milestones that permanently advance the narrative, introduce new tier awakenings, and introduce pivotal characters like Hang Kasa.
-              </p>
-            </div>
-            <div class="card">
-              <h4 class="card-title text-orange" style="font-size: 1.05rem;">Evolution vs. Elemental Fusion?</h4>
-              <p class="card-text">
-                <em>Evolution (Tier 2)</em> is the upgrade of a single element (e.g. Petir &rarr; Halilintar). <em>Fusion</em> merges two distinct elemental spheres simultaneously into a unified warrior (e.g. Fire + Ice = FrostFire; Solar + Halilintar = Supra).
-              </p>
-            </div>
-          </div>
-        </div>
+ <div class="mt-4 pt-2">
+ <h3 class="h3 mb-2" style="font-size: 1.35rem; font-weight: 800;">
+ Cadet Viewing FAQ &amp; Quick Tips
+ </h3>
+ 
+ <div class="grid-3" style="margin-top: 1.5rem;">
+ <div class="card">
+ <h4 class="card-title text-orange" style="font-size: 1.05rem;">Can I start with BoBoiBoy Galaxy?</h4>
+ <p class="card-text">
+ Yes! <em>BoBoiBoy Galaxy</em> acts as a soft franchise reboot designed to welcome new international viewers. However, watching <em>BoBoiBoy: The Movie (2016)</em> first provides crucial context regarding Klamkabot and Ochobot's upgrades.
+ </p>
+ </div>
+ <div class="card">
+ <h4 class="card-title text-orange" style="font-size: 1.05rem;">Are the Movies Official Canon?</h4>
+ <p class="card-text">
+ 100% Yes. Unlike anime feature films that are often non-canonical spin-offs, Monsta's movies are primary milestones that permanently advance the narrative, introduce new tier awakenings, and introduce pivotal characters like Hang Kasa.
+ </p>
+ </div>
+ <div class="card">
+ <h4 class="card-title text-orange" style="font-size: 1.05rem;">Evolution vs. Elemental Fusion?</h4>
+ <p class="card-text">
+ <em>Evolution (Tier 2)</em> is the upgrade of a single element (e.g. Petir &rarr; Halilintar). <em>Fusion</em> merges two distinct elemental spheres simultaneously into a unified warrior (e.g. Fire + Ice = FrostFire; Solar + Halilintar = Supra).
+ </p>
+ </div>
+ </div>
+ </div>
 
-      </div>
-    </section>
+ </div>
+ </section>
 
-    <section class="section section-alt" aria-labelledby="cta-heading" style="padding: 3.5rem 0;">
-      <div class="container text-center">
-        <h2 class="section-title" id="cta-heading" style="max-width: 720px; margin-left: auto; margin-right: auto;">
-          Enlist in TAPOPS Space Academy Today
-        </h2>
-        <p class="section-subtitle" style="max-width: 650px; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
-          Dive deeper into the 7 elemental matrix, inspect hero technical profiles, or submit your galactic fan transmission to join the defense coalition.
-        </p>
-        <div class="flex flex-center flex-wrap gap-2">
-          <a href="elements.html" class="btn btn-primary btn-lg">Explore 7 Elements</a>
-          <a href="characters.html" class="btn btn-secondary btn-lg">Meet TAPOPS Heroes</a>
-          <a href="contact.html" class="btn btn-secondary btn-lg">Enlist at Fan Hub</a>
-        </div>
-      </div>
-    </section>
+ <section class="section section-alt" aria-labelledby="cta-heading" style="padding: 3.5rem 0;">
+ <div class="container text-center">
+ <h2 class="section-title" id="cta-heading" style="max-width: 720px; margin-left: auto; margin-right: auto;">
+ Enlist in TAPOPS Space Academy Today
+ </h2>
+ <p class="section-subtitle" style="max-width: 650px; margin-left: auto; margin-right: auto; margin-bottom: 2rem;">
+ Dive deeper into the 7 elemental matrix, inspect hero technical profiles, or submit your galactic fan transmission to join the defense coalition.
+ </p>
+ <div class="flex flex-center flex-wrap gap-2">
+ <a href="elements.html" class="btn btn-primary btn-lg">Explore 7 Elements</a>
+ <a href="characters.html" class="btn btn-secondary btn-lg">Meet TAPOPS Heroes</a>
+ <a href="contact.html" class="btn btn-secondary btn-lg">Enlist at Fan Hub</a>
+ </div>
+ </div>
+ </section>
 
-  </main>
+ </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        
-        <div>
-          <a href="index.html" class="footer-brand" aria-label="BoBoiBoy Galactic Universe Home">
-            <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
-          </a>
-          <p>
-            The comprehensive galactic portal for BoBoiBoy fans, cadets, and scholars. Exploring elemental mastery, Power Spheras, and intergalactic defense chronicles.
-          </p>
-        </div>
+ <footer class="site-footer">
+ <div class="container">
+ <div class="footer-grid">
+ 
+ <div>
+ <a href="index.html" class="footer-brand" aria-label="BoBoiBoy Galactic Universe Home">
+ <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+ </a>
+ <p>
+ The comprehensive galactic portal for BoBoiBoy fans, cadets, and scholars. Exploring elemental mastery, Power Spheras, and intergalactic defense chronicles.
+ </p>
+ </div>
 
-        <div>
-          <h4 class="footer-col-title">Universe</h4>
-          <ul class="footer-links">
-            <li><a href="characters.html" class="footer-link">TAPOPS Heroes</a></li>
-            <li><a href="elements.html" class="footer-link">7 Elemental Tiers</a></li>
-            <li><a href="series.html" class="footer-link">Chronicles &amp; Movies</a></li>
-            <li><a href="contact.html" class="footer-link">Cadet Enlistment</a></li>
-          </ul>
-        </div>
+ <div>
+ <h4 class="footer-col-title">Universe</h4>
+ <ul class="footer-links">
+ <li><a href="characters.html" class="footer-link">TAPOPS Heroes</a></li>
+ <li><a href="elements.html" class="footer-link">7 Elemental Tiers</a></li>
+ <li><a href="series.html" class="footer-link">Chronicles &amp; Movies</a></li>
+ <li><a href="contact.html" class="footer-link">Cadet Enlistment</a></li>
+ </ul>
+ </div>
 
-        <div>
-          <h4 class="footer-col-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Galactic Home</a></li>
-            <li><a href="#chronicle-timeline" class="footer-link">Chronicle Timeline</a></li>
-            <li><a href="#viewing-roadmap" class="footer-link">Viewing Order Guide</a></li>
-            <li><a href="contact.html#student-profile" class="footer-link">Student Info</a></li>
-          </ul>
-        </div>
+ <div>
+ <h4 class="footer-col-title">Navigation</h4>
+ <ul class="footer-links">
+ <li><a href="index.html" class="footer-link">Galactic Home</a></li>
+ <li><a href="#chronicle-timeline" class="footer-link">Chronicle Timeline</a></li>
+ <li><a href="#viewing-roadmap" class="footer-link">Viewing Order Guide</a></li>
+ <li><a href="contact.html#student-profile" class="footer-link">Student Info</a></li>
+ </ul>
+ </div>
 
-        <div>
-          <div class="footer-quote">
-            <span class="quote-badge">Signature Battle Cry</span>
-            <p class="quote-text">"Awesome! Never give up, we must protect this galaxy at all costs!"</p>
-            <p class="quote-author">&mdash; BoBoiBoy, Elemental Master &amp; TAPOPS Leader</p>
-          </div>
-        </div>
-      </div>
+ <div>
+ <div class="footer-quote">
+ <span class="quote-badge">Signature Battle Cry</span>
+ <p class="quote-text">"Awesome! Never give up, we must protect this galaxy at all costs!"</p>
+ <p class="quote-author">&mdash; BoBoiBoy, Elemental Master &amp; TAPOPS Leader</p>
+ </div>
+ </div>
+ </div>
 
-      <div class="footer-bottom">
-        <p class="footer-copy">
-          &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.
-        </p>
-        <p class="footer-copy">
-          Crafted with Semantic HTML5 &amp; CSS3 &bull; <a href="contact.html">TAPOPS Space Academy</a>
-        </p>
-      </div>
-    </div>
-  </footer>
+ <div class="footer-bottom">
+ <p class="footer-copy">
+ &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.
+ </p>
+ <p class="footer-copy">
+ Crafted with Semantic HTML5 &amp; CSS3 &bull; <a href="contact.html">TAPOPS Space Academy</a>
+ </p>
+ </div>
+ </div>
+ </footer>
 
 </body>
 </html>

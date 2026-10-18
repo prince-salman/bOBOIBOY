@@ -88,7 +88,7 @@ def build_docx():
         
     p_title = doc.add_paragraph()
     p_title.paragraph_format.space_after = Pt(2)
-    r = p_title.add_run("⚡ 2-MINUTE CODE DEFENSE CHEAT SHEET")
+    r = p_title.add_run("2-MINUTE CODE DEFENSE CHEAT SHEET")
     r.bold = True
     r.font.size = Pt(16)
     r.font.color.rgb = COLOR_NAVY
@@ -211,7 +211,7 @@ def build_html():
   </style>
 </head>
 <body>
-  <h1>⚡ 2-Minute Code Defense Cheat Sheet</h1>
+  <h1>2-Minute Code Defense Cheat Sheet</h1>
   <div class="sub">Web Programming Project 1 • BoBoiBoy Universe Portal • Resident University</div>
 
   <div class="card">

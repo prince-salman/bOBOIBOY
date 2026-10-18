@@ -1,4 +1,4 @@
-# ⚡ 2-MINUTE CODE DEFENSE CHEAT SHEET
+# 2-MINUTE CODE DEFENSE CHEAT SHEET
 ## Project 1 Web Programming — BoBoiBoy Universe Portal
 **Informatics / Information Systems — Resident University**
 
