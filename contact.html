@@ -7,41 +7,6 @@
   <title>TAPOPS Cadet Hub &amp; Contact | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- =========================================================================
-       ACADEMIC REQUIREMENT: INTERNAL CSS (<style> Tag)
-       Demonstrating 4 property categories (minimum 5 properties each):
-       1. Background Properties:
-          - background-color
-          - background-image
-          - background-position
-          - background-repeat
-          - background-size
-          - background-attachment
-       2. Text and Font Properties:
-          - font-family
-          - font-size
-          - font-weight
-          - font-style
-          - line-height
-          - text-align
-          - text-transform
-          - letter-spacing
-          - color
-       3. Dimension Properties:
-          - width
-          - min-width
-          - max-width
-          - height
-          - min-height
-          - max-height
-       4. Positioning Properties:
-          - position
-          - top
-          - right
-          - bottom
-          - left
-          - z-index
-       ========================================================================= -->
   <style>
     /* 1. Background Properties Demonstration */
     .cadet-protocol-box {
@@ -137,14 +102,12 @@
 </head>
 <body>
 
-  <!-- Sticky Header & Navigation -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
         <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
       </a>
 
-      <!-- Pure CSS Mobile Hamburger Toggle -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
       <label for="nav-toggle" class="nav-toggle-label">
         <span class="hamburger-bar"></span>
@@ -164,10 +127,8 @@
     </div>
   </header>
 
-  <!-- Main Content -->
   <main>
 
-    <!-- Page Header / Hero Banner -->
     <section class="hero" aria-labelledby="fanhub-banner-title" style="padding: 4rem 0 3.25rem 0;">
       <div class="container text-center">
         <div class="hero-tag" style="margin-left: auto; margin-right: auto;">
@@ -188,7 +149,6 @@
       </div>
     </section>
 
-    <!-- Main Two-Column Section: Enlistment Form & Academic Dossier -->
     <section class="section" id="cadet-enlistment" aria-labelledby="enlistment-heading">
       <div class="container">
         <div class="section-header text-center mb-5">
@@ -201,12 +161,8 @@
 
         <div class="grid-2 cadet-enlistment-wrapper">
 
-          <!-- ---------------------------------------------------------------
-               COLUMN 1: Cadet Enlistment Form & Protocol Card
-               --------------------------------------------------------------- -->
           <div class="card" aria-labelledby="form-heading">
 
-            <!-- Cadet Enlistment Protocol Card (Ordered List Demonstration) -->
             <div class="cadet-protocol-box">
               <h3 class="cadet-protocol-title">
                 <span>📝</span> 4-Step TAPOPS Cadet Clearance Protocol
@@ -214,7 +170,7 @@
               <p class="text-secondary text-xs" style="margin-bottom: 0.75rem;">
                 Mandatory sequential procedure for all galactic recruits prior to operational deployment:
               </p>
-              <!-- Academic Ordered List #2 -->
+              
               <ol class="academic-ordered-list">
                 <li><strong>Identity Registration:</strong> Enter official civilian name and call-sign codename.</li>
                 <li><strong>Security Clearance Passcode:</strong> Establish an encrypted 8+ character quantum passcode.</li>
@@ -231,24 +187,20 @@
               </p>
             </div>
 
-            <!-- Complete Interactive Form with All Required Controls & HTML5 Validation -->
             <form action="#" method="get" class="cadet-form">
 
-              <!-- 1. Text Input: Full Cadet Name -->
               <div class="form-group">
                 <label for="cadet-name" class="form-label">Full Cadet Name <span class="required">*</span></label>
                 <input type="text" id="cadet-name" name="cadet-name" class="form-input" placeholder="e.g. Nur Farhan bin Ahmad" required>
                 <span class="form-hint">Official civilian or registered cadet legal name</span>
               </div>
 
-              <!-- 2. Text Input: Cadet Call-sign / Codename -->
               <div class="form-group">
                 <label for="cadet-codename" class="form-label">Cadet Call-sign / Codename <span class="required">*</span></label>
                 <input type="text" id="cadet-codename" name="cadet-codename" class="form-input" placeholder="e.g. ThunderStrike_99 or NovaSolar" required>
                 <span class="form-hint">Your designated tactical codename in the field</span>
               </div>
 
-              <!-- 3. Password Input: TAPOPS Security Passcode (ACADEMIC REQUIREMENT) -->
               <div class="form-group">
                 <label for="cadet-password" class="form-label">
                   TAPOPS Security Passcode / Password <span class="required">*</span>
@@ -257,14 +209,12 @@
                 <span class="form-hint">Must contain at least 8 alphanumeric characters for terminal encryption</span>
               </div>
 
-              <!-- 4. Email / Text Input: Communications Frequency -->
               <div class="form-group">
                 <label for="cadet-email" class="form-label">Communications Frequency / Email <span class="required">*</span></label>
                 <input type="email" id="cadet-email" name="cadet-email" class="form-input" placeholder="cadet@tapops-academy.galaxy" required>
                 <span class="form-hint">Quantum encrypted subspace transmission address</span>
               </div>
 
-              <!-- 5. Selection (Dropdown): Primary Elemental Affinity -->
               <div class="form-group">
                 <label for="elemental-affinity" class="form-label">Primary Elemental Affinity <span class="required">*</span></label>
                 <select id="elemental-affinity" name="elemental-affinity" class="form-select" required>
@@ -280,7 +230,6 @@
                 <span class="form-hint">The primal elemental force resonating closest to your spirit</span>
               </div>
 
-              <!-- 6. Radio Buttons: Cadet Division Preference -->
               <div class="form-group">
                 <label class="form-label">Cadet Tactical Division Preference <span class="required">*</span></label>
                 <div class="form-radio-group">
@@ -304,14 +253,12 @@
                 <span class="form-hint">Deployment role within the TAPOPS galactic fleet</span>
               </div>
 
-              <!-- 7. Textarea: Transmission Message -->
               <div class="form-group">
                 <label for="transmission-message" class="form-label">Subspace Transmission Dispatch <span class="required">*</span></label>
                 <textarea id="transmission-message" name="transmission-message" class="form-textarea" rows="4" placeholder="State your mission objective, fan appreciation dispatch, or galactic situation report to TAPOPS High Command..." required></textarea>
                 <span class="form-hint">All dispatches are subject to encrypted subspace review</span>
               </div>
 
-              <!-- 8. Checkbox: Code of Honor Checkbox -->
               <div class="form-group">
                 <label class="form-checkbox-wrap" for="honor-pledge">
                   <input type="checkbox" id="honor-pledge" name="honor-pledge" class="form-checkbox" required>
@@ -321,18 +268,14 @@
                 </label>
               </div>
 
-              <!-- 9. Submit Button -->
               <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; font-family: var(--font-display); font-weight: 800; letter-spacing: 0.04em;">
                 Transmit to TAPOPS HQ 🚀
               </button>
             </form>
           </div>
 
-          <!-- ---------------------------------------------------------------
-               COLUMN 2: Academic Assignment & Author Dossier Card (#student-profile)
-               --------------------------------------------------------------- -->
           <div class="student-card" id="student-profile" aria-labelledby="dossier-heading">
-            <!-- Student Header -->
+            
             <div class="student-header">
               <div class="student-avatar-badge" aria-label="Cadet Avatar Badge">RU</div>
               <div>
@@ -345,7 +288,6 @@
               </div>
             </div>
 
-            <!-- Student Metadata Table -->
             <table class="student-table" aria-label="Student and Project Metadata">
               <tbody>
                 <tr>
@@ -379,7 +321,6 @@
               </tbody>
             </table>
 
-            <!-- Group Members Table (Maximum 5 Students per Rubric) -->
             <div class="mt-3 mb-3">
               <h4 style="font-size: 0.95rem; color: var(--primary-orange); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.4rem;">
                 <span>👥</span> Project 1 Group Members (Max. 5 Students)
@@ -428,7 +369,6 @@
               </table>
             </div>
 
-            <!-- Academic Specification Compliance Checklist -->
             <div>
               <h4 class="mb-3" style="font-size: 1.05rem; color: var(--accent-amber); display: flex; align-items: center; gap: 0.5rem;">
                 <span>📋</span> Academic Specification Compliance Checklist
@@ -466,7 +406,6 @@
       </div>
     </section>
 
-    <!-- Interactive Pure CSS FAQ Accordion Section -->
     <section class="section section-alt" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-header text-center">
@@ -479,7 +418,6 @@
 
         <div class="faq-list">
 
-          <!-- FAQ Question 1: TAPOPS Mandate -->
           <details class="faq-item" open>
             <summary class="faq-question">
               <span>What is TAPOPS and what is its primary galactic mission?</span>
@@ -494,7 +432,6 @@
             </div>
           </details>
 
-          <!-- FAQ Question 2: Creators & History -->
           <details class="faq-item">
             <summary class="faq-question">
               <span>Who created BoBoiBoy and how has the franchise grown globally since 2011?</span>
@@ -509,7 +446,6 @@
             </div>
           </details>
 
-          <!-- FAQ Question 3: Power Sphera Mechanics -->
           <details class="faq-item">
             <summary class="faq-question">
               <span>What are Power Spheras, and why do alien warlords like Adu Du and Retak'ka hunt them?</span>
@@ -524,7 +460,6 @@
             </div>
           </details>
 
-          <!-- FAQ Question 4: Evolutions vs Fusions -->
           <details class="faq-item">
             <summary class="faq-question">
               <span>What is the difference between Second-Tier Evolutions and Elemental Fusions?</span>
@@ -539,7 +474,6 @@
             </div>
           </details>
 
-          <!-- FAQ Question 5: Technical Architecture -->
           <details class="faq-item">
             <summary class="faq-question">
               <span>How was this BoBoiBoy Universe website engineered using 100% pure HTML5 &amp; CSS3?</span>
@@ -563,11 +497,10 @@
 
   </main>
 
-  <!-- Universal Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        <!-- Brand Column -->
+        
         <div class="footer-brand">
           <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
             <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
@@ -577,7 +510,6 @@
           </p>
         </div>
 
-        <!-- Universe Links -->
         <div>
           <h4 class="footer-col-title">Universe</h4>
           <ul class="footer-links">
@@ -588,7 +520,6 @@
           </ul>
         </div>
 
-        <!-- Navigation Links -->
         <div>
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
@@ -599,7 +530,6 @@
           </ul>
         </div>
 
-        <!-- Quote Column -->
         <div>
           <div class="footer-quote">
             <span class="quote-badge">Signature Battle Cry</span>
@@ -609,7 +539,6 @@
         </div>
       </div>
 
-      <!-- Footer Bottom -->
       <div class="footer-bottom">
         <p class="footer-copy">
           &copy; 2026 BoBoiBoy Universe Portal. Original BoBoiBoy characters, series, and intellectual property &copy; Animonsta Studios Sdn. Bhd. (Monsta). Created for educational and academic showcase purposes.

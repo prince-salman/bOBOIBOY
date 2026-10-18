@@ -7,41 +7,6 @@
   <title>BoBoiBoy Universe | Master Frame Portal (Resident University Project 1)</title>
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- =========================================================================
-       ACADEMIC REQUIREMENT: INTERNAL CSS (<style> Tag in Master Frame)
-       Demonstrating all 4 required property categories (minimum 5 properties each):
-       1. Background Properties:
-          - background-color
-          - background-image
-          - background-position
-          - background-repeat
-          - background-size
-          - background-attachment
-       2. Text and Font Properties:
-          - font-family
-          - font-size
-          - font-weight
-          - font-style
-          - line-height
-          - text-align
-          - text-transform
-          - letter-spacing
-          - color
-       3. Dimension Properties:
-          - width
-          - min-width
-          - max-width
-          - height
-          - min-height
-          - max-height
-       4. Positioning Properties:
-          - position
-          - top
-          - right
-          - bottom
-          - left
-          - z-index
-       ========================================================================= -->
   <style>
     /* CSS Master Layout Styling for Frame Architecture */
     html, body {
@@ -207,7 +172,6 @@
 
   <div class="master-wrapper">
 
-    <!-- Academic Metadata Topbar (Outside Main Frame) -->
     <div class="academic-topbar">
       <div class="academic-topbar-left">
         <span class="academic-pill">RESIDENT UNIVERSITY</span>
@@ -218,14 +182,12 @@
       </div>
     </div>
 
-    <!-- Master Sticky Header & Navigation (EXCLUDED FROM MAIN FRAME) -->
     <header class="master-header">
       <div class="container nav-container" style="padding-top: 0.6rem; padding-bottom: 0.6rem;">
         <a href="home.html" target="mainFrame" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
           <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
         </a>
 
-        <!-- Pure CSS Mobile Hamburger Toggle -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
         <label for="nav-toggle" class="nav-toggle-label">
           <span class="hamburger-bar"></span>
@@ -233,7 +195,6 @@
           <span class="hamburger-bar"></span>
         </label>
 
-        <!-- Navigation Menu with TARGET="mainFrame" -->
         <nav class="nav-menu">
           <ul class="nav-list">
             <li><a href="home.html" target="mainFrame" class="nav-link active">Home</a></li>
@@ -246,14 +207,12 @@
       </div>
     </header>
 
-    <!-- Master Content Frame (The 5 Interconnected Pages Render Inside Here) -->
     <div class="main-frame-container" role="main">
       <iframe name="mainFrame" id="mainFrame" src="home.html" class="master-iframe" title="BoBoiBoy Universe Main Content Frame">
         <p>Your browser does not support iframes. Please view the content directly at <a href="home.html">Home Overview</a>.</p>
       </iframe>
     </div>
 
-    <!-- Master Frame Bottom Status Bar -->
     <div class="master-statusbar">
       <div class="status-indicator">
         <span class="status-dot"></span>
