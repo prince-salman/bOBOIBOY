@@ -3,120 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="BoBoiBoy Universe Master Frame Portal. Features full master frame architecture with external navigation.">
-  <title>BoBoiBoy Universe | Master Frame Portal</title>
+  <meta name="description" content="BoBoiBoy Galactic Universe Portal. Explore 7 elemental powers, hero dossiers, movies, and TAPOPS space defense.">
+  <title>BoBoiBoy Universe | Defend the Galaxy</title>
   <link rel="stylesheet" href="css/style.css">
-
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: #ffffff;
-      font-family: var(--font-body);
+    .portal-hero-banner {
+      background-color: #ffffff; background-image: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: scroll;
+      color: #0f172a; font-family: var(--font-sans); font-size: 0.95rem; font-weight: 600; line-height: 1.4;
+      text-align: left; text-transform: none; width: 100%; min-width: 100%; max-width: 100%; height: auto;
+      min-height: 68px; max-height: 90px; position: sticky; top: 0; left: 0; right: 0; z-index: 100;
+      border-bottom: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.03);
     }
-
-    .master-wrapper {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      min-width: 320px;
-      max-width: 100%;
-      height: 100vh;
-      min-height: 100%;
-      max-height: 100vh;
-      position: relative;
-      top: 0;
-      left: 0;
-      z-index: 1;
+    .ordered-protocol-list {
+      counter-reset: step; list-style: none; padding-left: 0; margin: 1rem 0;
+      display: flex; flex-direction: column; gap: 0.65rem;
     }
-
-    .master-header {
-      background-color: #ffffff;
-      background-image: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: scroll;
-      color: #0f172a;
-      font-family: var(--font-body);
-      font-size: 0.95rem;
-      font-weight: 600;
-      line-height: 1.4;
-      text-align: left;
-      text-transform: none;
-      width: 100%;
-      min-width: 100%;
-      max-width: 100%;
-      height: auto;
-      min-height: 68px;
-      max-height: 90px;
-      position: sticky;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      flex-shrink: 0;
-      border-bottom: 1px solid #e2e8f0;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    .ordered-protocol-list > li {
+      counter-increment: step; position: relative; padding-left: 2.4rem;
+      line-height: 1.4; font-size: 0.92rem; color: var(--text-secondary);
     }
-
-    .main-frame-container {
-      flex: 1 1 auto;
-      width: 100%;
-      height: calc(100vh - 68px);
-      min-height: 200px;
-      position: relative;
-      overflow: hidden;
-      background-color: #ffffff;
-    }
-
-    .master-iframe {
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-      border: none;
-      display: block;
-      background-color: #ffffff;
+    .ordered-protocol-list > li::before {
+      content: counter(step); position: absolute; left: 0; top: 0;
+      width: 1.7rem; height: 1.7rem; border-radius: 50%;
+      background: var(--primary-orange); color: #fff; font-weight: 700;
+      font-size: 0.8rem; display: flex; align-items: center; justify-content: center;
     }
   </style>
 </head>
 <body>
 
-  <div class="master-wrapper">
-
-    <header class="master-header">
-      <div class="container nav-container" style="padding-top: 0.6rem; padding-bottom: 0.6rem;">
-        <a href="home.html" target="mainFrame" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
-          <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
-        </a>
-
-        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-        </label>
-
-        <nav class="nav-menu">
-          <ul class="nav-list">
-            <li><a href="home.html" target="mainFrame" class="nav-link active">Home</a></li>
-            <li><a href="characters.html" target="mainFrame" class="nav-link">Characters</a></li>
-            <li><a href="elements.html" target="mainFrame" class="nav-link">Elements</a></li>
-            <li><a href="series.html" target="mainFrame" class="nav-link">Series &amp; Movies</a></li>
-            <li><a href="contact.html" target="mainFrame" class="nav-link">Cadet Hub</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="main-frame-container" role="main">
-      <iframe name="mainFrame" id="mainFrame" src="home.html" class="master-iframe" title="BoBoiBoy Universe Main Content Frame">
-        <p>Your browser does not support iframes. Please view the content directly at <a href="home.html">Home Overview</a>.</p>
-      </iframe>
+  <header class="master-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></label>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="characters.html" class="nav-link">Characters</a></li>
+          <li><a href="elements.html" class="nav-link">Elements</a></li>
+          <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
+          <li><a href="contact.html" class="nav-link">Cadet Hub</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-  </div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">Defend the Galaxy with <span class="highlight">Elemental Powers</span></h1>
+          <p class="hero-subtitle">Follow BoBoiBoy and his heroic friends as they harness extraordinary elemental forces to safeguard Power Spheras across the cosmos with TAPOPS.</p>
+          <div class="hero-cta">
+            <a href="characters.html" class="btn btn-primary btn-lg">Explore Heroes</a>
+            <a href="elements.html" class="btn btn-secondary btn-lg">Discover Elements</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-badge-card" style="background:#fff; width:100%; max-width:340px; padding:1.25rem; text-align:center; border:1px solid #e2e8f0; border-radius:8px;">
+            <img src="images/logo.svg" alt="BoBoiBoy Emblem" width="180" height="50" style="margin:0 auto 1rem auto;">
+            <h3 class="text-orange" style="font-size:1.15rem; margin-bottom:0.3rem;">Elemental Vanguard</h3>
+            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.75rem;">7 Primal Forces &bull; Clone Splitting &bull; TAPOPS Space Defense</p>
+            <div class="flex flex-center flex-wrap gap-1"><span class="badge badge-lightning">Tier 3 Master</span><span class="badge badge-fire">TAPOPS Cadet</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip stats-section" aria-label="Galactic Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card"><div class="stat-number">7</div><div class="stat-label">Elemental Tiers</div></div>
+          <div class="stat-card"><div class="stat-number">5</div><div class="stat-label">Core Heroes</div></div>
+          <div class="stat-card"><div class="stat-number">3</div><div class="stat-label">Feature Films</div></div>
+          <div class="stat-card"><div class="stat-number">100+</div><div class="stat-label">Episodes</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding: 1.5rem 0;">
+      <div class="container">
+        <div style="background:#fff; border:1px solid #e2e8f0; border-radius:8px; padding:1.25rem; margin-bottom:1.5rem;">
+          <span class="badge badge-lightning" style="margin-bottom:0.35rem; display:inline-block;">Official Announcement</span>
+          <h2 style="font-size:1.15rem; margin-bottom:0.25rem;">Welcome to BoBoiBoy Galactic Command</h2>
+          <p class="text-secondary" style="font-size:0.9rem; margin:0;">Master frame content portal demonstrating pure HTML5 semantic architecture and CSS3 styling standards.</p>
+        </div>
+        <div class="card" style="padding: 1.5rem; border-left: 4px solid var(--primary-orange);">
+          <h2 class="h3" style="font-size:1.25rem; margin-bottom:0.4rem;">Galactic Cadet Orientation Procedure</h2>
+          <ol class="ordered-protocol-list">
+            <li><strong>Survey the 7 Elemental Tiers:</strong> Explore Tier 1 sparks, Tier 2 forms, and dual fusions on the <a href="elements.html" class="text-orange" style="font-weight:700;">Elements Database</a>.</li>
+            <li><strong>Review TAPOPS Vanguard Heroes:</strong> Inspect profiles for BoBoiBoy, Yaya, Ying, Gopal, Fang, and Ochobot on the <a href="characters.html" class="text-orange" style="font-weight:700;">Characters Dossier</a>.</li>
+            <li><strong>Enlist at TAPOPS Space Academy:</strong> Choose your fleet division and submit your enlistment dispatch on the <a href="contact.html" class="text-orange" style="font-weight:700;">Cadet Hub</a>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="lore" aria-labelledby="lore-title">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title" id="lore-title">Origin of the Elemental Power Spheras</h2>
+          <p class="section-subtitle">Ancient artifacts engineered to bestow boundless elemental manipulation upon worthy protectors.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title text-orange">The Tok Aba Cocoa Outpost</h3>
+            <p class="text-secondary" style="margin-bottom: 0.75rem;">BoBoiBoy's journey began on Earth when he visited his grandfather Tok Aba on Pulau Rintis. Upon awakening Power Sphera Ochobot, BoBoiBoy was granted the extraordinary power to manipulate Lightning, Wind, and Earth.</p>
+            <p class="text-secondary">Through unwavering courage, he learned to split into three distinct elemental manifestations simultaneously via Kuasa Tiga.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title text-orange">TAPOPS Interstellar Commission</h3>
+            <p class="text-secondary" style="margin-bottom: 0.75rem;">Recruited into TAPOPS (Tracker and Protector of Power Spheras) under Commander Koko Ci, BoBoiBoy and his trusted comrades journey across hostile galaxies.</p>
+            <p class="text-secondary">Together, they recover endangered robotic Power Spheras, unlock advanced Tier 2 masteries, and achieve transcendent dual-element fusions against galactic conquerors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="radar" aria-labelledby="radar-title">
+      <div class="container">
+        <div class="section-header text-center" style="margin-bottom: 1.25rem;">
+          <h2 class="section-title" id="radar-title">Galactic Live Mission Frame</h2>
+          <p class="section-subtitle">Real-time tactical data link embedded via HTML5 iframe architecture.</p>
+        </div>
+        <div class="table-container">
+          <iframe name="mainFrame" id="mainFrame" src="elements.html" title="Galactic Mission Showcase" style="width: 100%; height: 320px; border: none; display: block;">
+            <p>Your browser does not support iframes. Explore the <a href="elements.html">Elements Database</a> directly.</p>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
+        <p class="text-secondary" style="font-size:0.85rem; margin-top:0.4rem;">Defending the galaxy with TAPOPS and 7 primal elements.</p>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Galactic Home</a></li>
+          <li><a href="characters.html" class="footer-link">Hero Roster</a></li>
+          <li><a href="elements.html" class="footer-link">Elemental Powers</a></li>
+          <li><a href="contact.html#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-quote"><p class="quote-text">"Awesome! Protect this galaxy at all costs!"</p><p class="quote-author">&mdash; BoBoiBoy</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center" style="padding-top:0.75rem; border-top:1px solid #e2e8f0; font-size:0.8rem; color:#64748b;">
+      <p>&copy; 2026 BoBoiBoy Universe Portal. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

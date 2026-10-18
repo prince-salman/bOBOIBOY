@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Master the 7 elemental powers of BoBoiBoy. Deep dive into Tier 1 base awakenings, Tier 2 evolved masteries, and legendary Tier 3 elemental fusions.">
+  <meta name="description" content="Master 7 elemental powers of BoBoiBoy across 3 evolutionary tiers, dual elemental fusions, and full tactical combat matrix.">
   <title>The 7 Elemental Powers &amp; Fusions | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
-
   <style>
     .evolution-hierarchy-box {
-      background-color: #f8fafc; background-image: none; background-position: center right;
+      background-color: #f8fafc; background-image: none; background-position: top left;
       background-repeat: no-repeat; background-size: auto; background-attachment: scroll;
       font-family: var(--font-sans); font-size: 1.1rem; font-weight: 700;
       text-align: left; text-transform: uppercase; line-height: 1.35;
@@ -36,6 +35,25 @@
 </head>
 <body>
 
+  <header class="master-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></label>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="characters.html" class="nav-link">Characters</a></li>
+          <li><a href="elements.html" class="nav-link active">Elements</a></li>
+          <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
+          <li><a href="contact.html" class="nav-link">Cadet Hub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <section class="hero" aria-labelledby="elements-page-title">
       <div class="container text-center">
@@ -60,61 +78,22 @@
 
     <section class="section" id="elemental-powers" aria-labelledby="elements-heading">
       <div class="container">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <h2 class="section-title" id="elements-heading">The 7 Primal Elements</h2>
-        </div>
+        <div class="section-header" style="margin-bottom: 1.5rem;"><h2 class="section-title" id="elements-heading">The 7 Primal Elements</h2></div>
         <div class="elements-grid">
-          <article class="element-card glow-lightning">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/lightning.png" alt="Halilintar Render" width="56" height="56"></div><span class="badge badge-lightning">Speed</span></div>
-            <h3 class="element-name text-lightning" style="font-size:1.05rem;">Lightning &bull; Halilintar</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Supersonic velocity and surgical cutting lethality with dual Pedang Halilintar.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Hujan Pedang Halilintar</span></div>
-          </article>
-          <article class="element-card glow-wind">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/wind.png" alt="Taufan Render" width="56" height="56"></div><span class="badge badge-wind">Mobility</span></div>
-            <h3 class="element-name text-wind" style="font-size:1.05rem;">Wind &bull; Taufan</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Sovereign of atmospheric currents riding his high-speed cyclone hoverboard.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Taufan Gerudi Beliung</span></div>
-          </article>
-          <article class="element-card glow-earth">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/earth.png" alt="Gempa Render" width="56" height="56"></div><span class="badge badge-earth">Defense</span></div>
-            <h3 class="element-name text-earth" style="font-size:1.05rem;">Earth &bull; Gempa</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Fortress vanguard commanding seismic shockwaves and summoning giant rock golems.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Tumbukan Golem Gempa</span></div>
-          </article>
-          <article class="element-card glow-fire">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/fire.png" alt="Blaze Render" width="56" height="56"></div><span class="badge badge-fire">Offense</span></div>
-            <h3 class="element-name text-fire" style="font-size:1.05rem;">Fire &bull; Blaze</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">High-temperature offensive fury armed with twin flaming explosive chakrams.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Hentakan Bebola Api Gergasi</span></div>
-          </article>
-          <article class="element-card glow-water">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/water.png" alt="Ais Render" width="56" height="56"></div><span class="badge badge-water">Cryo</span></div>
-            <h3 class="element-name text-water" style="font-size:1.05rem;">Water &bull; Ais</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Sub-zero permafrost freezing precision with crystalline cryo-arrows at range.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Panah Ais Beku Mutlak</span></div>
-          </article>
-          <article class="element-card glow-leaf">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/leaf.png" alt="Duri Render" width="56" height="56"></div><span class="badge badge-leaf">Nature</span></div>
-            <h3 class="element-name text-leaf" style="font-size:1.05rem;">Leaf &bull; Duri</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Bio-organic environmental dominion with barbed ivy whips and thorny traps.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Ikatan Duri Menjalar</span></div>
-          </article>
-          <article class="element-card glow-light">
-            <div class="element-header"><div class="element-icon-wrap"><img src="images/elements/light.png" alt="Solar Render" width="56" height="56"></div><span class="badge badge-light">Photonic</span></div>
-            <h3 class="element-name text-light" style="font-size:1.05rem;">Light &bull; Solar</h3>
-            <p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Apex manifestation of photonic energy discharging orbital solar cannons.</p>
-            <div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Tembakan Solar Maksima</span></div>
-          </article>
+          <article class="element-card glow-lightning"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/lightning.png" alt="Halilintar Render" width="56" height="56"></div><span class="badge badge-lightning">Speed</span></div><h3 class="element-name text-lightning" style="font-size:1.05rem;">Lightning &bull; Halilintar</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Supersonic velocity and surgical cutting lethality with dual Pedang Halilintar.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Hujan Pedang Halilintar</span></div></article>
+          <article class="element-card glow-wind"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/wind.png" alt="Taufan Render" width="56" height="56"></div><span class="badge badge-wind">Mobility</span></div><h3 class="element-name text-wind" style="font-size:1.05rem;">Wind &bull; Taufan</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Sovereign of atmospheric currents riding his high-speed cyclone hoverboard.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Taufan Gerudi Beliung</span></div></article>
+          <article class="element-card glow-earth"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/earth.png" alt="Gempa Render" width="56" height="56"></div><span class="badge badge-earth">Defense</span></div><h3 class="element-name text-earth" style="font-size:1.05rem;">Earth &bull; Gempa</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Fortress vanguard commanding seismic shockwaves and summoning giant rock golems.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Tumbukan Golem Gempa</span></div></article>
+          <article class="element-card glow-fire"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/fire.png" alt="Blaze Render" width="56" height="56"></div><span class="badge badge-fire">Offense</span></div><h3 class="element-name text-fire" style="font-size:1.05rem;">Fire &bull; Blaze</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">High-temperature offensive fury armed with twin flaming explosive chakrams.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Hentakan Bebola Api Gergasi</span></div></article>
+          <article class="element-card glow-water"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/water.png" alt="Ais Render" width="56" height="56"></div><span class="badge badge-water">Cryo</span></div><h3 class="element-name text-water" style="font-size:1.05rem;">Water &bull; Ais</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Sub-zero permafrost freezing precision with crystalline cryo-arrows at range.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Panah Ais Beku Mutlak</span></div></article>
+          <article class="element-card glow-leaf"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/leaf.png" alt="Duri Render" width="56" height="56"></div><span class="badge badge-leaf">Nature</span></div><h3 class="element-name text-leaf" style="font-size:1.05rem;">Leaf &bull; Duri</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Bio-organic environmental dominion with barbed ivy whips and thorny traps.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Ikatan Duri Menjalar</span></div></article>
+          <article class="element-card glow-light"><div class="element-header"><div class="element-icon-wrap"><img src="images/elements/light.png" alt="Solar Render" width="56" height="56"></div><span class="badge badge-light">Photonic</span></div><h3 class="element-name text-light" style="font-size:1.05rem;">Light &bull; Solar</h3><p class="text-secondary" style="font-size:0.85rem; margin-bottom:0.4rem;">Apex manifestation of photonic energy discharging orbital solar cannons.</p><div class="card-footer"><span class="text-xs text-muted"><strong>Move:</strong> Tembakan Solar Maksima</span></div></article>
         </div>
       </div>
     </section>
 
     <section class="section section-alt" id="elemental-fusions" aria-labelledby="fusions-heading">
       <div class="container">
-        <div class="section-header" style="margin-bottom: 1.5rem;">
-          <h2 class="section-title" id="fusions-heading">Dual-Elemental Fusions</h2>
-        </div>
+        <div class="section-header" style="margin-bottom: 1.5rem;"><h2 class="section-title" id="fusions-heading">Dual-Elemental Fusions</h2></div>
         <div class="grid-2">
           <article class="card glow-fire">
             <div class="flex items-center gap-2 mb-1"><img src="images/elements/frostfire.png" alt="FrostFire Render" width="60" height="60"><div><span class="badge badge-fire">Blaze + Ice</span><h3 class="card-title text-orange" style="margin:0.1rem 0;">BoBoiBoy FrostFire</h3></div></div>
@@ -138,22 +117,18 @@
 
     <section class="section" id="combat-matrix" aria-labelledby="matrix-heading">
       <div class="container">
-        <div class="section-header" style="margin-bottom: 1.25rem;">
-          <h2 class="section-title" id="matrix-heading">Elemental Combat Matrix</h2>
-        </div>
+        <div class="section-header" style="margin-bottom: 1.25rem;"><h2 class="section-title" id="matrix-heading">Elemental Combat Matrix</h2></div>
         <div class="table-container">
           <table class="data-table" aria-label="Elemental Matrix">
-            <thead>
-              <tr><th>Element</th><th>Malay Names</th><th>Tier 1</th><th>Tier 2</th><th>Signature Weapon</th><th>Prime Fusion</th></tr>
-            </thead>
+            <thead><tr><th>Element</th><th>Malay Names</th><th>Tier 1</th><th>Tier 2</th><th>Signature Weapon</th><th>Prime Fusion</th></tr></thead>
             <tbody>
               <tr><td><strong class="text-lightning">Lightning</strong></td><td>Petir &rarr; Halilintar</td><td>BoBoiBoy Petir</td><td>BoBoiBoy Halilintar</td><td>Pedang Halilintar</td><td><span class="badge badge-light">Solar (Supra)</span></td></tr>
-              <tr><td><strong class="text-wind">Wind</strong></td><td>Angin &rarr; Taufan</td><td>BoBoiBoy Angin</td><td>BoBoiBoy Taufan</td><td>Papan Luncur Taufan</td><td><span class="badge badge-fire">Fire (Beliung)</span></td></tr>
-              <tr><td><strong class="text-earth">Earth</strong></td><td>Tanah &rarr; Gempa</td><td>BoBoiBoy Tanah</td><td>BoBoiBoy Gempa</td><td>Golem Gempa</td><td><span class="badge badge-water">Ice (Glacier)</span></td></tr>
-              <tr><td><strong class="text-fire">Fire</strong></td><td>Api &rarr; Blaze</td><td>BoBoiBoy Api</td><td>BoBoiBoy Blaze</td><td>Cakera Api</td><td><span class="badge badge-water">Ice (FrostFire)</span></td></tr>
-              <tr><td><strong class="text-water">Water</strong></td><td>Air &rarr; Ais</td><td>BoBoiBoy Air</td><td>BoBoiBoy Ais</td><td>Panah Ais</td><td><span class="badge badge-fire">Fire (FrostFire)</span></td></tr>
-              <tr><td><strong class="text-leaf">Leaf</strong></td><td>Daun &rarr; Duri</td><td>BoBoiBoy Daun</td><td>BoBoiBoy Duri</td><td>Barbed Ivy Whips</td><td><span class="badge badge-light">Solar (SORI)</span></td></tr>
-              <tr><td><strong class="text-light">Light</strong></td><td>Cahaya &rarr; Solar</td><td>BoBoiBoy Cahaya</td><td>BoBoiBoy Solar</td><td>Meriam Solar Gerhana</td><td><span class="badge badge-lightning">Lightning (Supra)</span></td></tr>
+              <tr><td><strong class="text-wind">Wind</strong></td><td>Angin &rarr; Taufan</td><td>BoBoiBoy Angin</td><td>BoBoiBoy Taufan</td><td>Hoverboard Taufan</td><td><span class="badge badge-fire">Fire (Gentar)</span></td></tr>
+              <tr><td><strong class="text-earth">Earth</strong></td><td>Tanah &rarr; Gempa</td><td>BoBoiBoy Tanah</td><td>BoBoiBoy Gempa</td><td>Sarung Tangan Batu</td><td><span class="badge badge-water">Ice (Glacier)</span></td></tr>
+              <tr><td><strong class="text-fire">Fire</strong></td><td>Api &rarr; Blaze</td><td>BoBoiBoy Api</td><td>BoBoiBoy Blaze</td><td>Chakram Api</td><td><span class="badge badge-water">Ice (FrostFire)</span></td></tr>
+              <tr><td><strong class="text-water">Water</strong></td><td>Air &rarr; Ais</td><td>BoBoiBoy Air</td><td>BoBoiBoy Ais</td><td>Busur Panah Ais</td><td><span class="badge badge-fire">Fire (FrostFire)</span></td></tr>
+              <tr><td><strong class="text-leaf">Leaf</strong></td><td>Daun &rarr; Duri</td><td>BoBoiBoy Daun</td><td>BoBoiBoy Duri</td><td>Rambatan Duri</td><td><span class="badge badge-light">Solar (SORI)</span></td></tr>
+              <tr><td><strong class="text-light">Light</strong></td><td>Cahaya &rarr; Solar</td><td>BoBoiBoy Cahaya</td><td>BoBoiBoy Solar</td><td>Pedang / Meriam Solar</td><td><span class="badge badge-lightning">Lightning (Supra)</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -164,17 +139,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="home.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
+        <a href="index.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
         <p class="text-secondary" style="font-size:0.85rem; margin-top:0.4rem;">Defending the galaxy with TAPOPS and 7 primal elements.</p>
       </div>
       <div>
         <h4 class="footer-col-title">Navigation</h4>
         <ul class="footer-links">
-          <li><a href="home.html" class="footer-link">Galactic Home</a></li>
-          <li><a href="#evolution-tiers" class="footer-link">Evolution Tiers</a></li>
-          <li><a href="#elemental-powers" class="footer-link">The 7 Elements</a></li>
-          <li><a href="#elemental-fusions" class="footer-link">Elemental Fusions</a></li>
-          <li><a href="#combat-matrix" class="footer-link">Tactical Matrix</a></li>
+          <li><a href="index.html" class="footer-link">Galactic Home</a></li>
+          <li><a href="characters.html" class="footer-link">Hero Roster</a></li>
+          <li><a href="elements.html" class="footer-link">Elemental Powers</a></li>
+          <li><a href="contact.html#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
         </ul>
       </div>
       <div>

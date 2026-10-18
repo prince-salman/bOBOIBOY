@@ -6,7 +6,6 @@
   <meta name="description" content="Enlist as a TAPOPS space cadet, transmit dispatches to galactic command, and explore the BoBoiBoy Universe Portal.">
   <title>TAPOPS Cadet Hub &amp; Contact | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
-
   <style>
     .cadet-protocol-box {
       background-color: #f8fafc; background-image: none; background-position: top left;
@@ -35,6 +34,25 @@
   </style>
 </head>
 <body>
+
+  <header class="master-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></label>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="characters.html" class="nav-link">Characters</a></li>
+          <li><a href="elements.html" class="nav-link">Elements</a></li>
+          <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
+          <li><a href="contact.html" class="nav-link active">Cadet Hub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <section class="hero" aria-labelledby="fanhub-banner-title">
@@ -117,19 +135,19 @@
         <div class="section-header text-center" style="margin-bottom: 1.5rem;">
           <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
         </div>
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary class="faq-question"><span>What is TAPOPS and its galactic mission?</span></summary>
-            <div class="faq-answer"><p><strong>TAPOPS</strong> (Tracker and Protector of Power Spheras) is an interstellar defense coalition tasked with locating and safeguarding ancient Power Spheras from mercenary warlords and space conquerors.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question"><span>What is the difference between Evolutions and Fusions?</span></summary>
-            <div class="faq-answer"><p><strong>Tier 2 Evolutions</strong> (Halilintar, Taufan, Gempa, etc.) are deepened single-element upgrades. <strong>Elemental Fusions</strong> (FrostFire, Glacier, Supra, SORI) merge two distinct elements simultaneously into a hybrid warrior.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary class="faq-question"><span>How is this website engineered with pure HTML5 &amp; CSS3?</span></summary>
-            <div class="faq-answer"><p>The site uses semantic HTML5 elements, pure CSS mobile navigation drawer via the hidden checkbox pattern, accessible form validation, and CSS custom property design tokens with zero JavaScript dependencies.</p></div>
-          </details>
+        <div class="faq-list" style="max-width: 680px; margin: 0 auto;">
+          <div class="faq-item">
+            <h3 class="faq-question">What is TAPOPS?</h3>
+            <p class="faq-answer">TAPOPS (Tracker And Protector of Power Spheras) is a galactic organization dedicated to safeguarding robotic Power Spheras from evil entities across the cosmos.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">How does BoBoiBoy command 7 elements?</h3>
+            <p class="faq-answer">BoBoiBoy was granted elemental powers by Power Sphera Ochobot. He splits into clones to master Lightning, Wind, Earth, Fire, Water, Leaf, and Light.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">What are Elemental Fusions?</h3>
+            <p class="faq-answer">Introduced in BoBoiBoy Movie 2, fusions combine two distinct elemental forms into a single high-tier manifestation such as FrostFire, Glacier, Supra, and SORI.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -138,16 +156,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="home.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
+        <a href="index.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
         <p class="text-secondary" style="font-size:0.85rem; margin-top:0.4rem;">Defending the galaxy with TAPOPS and 7 primal elements.</p>
       </div>
       <div>
         <h4 class="footer-col-title">Navigation</h4>
         <ul class="footer-links">
-          <li><a href="home.html" class="footer-link">Galactic Home</a></li>
-          <li><a href="#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
+          <li><a href="index.html" class="footer-link">Galactic Home</a></li>
           <li><a href="characters.html" class="footer-link">Hero Roster</a></li>
-          <li><a href="#faq" class="footer-link">Galactic FAQ</a></li>
+          <li><a href="elements.html" class="footer-link">Elemental Powers</a></li>
+          <li><a href="contact.html#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
         </ul>
       </div>
       <div>

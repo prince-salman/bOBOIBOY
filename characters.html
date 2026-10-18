@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the galactic heroes of TAPOPS in the BoBoiBoy Universe. Complete dossiers for BoBoiBoy, Yaya, Ying, Gopal, Fang, Ochobot, and mentors Tok Aba and Papa Zola.">
+  <meta name="description" content="Explore galactic heroes of TAPOPS in BoBoiBoy Universe. Complete dossiers for BoBoiBoy, Yaya, Ying, Gopal, Fang, Ochobot, Tok Aba, Papa Zola.">
   <title>Galactic Heroes &amp; Cadets | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
-
   <style>
     .hero-dossier-highlight {
       background-color: #f8fafc; background-image: none; background-position: center top;
@@ -21,6 +20,25 @@
   </style>
 </head>
 <body>
+
+  <header class="master-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></label>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="characters.html" class="nav-link active">Characters</a></li>
+          <li><a href="elements.html" class="nav-link">Elements</a></li>
+          <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
+          <li><a href="contact.html" class="nav-link">Cadet Hub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <section class="hero" aria-labelledby="characters-page-title">
@@ -39,16 +57,9 @@
         </div>
 
         <div class="character-grid">
-
           <article class="character-card glow-fire">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #ff7043, #d84315);">
-              <img src="images/boboiboy.png" alt="BoBoiBoy Avatar" class="character-avatar" width="80" height="80">
-            </div>
-            <div class="character-header">
-              <span class="badge badge-fire mb-1">Elemental Leader</span>
-              <h3 class="character-name text-orange">BoBoiBoy</h3>
-              <div class="character-alias">Elemental Superhero &amp; Clone Master</div>
-            </div>
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #ff7043, #d84315);"><img src="images/boboiboy.png" alt="BoBoiBoy Avatar" class="character-avatar" width="80" height="80"></div>
+            <div class="character-header"><span class="badge badge-fire mb-1">Elemental Leader</span><h3 class="character-name text-orange">BoBoiBoy</h3><div class="character-alias">Elemental Superhero &amp; Clone Master</div></div>
             <p class="character-bio">Earth's premier defender commanding seven primal elements. Using Kuasa Tiga and Kuasa Tujuh, he splits into distinct clones to multiply tactical firepower across cosmic battlefields.</p>
             <div class="stat-group">
               <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 96%;" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">96%</span></div>
@@ -57,14 +68,8 @@
           </article>
 
           <article class="character-card glow-earth">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #ec4899, #be185d);">
-              <img src="images/yaya.png" alt="Yaya Avatar" class="character-avatar" width="80" height="80">
-            </div>
-            <div class="character-header">
-              <span class="badge badge-fire mb-1">Gravity Manipulator</span>
-              <h3 class="character-name" style="color: #ec4899;">Yaya</h3>
-              <div class="character-alias">High-Speed Flight &amp; Gravity Might</div>
-            </div>
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #ec4899, #be185d);"><img src="images/yaya.png" alt="Yaya Avatar" class="character-avatar" width="80" height="80"></div>
+            <div class="character-header"><span class="badge badge-fire mb-1">Gravity Manipulator</span><h3 class="character-name" style="color: #ec4899;">Yaya</h3><div class="character-alias">High-Speed Flight &amp; Gravity Might</div></div>
             <p class="character-bio">Wields gravity manipulation from Ochobot. She flies at supersonic speeds, lifts massive planetary debris, and delivers devastating gravitational punches against alien dreadnoughts.</p>
             <div class="stat-group">
               <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">92%</span></div>
@@ -73,14 +78,8 @@
           </article>
 
           <article class="character-card glow-wind">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #06b6d4, #0e7490);">
-              <img src="images/ying.png" alt="Ying Avatar" class="character-avatar" width="80" height="80">
-            </div>
-            <div class="character-header">
-              <span class="badge badge-wind mb-1">Temporal Speedster</span>
-              <h3 class="character-name text-wind">Ying</h3>
-              <div class="character-alias">Time Dilation &amp; Relativistic Agility</div>
-            </div>
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #06b6d4, #0e7490);"><img src="images/ying.png" alt="Ying Avatar" class="character-avatar" width="80" height="80"></div>
+            <div class="character-header"><span class="badge badge-wind mb-1">Temporal Speedster</span><h3 class="character-name text-wind">Ying</h3><div class="character-alias">Time Dilation &amp; Relativistic Agility</div></div>
             <p class="character-bio">Commands localized time distortion. She accelerates her own perception to relativistic speeds while slowing hostile targets, disarming explosive ordnance in microseconds.</p>
             <div class="stat-group">
               <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 82%;" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">82%</span></div>
@@ -89,14 +88,8 @@
           </article>
 
           <article class="character-card glow-fire">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #eab308, #ca8a04);">
-              <img src="images/gopal.png" alt="Gopal Avatar" class="character-avatar" width="80" height="80">
-            </div>
-            <div class="character-header">
-              <span class="badge badge-earth mb-1">Matter Transmuter</span>
-              <h3 class="character-name text-amber">Gopal</h3>
-              <div class="character-alias">Molecular Food Alchemy &amp; Support</div>
-            </div>
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #eab308, #ca8a04);"><img src="images/gopal.png" alt="Gopal Avatar" class="character-avatar" width="80" height="80"></div>
+            <div class="character-header"><span class="badge badge-earth mb-1">Matter Transmuter</span><h3 class="character-name text-amber">Gopal</h3><div class="character-alias">Molecular Food Alchemy &amp; Support</div></div>
             <p class="character-bio">BoBoiBoy's loyal best friend commanding atomic transmutation. He transforms lethal enemy laser blasts, steel barricades, and alien weaponry into candy, cookies, and snacks.</p>
             <div class="stat-group">
               <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">85%</span></div>
@@ -105,37 +98,24 @@
           </article>
 
           <article class="character-card glow-lightning">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #a855f7, #6b21a8);">
-              <img src="images/fang.png" alt="Fang Avatar" class="character-avatar" width="80" height="80">
-            </div>
-            <div class="character-header">
-              <span class="badge badge-lightning mb-1">Shadow Tactician</span>
-              <h3 class="character-name" style="color: #a855f7;">Fang</h3>
-              <div class="character-alias">Umbrageous Puppetry &amp; Shadow Beasts</div>
-            </div>
-            <p class="character-bio">TAPOPS Sergeant and brother of Captain Kaizo. Fang manipulates shadows into fierce kinetic beasts &mdash; Shadow Eagles, Tigers, and Dragons &mdash; to ambush and suppress hostile fleets.</p>
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #a855f7, #6b21a8);"><img src="images/fang.png" alt="Fang Avatar" class="character-avatar" width="80" height="80"></div>
+            <div class="character-header"><span class="badge badge-lightning mb-1">Shadow Tactician</span><h3 class="character-name" style="color: #a855f7;">Fang</h3><div class="character-alias">Shadow Manipulation &amp; TAPOPS Captain</div></div>
+            <p class="character-bio">Former rival turned staunch brother-in-arms. He manipulates darkness to form giant shadow eagles, impenetrable shadow barriers, and predatory shadow felines.</p>
             <div class="stat-group">
               <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">90%</span></div>
-              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">92%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 93%;" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">93%</span></div>
             </div>
           </article>
 
-          <article class="character-card glow-wind">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #38bdf8, #0284c7);">
-              <img src="images/ochobot.png" alt="Ochobot Avatar" class="character-avatar" width="80" height="80">
-            </div>
-            <div class="character-header">
-              <span class="badge badge-wind mb-1">Gen 9 Power Sphera</span>
-              <h3 class="character-name text-wind">Ochobot</h3>
-              <div class="character-alias">Interstellar Teleportation &amp; Catalyst</div>
-            </div>
-            <p class="character-bio">Awakened on Pulau Rintis by cocoa energy. Ochobot granted powers to the squad and provides instant cross-galaxy spatial teleportation for critical TAPOPS tactical extractions.</p>
+          <article class="character-card glow-water">
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #38bdf8, #0284c7);"><img src="images/ochobot.png" alt="Ochobot Avatar" class="character-avatar" width="80" height="80"></div>
+            <div class="character-header"><span class="badge badge-water mb-1">Generation 9 Sphera</span><h3 class="character-name text-water">Ochobot</h3><div class="character-alias">Teleportation Conduit &amp; Squad Heart</div></div>
+            <p class="character-bio">The legendary Generation 9 Power Sphera upgraded by Klamkabot. He awakened the elemental powers of BoBoiBoy and his friends, and controls interdimensional space bridges.</p>
             <div class="stat-group">
-              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">88%</span></div>
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 78%;" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">78%</span></div>
               <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 86%;" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">86%</span></div>
             </div>
           </article>
-
         </div>
       </div>
     </section>
@@ -143,22 +123,16 @@
     <section class="section section-alt" id="mentors" aria-labelledby="mentors-heading">
       <div class="container">
         <div class="section-header" style="margin-bottom: 1.5rem;">
-          <h2 class="section-title" id="mentors-heading">Mentors &amp; Beloved Allies</h2>
+          <h2 class="section-title" id="mentors-heading">Guardians &amp; Veteran Mentors</h2>
         </div>
         <div class="grid-2">
           <article class="card glow-earth">
-            <div class="flex items-center gap-2 mb-2">
-              <img src="images/tok-aba.png" alt="Tok Aba Avatar" class="character-avatar" width="70" height="70" style="background:linear-gradient(135deg,#d97706,#78350f);">
-              <div><span class="badge badge-earth">Pulau Rintis</span><h3 class="card-title text-amber" style="margin:0.15rem 0;">Tok Aba</h3><div class="text-muted" style="font-size:0.8rem;">Kokotiam Master &amp; Grandfather</div></div>
-            </div>
-            <p class="text-secondary" style="font-size:0.9rem;">BoBoiBoy's grandfather whose cocoa recipe revived Ochobot. He grounds the team with wisdom, reminding BoBoiBoy that true strength protects family and friends.</p>
+            <div class="flex items-center gap-2 mb-1"><img src="images/tok-aba.png" alt="Tok Aba Portrait" width="60" height="60" style="border-radius:50%; background:#fed7aa;"><div><span class="badge badge-earth">Moral Compass</span><h3 class="card-title text-earth" style="margin:0.1rem 0;">Tok Aba</h3></div></div>
+            <p class="text-secondary" style="font-size:0.85rem;">Grandfather, mentor, and beloved proprietor of Tok Aba and BoBoiBoy Kokotiam on Pulau Rintis.</p>
           </article>
           <article class="card glow-fire">
-            <div class="flex items-center gap-2 mb-2">
-              <img src="images/papa-zola.png" alt="Papa Zola Avatar" class="character-avatar" width="70" height="70" style="background:linear-gradient(135deg,#ef4444,#f59e0b);">
-              <div><span class="badge badge-fire">Hero of Justice</span><h3 class="card-title text-orange" style="margin:0.15rem 0;">Papa Zola</h3><div class="text-muted" style="font-size:0.8rem;">TAPOPS Physical Instructor</div></div>
-            </div>
-            <p class="text-secondary" style="font-size:0.9rem;">The flamboyant school teacher and self-proclaimed champion of justice. Behind his comical bravado lies fearless dedication to protecting his beloved students.</p>
+            <div class="flex items-center gap-2 mb-1"><img src="images/papa-zola.png" alt="Papa Zola Portrait" width="60" height="60" style="border-radius:50%; background:#fecaca;"><div><span class="badge badge-fire">TAPOPS Instructor</span><h3 class="card-title text-fire" style="margin:0.1rem 0;">Papa Zola</h3></div></div>
+            <p class="text-secondary" style="font-size:0.85rem;">The eccentric, heroic academy teacher delivering unconventional wisdom and comedic valor in battle.</p>
           </article>
         </div>
       </div>
@@ -168,15 +142,15 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a href="home.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
+        <a href="index.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
         <p class="text-secondary" style="font-size:0.85rem; margin-top:0.4rem;">Defending the galaxy with TAPOPS and 7 primal elements.</p>
       </div>
       <div>
         <h4 class="footer-col-title">Navigation</h4>
         <ul class="footer-links">
-          <li><a href="home.html" class="footer-link">Galactic Home</a></li>
-          <li><a href="#hero-squad" class="footer-link">Hero Dossiers</a></li>
-          <li><a href="#mentors" class="footer-link">Mentors &amp; Allies</a></li>
+          <li><a href="index.html" class="footer-link">Galactic Home</a></li>
+          <li><a href="characters.html" class="footer-link">Hero Roster</a></li>
+          <li><a href="elements.html" class="footer-link">Elemental Powers</a></li>
           <li><a href="contact.html#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
         </ul>
       </div>
