@@ -72,13 +72,48 @@
           </p>
         </div>
 
+        <!-- Pure CSS Media Filter Controls -->
+        <input type="radio" name="media-filter" id="filter-all" class="media-filter-radio" checked>
+        <input type="radio" name="media-filter" id="filter-series" class="media-filter-radio">
+        <input type="radio" name="media-filter" id="filter-movies" class="media-filter-radio">
+
+        <!-- Filter Tab Buttons -->
+        <div class="media-filter-tabs" role="tablist" aria-label="Filter series and movies">
+          <label for="filter-all" class="media-filter-btn">
+            <span class="filter-icon">🌟</span>
+            <span>All Timeline</span>
+            <span class="filter-count">5</span>
+          </label>
+          <label for="filter-series" class="media-filter-btn">
+            <span class="filter-icon">📺</span>
+            <span>TV Animated Series</span>
+            <span class="filter-count">3</span>
+          </label>
+          <label for="filter-movies" class="media-filter-btn">
+            <span class="filter-icon">🎬</span>
+            <span>Theatrical Movies</span>
+            <span class="filter-count">2</span>
+          </label>
+        </div>
+
+        <!-- Filter Status Notice -->
+        <div class="filter-indicator filter-indicator-all">
+          <span>🌟</span> Displaying all <strong>5 Canon Eras</strong> (TV Series &amp; Feature Films combined in release sequence)
+        </div>
+        <div class="filter-indicator filter-indicator-series">
+          <span>📺</span> Filtered to <strong>3 TV Animated Series</strong> (Classic, Galaxy S1, Galaxy S2)
+        </div>
+        <div class="filter-indicator filter-indicator-movies">
+          <span>🎬</span> Filtered to <strong>2 Theatrical Feature Films</strong> (The Movie 1, Movie 2)
+        </div>
+
         <!-- Vertical Timeline Container -->
         <div class="timeline">
 
           <!-- ---------------------------------------------------------------
                ERA 1: BoBoiBoy Classic (2011–2016)
                --------------------------------------------------------------- -->
-          <article class="timeline-item" aria-labelledby="era-classic-title">
+          <article class="timeline-item type-series" aria-labelledby="era-classic-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
               
@@ -137,7 +172,7 @@
           <!-- ---------------------------------------------------------------
                ERA 2: BoBoiBoy: The Movie (2016)
                --------------------------------------------------------------- -->
-          <article class="timeline-item" aria-labelledby="era-movie1-title">
+          <article class="timeline-item type-movie" aria-labelledby="era-movie1-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 
@@ -195,7 +230,7 @@
           <!-- ---------------------------------------------------------------
                ERA 3: BoBoiBoy Galaxy Season 1 (2016–2018)
                --------------------------------------------------------------- -->
-          <article class="timeline-item" aria-labelledby="era-galaxy1-title">
+          <article class="timeline-item type-series" aria-labelledby="era-galaxy1-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 
@@ -254,7 +289,7 @@
           <!-- ---------------------------------------------------------------
                ERA 4: BoBoiBoy Movie 2 (2019)
                --------------------------------------------------------------- -->
-          <article class="timeline-item" aria-labelledby="era-movie2-title">
+          <article class="timeline-item type-movie" aria-labelledby="era-movie2-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 
@@ -310,7 +345,7 @@
           <!-- ---------------------------------------------------------------
                ERA 5: BoBoiBoy Galaxy Season 2 (2023+)
                --------------------------------------------------------------- -->
-          <article class="timeline-item" aria-labelledby="era-galaxy2-title">
+          <article class="timeline-item type-series" aria-labelledby="era-galaxy2-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 

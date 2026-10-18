@@ -1097,6 +1097,128 @@ p:last-child {
 /* --------------------------------------------------------------------------
    13. SERIES, TIMELINE & CHRONICLE CARDS
    -------------------------------------------------------------------------- */
+/* Media Format Filter System */
+.media-filter-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.media-filter-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 auto 1.5rem auto;
+  max-width: 660px;
+  background: var(--bg-surface-dark);
+  padding: 0.35rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-medium);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.media-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.media-filter-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 11px;
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+/* Active Tab Styles */
+#filter-all:checked ~ .media-filter-tabs label[for="filter-all"],
+#filter-series:checked ~ .media-filter-tabs label[for="filter-series"],
+#filter-movies:checked ~ .media-filter-tabs label[for="filter-movies"] {
+  background: linear-gradient(135deg, var(--primary-orange-hover), var(--primary-orange));
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(255, 87, 34, 0.4);
+}
+
+#filter-all:checked ~ .media-filter-tabs label[for="filter-all"] .filter-count,
+#filter-series:checked ~ .media-filter-tabs label[for="filter-series"] .filter-count,
+#filter-movies:checked ~ .media-filter-tabs label[for="filter-movies"] .filter-count {
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+/* Filter Feedback Banner */
+.filter-indicator {
+  display: none;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0 auto 2.5rem auto;
+  max-width: 580px;
+  padding: 0.6rem 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+}
+
+#filter-all:checked ~ .filter-indicator-all {
+  display: block;
+}
+
+#filter-series:checked ~ .filter-indicator-series {
+  display: block;
+  border-color: rgba(56, 189, 248, 0.35);
+  background: rgba(56, 189, 248, 0.05);
+  color: var(--color-wind);
+}
+
+#filter-movies:checked ~ .filter-indicator-movies {
+  display: block;
+  border-color: rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.05);
+  color: #f87171;
+}
+
+/* Filter Display Rules */
+#filter-series:checked ~ .timeline .type-movie {
+  display: none;
+}
+
+#filter-movies:checked ~ .timeline .type-series {
+  display: none;
+}
+
+/* Format Border Indicators */
+.timeline-item.type-series .chronicle-card {
+  border-left: 4px solid var(--color-wind);
+}
+
+.timeline-item.type-movie .chronicle-card {
+  border-left: 4px solid var(--primary-orange);
+}
+
 .timeline {
   position: relative;
   max-width: 860px;
@@ -1878,6 +2000,19 @@ details.faq-item[open] .faq-question::after {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+
+  .media-filter-tabs {
+    flex-wrap: wrap;
+    border-radius: var(--radius-md);
+    padding: 0.5rem;
+  }
+
+  .media-filter-btn {
+    flex: 1 1 auto;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 0.55rem 0.9rem;
   }
 }
 
