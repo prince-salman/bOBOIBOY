@@ -18,15 +18,15 @@
       border: 1px solid var(--border-color); border-left: 4px solid var(--primary-orange);
       border-radius: var(--radius); box-shadow: var(--shadow-subtle); padding: 1rem 1.25rem;
     }
-    .academic-ordered-list {
+    .ordered-protocol-list {
       counter-reset: tier; list-style: none; padding-left: 0; margin: 0.75rem 0;
       display: flex; flex-direction: column; gap: 0.5rem;
     }
-    .academic-ordered-list > li {
+    .ordered-protocol-list > li {
       counter-increment: tier; position: relative; padding-left: 2.2rem;
       line-height: 1.4; font-size: 0.9rem; color: var(--text-secondary);
     }
-    .academic-ordered-list > li::before {
+    .ordered-protocol-list > li::before {
       content: counter(tier); position: absolute; left: 0; top: 0;
       width: 1.6rem; height: 1.6rem; border-radius: 50%;
       background: var(--primary-orange); color: #fff; font-weight: 700;
@@ -49,7 +49,7 @@
       <div class="container">
         <div class="evolution-hierarchy-box">
           <h2 id="tiers-heading" style="font-size:1.15rem; margin-bottom:0.25rem;">3-Stage Elemental Progression</h2>
-          <ol class="academic-ordered-list">
+          <ol class="ordered-protocol-list">
             <li><strong>Stage 1 &mdash; Base Awakenings (Tier 1):</strong> Primal forces (Petir, Angin, Tanah, Api, Air, Daun, Cahaya) enabling environmental manipulation and Kuasa Tiga.</li>
             <li><strong>Stage 2 &mdash; Evolved Masteries (Tier 2):</strong> Awakened through willpower (Halilintar, Taufan, Gempa, Blaze, Ais, Duri, Solar) with weapons and Kuasa Tujuh.</li>
             <li><strong>Stage 3 &mdash; Dual Fusions (Tier 3):</strong> Synthesizes two elemental forms into a transcendent hybrid warrior (FrostFire, Glacier, Supra, SORI).</li>
@@ -182,7 +182,7 @@
       </div>
     </div>
     <div class="footer-bottom text-center" style="padding-top:0.75rem; border-top:1px solid #e2e8f0; font-size:0.8rem; color:#64748b;">
-      <p>&copy; 2026 BoBoiBoy Universe Portal &bull; Academic Project 1 &bull; Resident University</p>
+      <p>&copy; 2026 BoBoiBoy Universe Portal. All rights reserved.</p>
     </div>
   </footer>
 

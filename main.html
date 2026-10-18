@@ -18,15 +18,15 @@
       border: 1px solid var(--border-color); border-left: 4px solid var(--primary-orange);
       border-radius: var(--radius); box-shadow: var(--shadow-subtle); padding: 1rem 1.25rem;
     }
-    .academic-ordered-list {
+    .ordered-protocol-list {
       counter-reset: step; list-style: none; padding-left: 0; margin: 1rem 0;
       display: flex; flex-direction: column; gap: 0.65rem;
     }
-    .academic-ordered-list > li {
+    .ordered-protocol-list > li {
       counter-increment: step; position: relative; padding-left: 2.4rem;
       line-height: 1.4; font-size: 0.92rem; color: var(--text-secondary);
     }
-    .academic-ordered-list > li::before {
+    .ordered-protocol-list > li::before {
       content: counter(step); position: absolute; left: 0; top: 0;
       width: 1.7rem; height: 1.7rem; border-radius: 50%;
       background: var(--primary-orange); color: #fff; font-weight: 700;
@@ -75,7 +75,7 @@
     <section class="section" style="padding: 1.5rem 0;">
       <div class="container">
         <div class="portal-announcement-banner">
-          <span class="badge badge-lightning" style="margin-bottom:0.35rem; display:inline-block;">Academic Project 1</span>
+          <span class="badge badge-lightning" style="margin-bottom:0.35rem; display:inline-block;">Official Announcement</span>
           <h2 style="font-size:1.15rem; margin-bottom:0.25rem;">Welcome to BoBoiBoy Galactic Command</h2>
           <p class="text-secondary" style="font-size:0.9rem; margin:0;">Master frame content portal demonstrating pure HTML5 semantic architecture and CSS3 styling standards.</p>
         </div>
@@ -86,7 +86,7 @@
       <div class="container">
         <div class="card" style="padding: 1.5rem; border-left: 4px solid var(--primary-orange);">
           <h2 class="h3" id="onboarding-title" style="font-size:1.25rem; margin-bottom:0.4rem;">Galactic Cadet Orientation Procedure</h2>
-          <ol class="academic-ordered-list">
+          <ol class="ordered-protocol-list">
             <li><strong>Survey the 7 Elemental Tiers:</strong> Explore Tier 1 sparks, Tier 2 forms, and dual fusions on the <a href="elements.html" class="text-orange" style="font-weight:700;">Elements Database</a>.</li>
             <li><strong>Review TAPOPS Vanguard Heroes:</strong> Inspect profiles for BoBoiBoy, Yaya, Ying, Gopal, Fang, and Ochobot on the <a href="characters.html" class="text-orange" style="font-weight:700;">Characters Dossier</a>.</li>
             <li><strong>Enlist at TAPOPS Space Academy:</strong> Choose your fleet division and submit your enlistment dispatch on the <a href="contact.html" class="text-orange" style="font-weight:700;">Cadet Hub</a>.</li>
@@ -173,7 +173,7 @@
           <li><a href="home.html" class="footer-link">Galactic Home</a></li>
           <li><a href="#lore" class="footer-link">Origin Lore</a></li>
           <li><a href="#featured" class="footer-link">Hero Vanguard</a></li>
-          <li><a href="contact.html#student-profile" class="footer-link">Student Info</a></li>
+          <li><a href="contact.html#cadet-dossier" class="footer-link">Cadet Dossier</a></li>
         </ul>
       </div>
       <div>
@@ -184,7 +184,7 @@
       </div>
     </div>
     <div class="footer-bottom text-center" style="padding-top:0.75rem; border-top:1px solid #e2e8f0; font-size:0.8rem; color:#64748b;">
-      <p>&copy; 2026 BoBoiBoy Universe Portal &bull; Academic Project 1 &bull; Resident University</p>
+      <p>&copy; 2026 BoBoiBoy Universe Portal. All rights reserved.</p>
     </div>
   </footer>
 
