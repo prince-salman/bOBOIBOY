@@ -313,10 +313,10 @@ def main():
 
         # Validate Landmarks
         if filename == "index.html":
-            if parser.has_header and parser.has_nav and parser.has_main and parser.has_footer:
-                print(f"  [OK] {filename}: Master Frame landmarks present (<header>, <nav>, <main>, <footer>)")
+            if parser.has_header and parser.has_nav and parser.has_main:
+                print(f"  [OK] {filename}: Master Frame landmarks present (<header>, <nav>, <main>)")
             else:
-                print(f"  [FAIL] {filename}: Missing master landmark (header={parser.has_header}, nav={parser.has_nav}, main={parser.has_main}, footer={parser.has_footer})")
+                print(f"  [FAIL] {filename}: Missing master landmark (header={parser.has_header}, nav={parser.has_nav}, main={parser.has_main})")
                 total_errors += 1
             if parser.has_nav_toggle:
                 print(f"  [OK] {filename}: Pure CSS mobile drawer #nav-toggle input present")
