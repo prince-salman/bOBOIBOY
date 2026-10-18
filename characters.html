@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the galactic heroes of TAPOPS in the BoBoiBoy Universe. Complete dossiers for BoBoiBoy, Yaya, Ying, Gopal, Fang, Ochobot, and legendary mentors Tok Aba and Papa Zola.">
+  <meta name="description" content="Explore the galactic heroes of TAPOPS in the BoBoiBoy Universe. Complete dossiers for BoBoiBoy, Yaya, Ying, Gopal, Fang, Ochobot, and mentors Tok Aba and Papa Zola.">
   <title>Galactic Heroes &amp; Cadets | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
 
@@ -16,17 +16,17 @@
       background-repeat: no-repeat;
       background-size: auto;
       background-attachment: scroll;
-      border: 1px solid var(--border-subtle);
+      border: 1px solid var(--border-color);
       border-left: 4px solid var(--primary-orange);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-subtle);
       padding: 1.25rem 1.5rem;
       margin-bottom: 2rem;
     }
 
     /* 2. Text and Font Properties Demonstration */
     .hero-dossier-heading {
-      font-family: var(--font-display);
+      font-family: var(--font-sans);
       font-size: 1.15rem;
       font-weight: 800;
       font-style: normal;
@@ -44,7 +44,7 @@
       min-width: 280px;
       max-width: 100%;
       height: auto;
-      min-height: 90px;
+      min-height: 80px;
       max-height: none;
     }
 
@@ -56,6 +56,8 @@
       bottom: auto;
       left: 0;
       z-index: 2;
+      display: inline-block;
+      margin-bottom: 0.4rem;
     }
   </style>
 </head>
@@ -63,15 +65,15 @@
 
   <main>
 
-    <section class="hero" aria-labelledby="characters-page-title" style="padding: 4rem 0 3rem 0;">
+    <section class="hero" aria-labelledby="characters-page-title">
       <div class="container text-center">
-        <h1 class="hero-title" id="characters-page-title" style="max-width: 820px; margin-left: auto; margin-right: auto;">
+        <h1 class="hero-title" id="characters-page-title" style="max-width: 820px; margin: 0 auto 1rem auto;">
           The Galactic Heroes of <span class="highlight">TAPOPS</span>
         </h1>
-        <p class="hero-subtitle" style="max-width: 720px; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;">
-          From the peaceful streets of Pulau Rintis to the outer sectors of space, meet the courageous guardians who protect Generation Power Spheras from ruthless intergalactic conquerors.
+        <p class="hero-subtitle" style="max-width: 720px; margin: 0 auto 1.5rem auto;">
+          Meet the courageous guardians who defend Generation Power Spheras from ruthless intergalactic conquerors across outer space.
         </p>
-        <div class="flex flex-center flex-wrap gap-2">
+        <div class="flex flex-center flex-wrap gap-1">
           <span class="badge badge-fire">6 Core Heroes</span>
           <span class="badge badge-lightning">Combat Stat Meters</span>
           <span class="badge badge-wind">Mentors &amp; Allies</span>
@@ -82,9 +84,9 @@
     <section class="section" id="hero-squad" aria-labelledby="core-heroes-heading">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title" id="core-heroes-heading">The Frontline Guardians</h2>
+          <h2 class="section-title" id="core-heroes-heading">Frontline Guardians</h2>
           <p class="section-subtitle">
-            Equipped with miraculous Power Sphera energy bonds, each hero commands unique superhuman attributes honed through intense cosmic trials.
+            Harnessing Power Sphera energy bonds, each hero commands unique superhuman attributes honed through intense cosmic trials.
           </p>
         </div>
 
@@ -95,328 +97,112 @@
               <img src="images/boboiboy.png" alt="BoBoiBoy Avatar" class="character-avatar" width="90" height="90">
             </div>
             <div class="character-header">
-              <div class="flex flex-center flex-wrap gap-1 mb-2">
-                <span class="badge badge-fire">Elemental Leader</span>
-                <span class="badge badge-lightning">Cadet Rank</span>
-              </div>
+              <span class="badge badge-fire mb-1">Elemental Leader</span>
               <h3 class="character-name text-orange">BoBoiBoy</h3>
               <div class="character-alias">Elemental Superhero &amp; Clone Master</div>
             </div>
             <p class="character-bio">
-              Earth's premier defender and the tactical anchor of the TAPOPS squad. BoBoiBoy wields the unprecedented gift of commanding seven primal elements &mdash; Lightning, Wind, Earth, Fire, Water, Leaf, and Light. Using his signature <em>BoBoiBoy Kuasa Tiga</em> and <em>Kuasa Tujuh</em> maneuvers, he splits his consciousness into separate elemental clones, multiplying his tactical presence across any cosmic battlefield.
+              Earth's premier defender wielding seven primal elements. Using his signature <em>Kuasa Tiga</em> and <em>Kuasa Tujuh</em>, he splits into distinct clones to multiply his tactical presence.
             </p>
             <div class="stat-group">
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Power</span>
-                  <span class="stat-value">96%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-power" style="width: 96%;" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Agility</span>
-                  <span class="stat-value">90%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-agility" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Defense</span>
-                  <span class="stat-value">88%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-defense" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Intelligence</span>
-                  <span class="stat-value">85%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-intelligence" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 96%;" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">96%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">90%</span></div>
+              <div class="stat-row"><span class="stat-name">Defense</span><div class="stat-bar"><div class="stat-fill fill-defense" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">88%</span></div>
             </div>
           </article>
 
-          <article class="character-card" style="border-color: rgba(236, 72, 153, 0.4); box-shadow: 0 4px 20px rgba(236, 72, 153, 0.2);">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #f472b6, #db2777);">
+          <article class="character-card glow-earth">
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #ec4899, #be185d);">
               <img src="images/yaya.png" alt="Yaya Avatar" class="character-avatar" width="90" height="90">
             </div>
             <div class="character-header">
-              <div class="flex flex-center flex-wrap gap-1 mb-2">
-                <span class="badge" style="background: rgba(236, 72, 153, 0.15); color: #f472b6; border-color: rgba(236, 72, 153, 0.3);">Gravity Master</span>
-                <span class="badge badge-light">Aerial Vanguard</span>
-              </div>
-              <h3 class="character-name" style="color: #f472b6;">Yaya</h3>
-              <div class="character-alias" style="color: #f472b6;">Gravity Manipulation &amp; Super Strength</div>
+              <span class="badge badge-fire mb-1">Gravity Manipulator</span>
+              <h3 class="character-name" style="color: #ec4899;">Yaya</h3>
+              <div class="character-alias">High-Speed Flight &amp; Gravitational Might</div>
             </div>
             <p class="character-bio">
-              Disciplined, upright, and fiercely courageous. Yaya can manipulate gravitational vectors, allowing her to soar at supersonic flight altitudes and strike with immense physical power. She can alter the mass of enemy armor, immobilize titanic alien mechs in midair, or smash through blast doors with her <em>Tumbukan Padu</em>. Outside of combat, she is a dedicated student council leader famous for her notoriously indestructible biscuits.
+              Wields gravitational alteration granted by Ochobot. She flies at supersonic speeds, lifts planetary debris, and delivers devastating gravitational punches against massive warships.
             </p>
             <div class="stat-group">
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Power</span>
-                  <span class="stat-value">92%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-power" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Agility</span>
-                  <span class="stat-value">86%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-agility" style="width: 86%;" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Defense</span>
-                  <span class="stat-value">88%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-defense" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Intelligence</span>
-                  <span class="stat-value">92%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-intelligence" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="character-card glow-water">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #22d3ee, #0891b2);">
-              <img src="images/ying.png" alt="Ying Avatar" class="character-avatar" width="90" height="90">
-            </div>
-            <div class="character-header">
-              <div class="flex flex-center flex-wrap gap-1 mb-2">
-                <span class="badge badge-water">Chrono Speedster</span>
-                <span class="badge badge-wind">Rapid Infiltration</span>
-              </div>
-              <h3 class="character-name text-water">Ying</h3>
-              <div class="character-alias" style="color: var(--color-water);">Time Acceleration &amp; Temporal Reflexes</div>
-            </div>
-            <p class="character-bio">
-              The fastest heroine in the galaxy. Ying commands temporal manipulation, allowing her to accelerate the flow of time around her body to reach hypersonic speeds. She weaves effortlessly through volleys of plasma fire, delivers blinding multi-kick combinations via <em>Tendangan Laju</em>, and executes rapid battlefield evacuations before adversaries even register her movement. In combat, she and Yaya form an unstoppable complementary assault duo.
-            </p>
-            <div class="stat-group">
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Power</span>
-                  <span class="stat-value">82%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-power" style="width: 82%;" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Agility</span>
-                  <span class="stat-value">98%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-agility" style="width: 98%;" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Defense</span>
-                  <span class="stat-value">78%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-defense" style="width: 78%;" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Intelligence</span>
-                  <span class="stat-value">90%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-intelligence" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="character-card glow-leaf">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #34d399, #059669);">
-              <img src="images/gopal.png" alt="Gopal Avatar" class="character-avatar" width="90" height="90">
-            </div>
-            <div class="character-header">
-              <div class="flex flex-center flex-wrap gap-1 mb-2">
-                <span class="badge badge-leaf">Molecular Support</span>
-                <span class="badge badge-earth">Tactical Rearguard</span>
-              </div>
-              <h3 class="character-name text-leaf">Gopal</h3>
-              <div class="character-alias" style="color: var(--color-leaf);">Molecular Transmutation &amp; Heavy Support</div>
-            </div>
-            <p class="character-bio">
-              BoBoiBoy's warm-hearted childhood friend who wields one of the most game-changing superpowers in existence: atomic molecular restructuring. With a touch or ray burst, Gopal can convert high-yield alien artillery, laser missiles, and dense titanium shields into delicious candy, chocolate bars, and curry puffs. While he initially flees from danger, his panic-induced transmutations have repeatedly saved TAPOPS from catastrophic destruction.
-            </p>
-            <div class="stat-group">
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Power</span>
-                  <span class="stat-value">88%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-power" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Agility</span>
-                  <span class="stat-value">70%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-agility" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Defense</span>
-                  <span class="stat-value">85%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-defense" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Intelligence</span>
-                  <span class="stat-value">76%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-intelligence" style="width: 76%;" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="character-card" style="border-color: rgba(139, 92, 246, 0.4); box-shadow: 0 4px 20px rgba(139, 92, 246, 0.2);">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #8b5cf6, #4f46e5);">
-              <img src="images/fang.png" alt="Fang Avatar" class="character-avatar" width="90" height="90">
-            </div>
-            <div class="character-header">
-              <div class="flex flex-center flex-wrap gap-1 mb-2">
-                <span class="badge" style="background: rgba(139, 92, 246, 0.15); color: #c084fc; border-color: rgba(139, 92, 246, 0.3);">Shadow Master</span>
-                <span class="badge badge-fire">TAPOPS Private</span>
-              </div>
-              <h3 class="character-name" style="color: #a78bfa;">Fang</h3>
-              <div class="character-alias" style="color: #a78bfa;">Shadow Manipulation &amp; Tactical Strategist</div>
-            </div>
-            <p class="character-bio">
-              A fierce combat strategist and younger brother of legendary fleet captain Kaizo. Fang manipulates ambient dark matter and shadows into lethal constructs, summoning phantom beasts like the <em>Harimau Bayang</em> (Shadow Tiger), <em>Helang Bayang</em> (Shadow Eagle), and <em>Naga Bayang</em> (Shadow Dragon). Driven by sharp military discipline, Fang acts as the team's covert infiltration specialist and BoBoiBoy's greatest friendly rival.
-            </p>
-            <div class="stat-group">
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Power</span>
-                  <span class="stat-value">90%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-power" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Agility</span>
-                  <span class="stat-value">92%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-agility" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Defense</span>
-                  <span class="stat-value">86%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-defense" style="width: 86%;" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Intelligence</span>
-                  <span class="stat-value">94%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-intelligence" style="width: 94%;" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">92%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">88%</span></div>
+              <div class="stat-row"><span class="stat-name">Defense</span><div class="stat-bar"><div class="stat-fill fill-defense" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">85%</span></div>
             </div>
           </article>
 
           <article class="character-card glow-wind">
-            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #38bdf8, #06b6d4);">
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #06b6d4, #0e7490);">
+              <img src="images/ying.png" alt="Ying Avatar" class="character-avatar" width="90" height="90">
+            </div>
+            <div class="character-header">
+              <span class="badge badge-wind mb-1">Temporal Speedster</span>
+              <h3 class="character-name text-wind">Ying</h3>
+              <div class="character-alias">Time Dilation &amp; Relativistic Agility</div>
+            </div>
+            <p class="character-bio">
+              Commands localized temporal distortion. She accelerates her own perception to relativistic speeds while slowing enemy movements, neutralizing incoming missile barrages instantly.
+            </p>
+            <div class="stat-group">
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 82%;" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">82%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 98%;" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">98%</span></div>
+              <div class="stat-row"><span class="stat-name">Defense</span><div class="stat-bar"><div class="stat-fill fill-defense" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">80%</span></div>
+            </div>
+          </article>
+
+          <article class="character-card glow-fire">
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #eab308, #ca8a04);">
+              <img src="images/gopal.png" alt="Gopal Avatar" class="character-avatar" width="90" height="90">
+            </div>
+            <div class="character-header">
+              <span class="badge badge-earth mb-1">Matter Transmuter</span>
+              <h3 class="character-name text-amber">Gopal</h3>
+              <div class="character-alias">Molecular Food Alchemy &amp; Support</div>
+            </div>
+            <p class="character-bio">
+              BoBoiBoy's faithful best friend wielding atomic transmutation. He transforms lethal enemy laser blasts, steel barricades, and alien weaponry into candy, cookies, and snacks.
+            </p>
+            <div class="stat-group">
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">85%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 72%;" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">72%</span></div>
+              <div class="stat-row"><span class="stat-name">Defense</span><div class="stat-bar"><div class="stat-fill fill-defense" style="width: 86%;" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">86%</span></div>
+            </div>
+          </article>
+
+          <article class="character-card glow-lightning">
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #a855f7, #6b21a8);">
+              <img src="images/fang.png" alt="Fang Avatar" class="character-avatar" width="90" height="90">
+            </div>
+            <div class="character-header">
+              <span class="badge badge-lightning mb-1">Shadow Tactician</span>
+              <h3 class="character-name" style="color: #a855f7;">Fang</h3>
+              <div class="character-alias">Umbrageous Puppetry &amp; Shadow Beasts</div>
+            </div>
+            <p class="character-bio">
+              TAPOPS Sergeant and brother of Captain Kaizo. Fang manipulates shadows into fierce kinetic beasts &mdash; Shadow Eagles, Tigers, and Dragons &mdash; to ambush and restrain cosmic threats.
+            </p>
+            <div class="stat-group">
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 90%;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">90%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">92%</span></div>
+              <div class="stat-row"><span class="stat-name">Defense</span><div class="stat-bar"><div class="stat-fill fill-defense" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">88%</span></div>
+            </div>
+          </article>
+
+          <article class="character-card glow-wind">
+            <div class="character-avatar-wrap" style="background: linear-gradient(135deg, #38bdf8, #0284c7);">
               <img src="images/ochobot.png" alt="Ochobot Avatar" class="character-avatar" width="90" height="90">
             </div>
             <div class="character-header">
-              <div class="flex flex-center flex-wrap gap-1 mb-2">
-                <span class="badge badge-wind">Power Sphera Gen 9</span>
-                <span class="badge badge-light">Cosmic Core</span>
-              </div>
+              <span class="badge badge-wind mb-1">Gen 9 Power Sphera</span>
               <h3 class="character-name text-wind">Ochobot</h3>
-              <div class="character-alias" style="color: var(--color-wind);">Galactic Teleportation &amp; Power Catalyst</div>
+              <div class="character-alias">Interstellar Teleportation &amp; Catalyst</div>
             </div>
             <p class="character-bio">
-              The miraculous Generation 9 Power Sphera that ignited the legend of Earth's protectors. Revitalized by Tok Aba's cocoa energy, Ochobot possesses the extraordinary capability to awaken latent superpowers in worthy sentient beings. As TAPOPS' primary spatial navigation hub, Ochobot generates quantum wormholes, instantly teleporting the team across light-years of hostile galactic sectors in seconds.
+              Salvaged on Pulau Rintis and awakened by cocoa energy. Ochobot granted powers to the squad and provides instant cross-galaxy spatial teleportation for critical TAPOPS missions.
             </p>
             <div class="stat-group">
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Power</span>
-                  <span class="stat-value">75%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-power" style="width: 75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Agility</span>
-                  <span class="stat-value">80%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-agility" style="width: 80%;" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Defense</span>
-                  <span class="stat-value">82%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-defense" style="width: 82%;" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="stat-row">
-                <div class="stat-label-group">
-                  <span class="stat-name">Intelligence</span>
-                  <span class="stat-value">98%</span>
-                </div>
-                <div class="stat-bar">
-                  <div class="stat-fill fill-intelligence" style="width: 98%;" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
+              <div class="stat-row"><span class="stat-name">Power</span><div class="stat-bar"><div class="stat-fill fill-power" style="width: 88%;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">88%</span></div>
+              <div class="stat-row"><span class="stat-name">Agility</span><div class="stat-bar"><div class="stat-fill fill-agility" style="width: 86%;" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">86%</span></div>
+              <div class="stat-row"><span class="stat-name">Defense</span><div class="stat-bar"><div class="stat-fill fill-defense" style="width: 82%;" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div></div><span class="stat-value">82%</span></div>
             </div>
           </article>
 
@@ -429,111 +215,50 @@
         <div class="section-header">
           <h2 class="section-title" id="mentors-heading">Mentors &amp; Beloved Allies</h2>
           <p class="section-subtitle">
-            Behind every victorious galactic battle stands the invaluable wisdom, warm cocoa, and heroic motivation of Earth's finest mentors.
+            Behind every victorious galactic skirmish stands the wisdom, warm cocoa, and heroic courage of Earth's finest mentors.
           </p>
         </div>
 
         <div class="grid-2">
 
           <article class="card glow-earth">
-            <div class="flex items-center gap-3 mb-3">
+            <div class="flex items-center gap-3 mb-2">
               <div class="character-avatar-wrap" style="margin: 0; flex-shrink: 0; background: linear-gradient(135deg, #d97706, #78350f);">
                 <img src="images/tok-aba.png" alt="Tok Aba Avatar" class="character-avatar" width="90" height="90">
               </div>
               <div>
                 <span class="badge badge-earth mb-1">Pulau Rintis Guardian</span>
-                <h3 class="card-title text-amber" style="margin-bottom: 0.2rem;">Tok Aba</h3>
-                <div class="character-alias" style="color: var(--color-earth);">Kokotiam Master &amp; Grandfather</div>
+                <h3 class="card-title text-amber" style="margin: 0.2rem 0;">Tok Aba</h3>
+                <div class="text-muted" style="font-size: 0.85rem;">Kokotiam Master &amp; Grandfather</div>
               </div>
             </div>
-            <div class="card-body">
-              <p>
-                BoBoiBoy's wise, warm-hearted grandfather and master proprietor of <em>Tok Aba's Kokotiam</em> on Pulau Rintis. Unbeknownst to anyone at first, his secret special hot cocoa recipe held the precise energetic frequency required to revive Ochobot from his centuries-long deep slumber.
-              </p>
-              <p class="mt-2">
-                Whenever galactic battles wear heavy on the young squad, Tok Aba provides steady grounding, emotional reassurance, and life wisdom. He reminds BoBoiBoy that true strength does not merely lie in cosmic fire or thunder, but in protecting the bonds of friendship and family.
-              </p>
-              <div class="footer-quote mt-3">
-                <span class="quote-badge">Signature Saying</span>
-                <p class="quote-text">"Tok Aba's special hot cocoa isn't just ordinary chocolate—it delivers invigorating energy and warmth to anyone who tastes it!"</p>
-                <p class="quote-author">&mdash; Tok Aba, Founder of Tok Aba's Kokotiam</p>
-              </div>
-            </div>
-            <div class="card-footer flex-between">
-              <span class="text-muted" style="font-size:0.85rem;">Headquarters: Tok Aba Kokotiam, Earth</span>
-              <span class="badge badge-earth">Specialty: Cocoa Energy</span>
+            <p class="text-secondary" style="font-size: 0.92rem;">
+              BoBoiBoy's kind grandfather whose special cocoa recipe awakened Ochobot. He grounds the team with wisdom, reminding BoBoiBoy that real strength protects family and friendship.
+            </p>
+            <div class="card-footer mt-2" style="padding-top: 0.5rem;">
+              <span class="text-xs text-muted"><strong>Base:</strong> Tok Aba Kokotiam, Earth &bull; <strong>Specialty:</strong> Cocoa Energy</span>
             </div>
           </article>
 
           <article class="card glow-fire">
-            <div class="flex items-center gap-3 mb-3">
+            <div class="flex items-center gap-3 mb-2">
               <div class="character-avatar-wrap" style="margin: 0; flex-shrink: 0; background: linear-gradient(135deg, #ef4444, #f59e0b);">
                 <img src="images/papa-zola.png" alt="Papa Zola Avatar" class="character-avatar" width="90" height="90">
               </div>
               <div>
                 <span class="badge badge-fire mb-1">Champion of Justice</span>
-                <h3 class="card-title text-orange" style="margin-bottom: 0.2rem;">Papa Zola</h3>
-                <div class="character-alias">TAPOPS Academy Instructor &amp; Educator</div>
+                <h3 class="card-title text-orange" style="margin: 0.2rem 0;">Papa Zola</h3>
+                <div class="text-muted" style="font-size: 0.85rem;">TAPOPS Academy Instructor</div>
               </div>
             </div>
-            <div class="card-body">
-              <p>
-                The flamboyant, indomitable school teacher who claims the grand title of "Hero of Justice". After accidentally being pulled into cosmic escapades alongside his students, Papa Zola was appointed as TAPOPS Academy's physical education mentor and motivational instructor.
-              </p>
-              <p class="mt-2">
-                While frequently delivering comically exaggerated lectures and boasting of his invincible gaming prowess, Papa Zola possesses true valor. When alien forces threaten his beloved pupils, Papa Zola fearlessly steps into the fray, brandishing pure bravado and unbreakable conviction.
-              </p>
-              <div class="footer-quote mt-3">
-                <span class="quote-badge">Battle Proclamation</span>
-                <p class="quote-text">"Justice shall never waver! Prepare yourselves to face the greatness and righteousness of Papa Zola, you cosmic scoundrels!"</p>
-                <p class="quote-author">&mdash; Papa Zola, Hero of Justice &amp; Mathematics</p>
-              </div>
-            </div>
-            <div class="card-footer flex-between">
-              <span class="text-muted" style="font-size:0.85rem;">Rank: Special TAPOPS Instructor</span>
-              <span class="badge badge-fire">Specialty: Moral Fortitude</span>
+            <p class="text-secondary" style="font-size: 0.92rem;">
+              The flamboyant school teacher and self-proclaimed "Hero of Justice". Despite his comical boasting, he fearlessly defends his students with unbreakable courage against alien warlords.
+            </p>
+            <div class="card-footer mt-2" style="padding-top: 0.5rem;">
+              <span class="text-xs text-muted"><strong>Rank:</strong> TAPOPS Physical Instructor &bull; <strong>Specialty:</strong> Moral Fortitude</span>
             </div>
           </article>
 
-        </div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="synergy-heading">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" id="synergy-heading">Tactical Squad Synergy</h2>
-          <p class="section-subtitle">
-            How the TAPOPS Earth squad combines offensive elemental firepower, temporal speeds, gravity fields, and molecular transmutation to prevail against overwhelming fleets.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <div class="stat-card glow-lightning">
-            <h3 class="card-title text-lightning mb-1">Elemental Vanguard</h3>
-            <p style="font-size:0.9rem;">
-              BoBoiBoy splits into multi-element strikes, creating elemental elemental crossfires while Fang's shadow beasts flank and suppress heavy enemy infantry.
-            </p>
-          </div>
-          <div class="stat-card glow-wind">
-            <h3 class="card-title text-wind mb-1">Spatial Speed Blitz</h3>
-            <p style="font-size:0.9rem;">
-              Ying slows temporal defense grids and clears minefields in microseconds, while Yaya uses crushing gravity domes to pin down colossal dreadnoughts.
-            </p>
-          </div>
-          <div class="stat-card glow-leaf">
-            <h3 class="card-title text-leaf mb-1">Rearguard Transmutation</h3>
-            <p style="font-size:0.9rem;">
-              Gopal neutralizes incoming high-caliber plasma shells into giant confectionery, while Ochobot maintains active warp corridors for instant extraction.
-            </p>
-          </div>
-        </div>
-
-        <div class="text-center mt-4">
-          <div class="hero-cta" style="justify-content: center;">
-            <a href="elements.html" class="btn btn-primary btn-lg">Explore All 7 Elements &rarr;</a>
-            <a href="series.html" class="btn btn-secondary btn-lg">View Mission Chronicles</a>
-          </div>
         </div>
       </div>
     </section>
@@ -543,9 +268,8 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        
         <div class="footer-brand">
-          <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
+          <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
             <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
           </a>
           <p>
@@ -566,7 +290,7 @@
         <div>
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Galactic Home</a></li>
+            <li><a href="home.html" class="footer-link">Galactic Home</a></li>
             <li><a href="#hero-squad" class="footer-link">Hero Dossiers</a></li>
             <li><a href="#mentors" class="footer-link">Mentors &amp; Allies</a></li>
             <li><a href="contact.html#student-profile" class="footer-link">Student Info</a></li>

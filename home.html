@@ -16,10 +16,10 @@
       background-repeat: no-repeat;
       background-size: auto;
       background-attachment: scroll;
-      border: 1px solid #e2e8f0;
+      border: 1px solid var(--border-color);
       border-left: 4px solid var(--primary-orange);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-subtle);
       padding: 1.25rem 1.5rem;
       margin: 0 auto;
     }
@@ -62,15 +62,15 @@
       margin-bottom: 0.35rem;
     }
 
-    /* Academic Ordered List Styling */
+    /* Academic Ordered List Counter */
     .academic-ordered-list {
       counter-reset: custom-counter;
       list-style: none;
       padding-left: 0;
-      margin: 1.25rem 0;
+      margin: 1rem 0;
       display: flex;
       flex-direction: column;
-      gap: 0.85rem;
+      gap: 0.75rem;
     }
 
     .academic-ordered-list > li {
@@ -78,6 +78,7 @@
       position: relative;
       padding-left: 2.75rem;
       line-height: 1.5;
+      font-size: 0.95rem;
       color: var(--text-secondary);
     }
 
@@ -96,7 +97,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 6px rgba(249, 115, 22, 0.35);
+      box-shadow: 0 2px 6px rgba(234, 88, 12, 0.35);
     }
   </style>
 </head>
@@ -118,8 +119,8 @@
             <a href="elements.html" class="btn btn-secondary btn-lg">Discover Elements</a>
           </div>
         </div>
+
         <div class="hero-visual">
-          
           <div class="hero-badge-card" style="background-color: #ffffff; width: 100%; max-width: 380px; position: relative; text-align: center; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
             <img src="images/logo.svg" alt="BoBoiBoy Galaxy Emblem" width="220" height="65" style="margin: 0 auto 1.25rem auto;">
             <h3 class="text-orange mb-1" style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 700; color: #ff5722;">
@@ -170,7 +171,7 @@
           </div>
           <h2 class="portal-banner-title">Welcome to BoBoiBoy Galactic Command</h2>
           <p class="text-secondary" style="font-size: 0.95rem; line-height: 1.6; margin: 0;">
-            This portal serves as the primary master frame content page for the Web Programming &amp; Web Design Project. All five core pages are fully interconnected and styled with pure semantic HTML5 &amp; CSS3.
+            This portal serves as the primary master frame content page for the Web Programming &amp; Web Design Project. All five core pages are interconnected and styled with semantic HTML5 &amp; CSS3.
           </p>
         </div>
       </div>
@@ -179,75 +180,65 @@
     <section class="section" id="onboarding" aria-labelledby="onboarding-title" style="padding-top: 2rem; padding-bottom: 2rem;">
       <div class="container">
         <div class="card" style="padding: 2rem; border-left: 4px solid var(--primary-orange);">
-          <h2 class="h3" id="onboarding-title" style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+          <h2 class="h3" id="onboarding-title" style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.5rem;">
             Galactic Cadet Fast-Track Orientation Procedure
           </h2>
           <p class="text-secondary" style="font-size: 0.95rem; margin-bottom: 1rem;">
-            Follow this official 3-step sequence to navigate through the BoBoiBoy Universe database and complete your TAPOPS orientation:
+            Follow this 3-step sequence to navigate the database and complete your TAPOPS orientation:
           </p>
 
           <ol class="academic-ordered-list">
             <li>
-              <strong>Survey the 7 Elemental Tiers &amp; Dual Fusions:</strong>
-              Inspect Tier 1 sparks, Tier 2 evolutions, and the multi-element fusion matrix on the <a href="elements.html" class="text-orange" style="font-weight: 700;">Elements Database</a>.
+              <strong>Survey the 7 Elemental Tiers &amp; Fusions:</strong> Inspect Tier 1 sparks, Tier 2 evolutions, and dual fusions on the <a href="elements.html" class="text-orange" style="font-weight: 700;">Elements Database</a>.
             </li>
             <li>
-              <strong>Review TAPOPS Vanguard Heroes &amp; Alien Adversaries:</strong>
-              Learn the combat strengths and equipment of BoBoiBoy, Yaya, Ying, Gopal, Fang, and Ochobot on the <a href="characters.html" class="text-orange" style="font-weight: 700;">Characters Dossier</a>.
+              <strong>Review TAPOPS Vanguard Heroes:</strong> Learn combat strengths of BoBoiBoy, Yaya, Ying, Gopal, Fang, and Ochobot on the <a href="characters.html" class="text-orange" style="font-weight: 700;">Characters Dossier</a>.
             </li>
             <li>
-              <strong>Enlist at TAPOPS Academy &amp; Submit Subspace Dispatch:</strong>
-              Fill in your cadet call-sign, set your security passcode, choose your elemental division, and submit your sworn pledge on the <a href="contact.html" class="text-orange" style="font-weight: 700;">Cadet Enlistment Hub</a>.
+              <strong>Enlist at TAPOPS Academy:</strong> Select your division and transmit your dispatch on the <a href="contact.html" class="text-orange" style="font-weight: 700;">Cadet Enlistment Hub</a>.
             </li>
           </ol>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt lore-section" id="lore" aria-labelledby="lore-title">
+    <section class="section section-alt" id="lore" aria-labelledby="lore-title">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title" id="lore-title">The Legend of the Elemental Guardian</h2>
           <p class="section-subtitle">
-            From humble beginnings at a cocoa stall on Rintis Island to frontline interstellar skirmishes defending ancient robotic technology.
+            From humble beginnings at a cocoa stall on Pulau Rintis to interstellar defense skirmishes across the stars.
           </p>
         </div>
 
         <div class="grid-2">
-          
           <article class="card glow-fire">
             <div class="card-header">
-              <span class="badge badge-fire mb-1">Chapter 1: The Origin</span>
+              <span class="badge badge-fire mb-1">Origin</span>
               <h3 class="card-title text-orange">Awakening on Pulau Rintis</h3>
             </div>
             <div class="card-body">
               <p>
-                During a school holiday visit to his grandfather Tok Aba's renowned cocoa stall on Pulau Rintis, young BoBoiBoy stumbled upon an ancient, dormant spherical robot named <strong>Ochobot</strong>. Unbeknownst to humanity, cocoa beans possessed concentrated cosmic energy, attracting the nefarious alien warlord <strong>Adu Du</strong> from planet Ata Ta Tiga and his battle robot Probe.
-              </p>
-              <p class="mt-2">
-                When Adu Du launched an assault to plunder the cocoa supply, Ochobot awakened and bonded with BoBoiBoy and his neighborhood companions &mdash; Yaya, Ying, and Gopal. Ochobot endowed BoBoiBoy with primordial elemental manipulation powers over Earth, Wind, and Lightning. BoBoiBoy quickly pioneered his signature maneuver, <em>BoBoiBoy Kuasa Tiga</em>, enabling him to materialize three distinct elemental clones simultaneously to defend the island.
+                During a holiday visit to Tok Aba's cocoa stall, BoBoiBoy awakened Power Sphera Ochobot. Cocoa beans held concentrated cosmic energy, attracting alien warlord Adu Du. Ochobot gifted BoBoiBoy elemental mastery over Earth, Wind, and Lightning to protect the island.
               </p>
             </div>
             <div class="card-footer">
-              <p class="text-muted" style="font-size:0.85rem;"><strong>Primary Setting:</strong> Tok Aba's Kokotiam &bull; Pulau Rintis &bull; Planet Earth</p>
+              <p class="text-muted" style="font-size:0.85rem;"><strong>Setting:</strong> Tok Aba's Kokotiam &bull; Pulau Rintis &bull; Planet Earth</p>
             </div>
           </article>
 
           <article class="card glow-lightning">
             <div class="card-header">
-              <span class="badge badge-lightning mb-1">Chapter 2: The Cosmic Mission</span>
+              <span class="badge badge-lightning mb-1">Cosmic Duty</span>
               <h3 class="card-title text-amber">TAPOPS &amp; The Interstellar Front</h3>
             </div>
             <div class="card-body">
               <p>
-                As extraterrestrial incursions escalated beyond Earth's atmosphere, BoBoiBoy and his friends were inducted into <strong>TAPOPS</strong> (<em>Tracker and Protector of Power Spheras</em>), an elite galaxy-wide defense coalition marshaled by Commander Koko Ci, Admiral Tarung, and Captain Kaizo. Their critical mandate: locate and secure ancient Generation Power Spheras before galactic conquerors exploit their reality-altering capabilities.
-              </p>
-              <p class="mt-2">
-                Journeying through perilous star sectors, the team thwarted merciless foes including space pirate Borara of the Tengkotak armada, Captain Vargoba, and the primordial elemental master <strong>Retak'ka</strong>. To triumph against Retak'ka's multi-element absorption, BoBoiBoy unlocked Tier 2 forms (Halilintar, Taufan, Gempa, Blaze, Ice, Duri, Solar) and revolutionized combat with dual-elemental Fusions like FrostFire and Supra.
+                As threats expanded beyond Earth, the squad joined TAPOPS (Tracker and Protector of Power Spheras) under Commander Koko Ci and Admiral Tarung. They defend ancient Power Spheras from ruthless warlords like Captain Vargoba and primordial conqueror Retak'ka.
               </p>
             </div>
             <div class="card-footer">
-              <p class="text-muted" style="font-size:0.85rem;"><strong>Command Operations:</strong> TAPOPS Space Station &bull; Sector 12 Outer Rim</p>
+              <p class="text-muted" style="font-size:0.85rem;"><strong>Operations:</strong> TAPOPS Space Station &bull; Sector 12 Outer Rim</p>
             </div>
           </article>
         </div>
@@ -259,64 +250,48 @@
         <div class="section-header">
           <h2 class="section-title" id="featured-title">Galactic Vanguard Spotlight</h2>
           <p class="section-subtitle">
-            Meet the elemental prodigy who commands the forces of nature and the Generation 9 Power Sphera who sparked the defense of the cosmos.
+            Meet the elemental prodigy and the Generation 9 Power Sphera who sparked the defense of the cosmos.
           </p>
         </div>
 
         <div class="grid-2">
-          
           <article class="card glow-fire">
-            <div class="flex items-center gap-3 mb-3">
+            <div class="flex items-center gap-3 mb-2">
               <div class="character-avatar-wrap" style="margin: 0; flex-shrink: 0;">
-                <img src="images/boboiboy.png" alt="BoBoiBoy Avatar" class="character-avatar" width="90" height="90">
+                <img src="images/boboiboy.png" alt="BoBoiBoy Avatar" class="character-avatar" width="80" height="80">
               </div>
               <div>
                 <span class="badge badge-fire mb-1">Elemental Leader</span>
-                <h3 class="card-title text-orange" style="margin-bottom: 0.2rem;">BoBoiBoy</h3>
+                <h3 class="card-title text-orange" style="margin: 0.2rem 0;">BoBoiBoy</h3>
                 <div class="character-alias">Master of 7 Elements &amp; Clone Splitting</div>
               </div>
             </div>
-            <div class="card-body">
-              <p>
-                Earth's chief defender and TAPOPS cadet vanguard. BoBoiBoy wields the unprecedented ability to manipulate seven distinct elemental dimensions &mdash; advancing from Tier 1 base forms to Tier 2 masters and synthetic dual-elemental fusions. He can split his consciousness into multiple simultaneous clones to turn the tide of cosmic battles.
-              </p>
-              <div class="flex flex-wrap gap-1 mt-3">
-                <span class="badge badge-lightning">Lightning / Halilintar</span>
-                <span class="badge badge-wind">Wind / Taufan</span>
-                <span class="badge badge-earth">Earth / Gempa</span>
-                <span class="badge badge-fire">Fire / Blaze</span>
-              </div>
-            </div>
-            <div class="card-footer flex-between">
+            <p class="text-secondary" style="font-size: 0.92rem;">
+              Earth's chief defender wielding seven primal elements. He advances from base sparks to evolved masteries and dual fusions, splitting into multiple clones during combat.
+            </p>
+            <div class="card-footer flex-between mt-2" style="padding-top: 0.5rem;">
               <span class="text-muted" style="font-size:0.85rem;">Rank: TAPOPS Cadet</span>
-              <a href="characters.html" class="btn btn-primary btn-sm">Explore Hero Dossier &rarr;</a>
+              <a href="characters.html" class="btn btn-primary btn-sm">Hero Dossier &rarr;</a>
             </div>
           </article>
 
           <article class="card glow-wind">
-            <div class="flex items-center gap-3 mb-3">
+            <div class="flex items-center gap-3 mb-2">
               <div class="character-avatar-wrap" style="margin: 0; flex-shrink: 0; background: linear-gradient(135deg, #38bdf8, #06b6d4);">
-                <img src="images/ochobot.png" alt="Ochobot Avatar" class="character-avatar" width="90" height="90">
+                <img src="images/ochobot.png" alt="Ochobot Avatar" class="character-avatar" width="80" height="80">
               </div>
               <div>
                 <span class="badge badge-wind mb-1">Power Sphera Gen 9</span>
-                <h3 class="card-title text-wind" style="margin-bottom: 0.2rem;">Ochobot</h3>
-                <div class="character-alias" style="color: var(--color-wind);">Cosmic Teleportation &amp; Power Catalyst</div>
+                <h3 class="card-title text-wind" style="margin: 0.2rem 0;">Ochobot</h3>
+                <div class="character-alias">Spatial Teleportation &amp; Catalyst</div>
               </div>
             </div>
-            <div class="card-body">
-              <p>
-                A high-tier spherical mechanical intelligence salvaged on Pulau Rintis. Awakened through cocoa energy, Ochobot serves as BoBoiBoy's steadfast partner and tactical navigator. He holds the critical power to awaken and upgrade elemental superpowers, as well as execute instant cross-galaxy spatial teleportation for TAPOPS tactical insertions.
-              </p>
-              <div class="flex flex-wrap gap-1 mt-3">
-                <span class="badge badge-wind">Spatial Wormhole</span>
-                <span class="badge badge-light">Power Transmutation</span>
-                <span class="badge badge-lightning">Generation 9 Core</span>
-              </div>
-            </div>
-            <div class="card-footer flex-between">
+            <p class="text-secondary" style="font-size: 0.92rem;">
+              A high-tier spherical intelligence awakened by cocoa energy. Ochobot upgrades elemental superpowers and opens instant spatial wormholes for TAPOPS missions.
+            </p>
+            <div class="card-footer flex-between mt-2" style="padding-top: 0.5rem;">
               <span class="text-muted" style="font-size:0.85rem;">Origin: Ancient Sphere Makers</span>
-              <a href="characters.html" class="btn btn-secondary btn-sm">Inspect Sphera Specs &rarr;</a>
+              <a href="characters.html" class="btn btn-secondary btn-sm">Sphera Specs &rarr;</a>
             </div>
           </article>
         </div>
@@ -382,7 +357,6 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
-        
         <div class="footer-brand">
           <a href="home.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
             <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
