@@ -6,32 +6,6 @@
   <meta name="description" content="Enlist as a TAPOPS space cadet, transmit dispatches to galactic command, and explore the BoBoiBoy Universe Portal.">
   <title>TAPOPS Cadet Hub &amp; Contact | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .cadet-protocol-box {
-      background-color: #f8fafc; background-image: none; background-position: top left;
-      background-repeat: no-repeat; background-size: auto; background-attachment: scroll;
-      font-family: var(--font-sans); font-size: 1.1rem; font-weight: 700;
-      text-align: left; text-transform: uppercase; line-height: 1.35;
-      width: 100%; min-width: 280px; max-width: 100%; height: auto; min-height: 60px;
-      position: relative; top: 0; left: 0; right: 0; z-index: 2;
-      border: 1px solid var(--border-color); border-left: 4px solid var(--primary-orange);
-      border-radius: var(--radius); box-shadow: var(--shadow-subtle); padding: 1rem 1.25rem;
-    }
-    .ordered-protocol-list {
-      counter-reset: step; list-style: none; padding-left: 0; margin: 0.75rem 0;
-      display: flex; flex-direction: column; gap: 0.5rem;
-    }
-    .ordered-protocol-list > li {
-      counter-increment: step; position: relative; padding-left: 2.2rem;
-      line-height: 1.4; font-size: 0.9rem; color: var(--text-secondary);
-    }
-    .ordered-protocol-list > li::before {
-      content: counter(step); position: absolute; left: 0; top: 0;
-      width: 1.6rem; height: 1.6rem; border-radius: 50%;
-      background: var(--primary-orange); color: #fff; font-weight: 700;
-      font-size: 0.75rem; display: flex; align-items: center; justify-content: center;
-    }
-  </style>
 </head>
 <body>
 
@@ -57,23 +31,23 @@
   <main>
     <section class="hero" aria-labelledby="fanhub-banner-title">
       <div class="container text-center">
-        <h1 class="hero-title" id="fanhub-banner-title" style="max-width:880px; margin:0 auto 0.75rem auto;">TAPOPS Space Academy &amp; <span class="highlight">Cadet Hub</span></h1>
-        <p class="hero-subtitle" style="max-width:780px; margin:0 auto 1.25rem auto;">Enlist as an official TAPOPS cadet, transmit dispatches to galactic command, and explore galactic defense operations.</p>
+        <h1 class="hero-title hero-title-max" id="fanhub-banner-title">TAPOPS Space Academy &amp; <span class="highlight">Cadet Hub</span></h1>
+        <p class="hero-subtitle hero-subtitle-max">Enlist as an official TAPOPS cadet, transmit dispatches to galactic command, and explore galactic defense operations.</p>
         <div class="flex flex-center flex-wrap gap-1"><span class="badge badge-lightning">7 Elemental Disciplines</span><span class="badge badge-fire">TAPOPS Enlistment</span><span class="badge badge-earth">TAPOPS Verified</span></div>
       </div>
     </section>
 
     <section class="section" id="cadet-enlistment" aria-labelledby="enlistment-heading">
       <div class="container">
-        <div class="section-header text-center" style="margin-bottom: 1.5rem;">
+        <div class="section-header text-center">
           <h2 class="section-title" id="enlistment-heading">Cadet Recruitment &amp; Dispatch Terminal</h2>
         </div>
 
-        <div style="max-width: 680px; margin: 0 auto;">
+        <div class="form-center-box">
           <div class="card" aria-labelledby="form-heading">
-            <div class="cadet-protocol-box">
-              <span class="badge badge-lightning" style="margin-bottom:0.35rem; display:inline-block;">Official Protocol</span>
-              <h3 style="font-size:1.1rem; margin-bottom:0.25rem;">Cadet Clearance Protocol</h3>
+            <div class="protocol-box">
+              <span class="badge badge-lightning mb-1">Official Protocol</span>
+              <h3 class="protocol-box-title">Cadet Clearance Protocol</h3>
               <ol class="ordered-protocol-list">
                 <li><strong>Identity:</strong> Register official cadet legal name.</li>
                 <li><strong>Passcode:</strong> Create an encrypted 8+ character passcode.</li>
@@ -82,7 +56,7 @@
               </ol>
             </div>
 
-            <h3 id="form-heading" class="mb-2" style="font-size: 1.15rem;">TAPOPS Enlistment Form</h3>
+            <h3 id="form-heading" class="card-title mb-2">TAPOPS Enlistment Form</h3>
             <form action="#" method="get" class="cadet-form">
               <div class="form-group">
                 <label for="cadet-name" class="form-label">Cadet Name <span class="required">*</span></label>
@@ -123,7 +97,7 @@
                   <span class="form-checkbox-label">I pledge to protect Power Spheras and uphold galactic peace. <span class="required">*</span></span>
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Transmit to TAPOPS HQ</button>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Transmit to TAPOPS HQ</button>
             </form>
           </div>
         </div>
@@ -132,10 +106,10 @@
 
     <section class="section section-alt" id="faq" aria-labelledby="faq-title">
       <div class="container">
-        <div class="section-header text-center" style="margin-bottom: 1.5rem;">
+        <div class="section-header text-center">
           <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
         </div>
-        <div class="faq-list" style="max-width: 680px; margin: 0 auto;">
+        <div class="faq-list">
           <div class="faq-item">
             <h3 class="faq-question">What is TAPOPS?</h3>
             <p class="faq-answer">TAPOPS (Tracker And Protector of Power Spheras) is a galactic organization dedicated to safeguarding robotic Power Spheras from evil entities across the cosmos.</p>
@@ -157,7 +131,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
-        <p class="text-secondary" style="font-size:0.85rem; margin-top:0.4rem;">Defending the galaxy with TAPOPS and 7 primal elements.</p>
+        <p class="footer-desc">Defending the galaxy with TAPOPS and 7 primal elements.</p>
       </div>
       <div>
         <h4 class="footer-col-title">Navigation</h4>
@@ -172,7 +146,7 @@
         <div class="footer-quote"><p class="quote-text">"Awesome! Protect this galaxy at all costs!"</p><p class="quote-author">&mdash; BoBoiBoy</p></div>
       </div>
     </div>
-    <div class="footer-bottom text-center" style="padding-top:0.75rem; border-top:1px solid #e2e8f0; font-size:0.8rem; color:#64748b;">
+    <div class="footer-bottom">
       <p>&copy; 2026 BoBoiBoy Universe Portal. All rights reserved.</p>
     </div>
   </footer>
