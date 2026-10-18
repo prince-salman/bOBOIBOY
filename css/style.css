@@ -772,6 +772,7 @@ p:last-child {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top center;
   background-color: var(--bg-surface-dark);
 }
 
@@ -893,9 +894,27 @@ p:last-child {
 }
 
 .element-icon-wrap {
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+}
+
+.element-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+  transition: transform var(--transition-normal);
+}
+
+.element-card:hover .element-icon-wrap img {
+  transform: scale(1.08);
 }
 
 .element-header {
@@ -1008,6 +1027,30 @@ p:last-child {
   gap: 0.5rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
+}
+
+.fusion-visual-wrap {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.fusion-visual {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.55));
+  transition: transform var(--transition-normal);
+}
+
+.fusion-card:hover .fusion-visual {
+  transform: scale(1.05);
 }
 
 /* General Data Tables */
@@ -1158,17 +1201,20 @@ p:last-child {
   overflow: hidden;
   border: 1px solid var(--border-subtle);
   background: var(--bg-surface-dark);
+  height: 260px;
 }
 
 .chronicle-banner img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
   transition: transform var(--transition-normal);
 }
 
 .chronicle-card:hover .chronicle-banner img {
-  transform: scale(1.015);
+  transform: scale(1.03);
 }
 
 .chronicle-title {
@@ -1861,5 +1907,9 @@ details.faq-item[open] .faq-question::after {
   .student-header {
     flex-direction: column;
     text-align: center;
+  }
+
+  .chronicle-banner {
+    height: 180px;
   }
 }
