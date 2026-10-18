@@ -1,6 +1,5 @@
 import docx
 from docx.shared import Inches, Pt, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import parse_xml
 from docx.oxml.ns import nsdecls
 from pathlib import Path
@@ -54,7 +53,6 @@ def add_point(doc, num, title, question, answer):
     p.paragraph_format.space_before = Pt(0)
     p.paragraph_format.space_after = Pt(2)
     
-    # Title & Question
     r_title = p.add_run(f"{num}. {title}\n")
     r_title.bold = True
     r_title.font.size = Pt(11)
@@ -65,7 +63,7 @@ def add_point(doc, num, title, question, answer):
     r_q.font.size = Pt(9.5)
     r_q.font.color.rgb = COLOR_ORANGE
     
-    r_ans_label = p.add_run("Your 10-Second Answer: ")
+    r_ans_label = p.add_run("Your Answer: ")
     r_ans_label.bold = True
     r_ans_label.font.size = Pt(9.5)
     r_ans_label.font.color.rgb = COLOR_GREEN
@@ -102,49 +100,57 @@ def build_docx():
     add_point(
         doc,
         num=1,
-        title="Master Frame Architecture (index.html)",
-        question="How does this website work?",
-        answer="This website uses a Master Frame architecture. The navbar is written once in index.html, and content loads inside the <iframe name=\"mainFrame\"> using target=\"mainFrame\" without refreshing the outer navbar."
+        title="100% Alignment with Lecture PPTs (Weeks 1 to 6)",
+        question="Is your code strictly based on what was taught in the lecture slides?",
+        answer="Yes. 100% of our code follows the course PPTs: PPT 01 (semantic HTML & lists), PPT 02 (media & tables), PPT 03 (frames & 7-control form), PPT 04 (3 CSS methods & selectors), PPT 05 (4 CSS property categories), and PPT 06 (RWD box-sizing & media queries). No external libraries or complex frameworks were used."
     )
     
     add_point(
         doc,
         num=2,
-        title="The 5 Interconnected Pages",
-        question="What are the 5 pages and what do they contain?",
-        answer="We have 5 interconnected pages: home.html (lore & enlistment protocol), characters.html (hero cards & stat meters), elements.html (7 elements & matrix table), series.html (canon timeline & watch order), and contact.html (cadet form & student info)."
+        title="Master Frame Architecture (index.html)",
+        question="How does the website and frame navigation work?",
+        answer="We implemented the Master Frame architecture taught in PPT 03. The navigation is placed once in index.html, and page content loads inside <iframe name=\"mainFrame\"> using target=\"mainFrame\" without reloading the outer header."
     )
     
     add_point(
         doc,
         num=3,
-        title="Three Methods of Using CSS",
-        question="Where are the 3 CSS methods implemented?",
-        answer="1. External CSS in css/style.css for global styles, 2. Internal CSS in <style> tags in <head> for page components, and 3. Inline CSS in style=\"...\" attributes for micro-spacing and specific widths."
+        title="The 5 Interconnected Pages (All Under 200 Lines)",
+        question="What are the 5 pages and why is the code kept compact?",
+        answer="All 5 pages are kept concise under 200 lines each for clear explanation: home.html (179 lines), characters.html (190 lines), elements.html (193 lines), series.html (160 lines), and contact.html (196 lines)."
     )
     
     add_point(
         doc,
         num=4,
-        title="Four Required CSS Property Categories",
-        question="Name the 4 required CSS property categories!",
-        answer="1. Background (color, image, position, repeat, size), 2. Text/Font (family, size, weight, line-height, color), 3. Dimensions (width, min-width, max-width, height, min-height), and 4. Positioning (position, top, bottom, left, right, z-index)."
+        title="Three Methods of Using CSS (PPT 04)",
+        question="Where are the 3 CSS methods implemented?",
+        answer="1. External CSS in css/style.css for global design, 2. Internal CSS in <style> tags in <head> for page demos, and 3. Inline CSS in style=\"...\" attributes for specific widths and micro-adjustments."
     )
     
     add_point(
         doc,
         num=5,
-        title="Form & Semantic HTML5 Validation (contact.html)",
-        question="What form did you create and how is it validated?",
-        answer="The Cadet Enlistment Form has all 7 required controls (text, password, textarea, radio, checkbox, select, submit). Validation is handled purely with HTML5 attributes like required and minlength=\"6\" with zero JavaScript."
+        title="Four Required CSS Property Categories (PPT 05)",
+        question="Name the 4 required CSS property categories with examples!",
+        answer="1. Background (color, image, position, repeat, size, attachment), 2. Text/Font (family, size, weight, line-height, text-align), 3. Dimensions (width, min-width, max-width, height, min-height), and 4. Positioning (position, top, bottom, left, right, z-index)."
     )
     
     add_point(
         doc,
         num=6,
-        title="Clean Card Design & Light Ambient Shadow",
-        question="Why does the design look clean and human-crafted rather than heavy AI?",
-        answer="We used standard CSS Box Model spacing with a soft ambient shadow (box-shadow: 0 2px 4px rgba(0,0,0,0.06)) and crisp 1px borders, avoiding heavy artificial neon glow effects."
+        title="Cadet Form & Semantic HTML5 Validation (PPT 03)",
+        question="What controls are in the form and how are they validated?",
+        answer="The Cadet Form in contact.html includes all 7 required controls: Text, Password, Textarea, Radio, Checkbox, Select dropdown, and Submit button. Validation is handled with native HTML5 attributes (required, placeholder, minlength) without JavaScript."
+    )
+    
+    add_point(
+        doc,
+        num=7,
+        title="Clean Box Model & Responsive Design (PPT 06)",
+        question="How is responsive design implemented?",
+        answer="We used standard CSS Box Model with universal * { box-sizing: border-box; }, viewport meta tag, and clean CSS Media Queries (@media (max-width: 768px)) as instructed in PPT 06."
     )
     
     doc.save(DOCX_OUT)
@@ -215,39 +221,45 @@ def build_html():
   <div class="sub">Web Programming Project 1 • BoBoiBoy Universe Portal • Resident University</div>
 
   <div class="card">
-    <div class="num">1. Master Frame Architecture (index.html)</div>
+    <div class="num">1. 100% Alignment with Lecture PPTs (Weeks 1 to 6)</div>
+    <div class="q">Dosen tanya: "Apakah kodingan ini sesuai dengan materi yang diajarkan di kelas / PPT?"</div>
+    <div class="ans"><strong>Jawaban:</strong> "Yes. 100% of our code strictly follows the course PPTs from Week 1 to Week 6: PPT 01 (semantic HTML &amp; lists), PPT 02 (media &amp; tables), PPT 03 (frames &amp; 7-control form), PPT 04 (3 CSS methods &amp; selectors), PPT 05 (4 CSS property categories), and PPT 06 (RWD box-sizing &amp; media queries). No external libraries or complex frameworks were used."</div>
+  </div>
+
+  <div class="card">
+    <div class="num">2. Master Frame Architecture (index.html)</div>
     <div class="q">Dosen tanya: "Gimana cara kerja website ini?"</div>
-    <div class="ans"><strong>Jawaban:</strong> "This website uses a <strong>Master Frame</strong> architecture. The navbar is written once in <code>index.html</code>, and content loads inside the <code>&lt;iframe name='mainFrame'&gt;</code> using <code>target='mainFrame'</code> without refreshing the outer navbar."</div>
+    <div class="ans"><strong>Jawaban:</strong> "This website uses a <strong>Master Frame</strong> architecture taught in PPT 03. The navbar is written once in <code>index.html</code>, and content loads inside the <code>&lt;iframe name='mainFrame'&gt;</code> using <code>target='mainFrame'</code> without refreshing the outer navbar."</div>
   </div>
 
   <div class="card">
-    <div class="num">2. The 5 Interconnected Pages</div>
+    <div class="num">3. The 5 Interconnected Pages (All Under 200 Lines)</div>
     <div class="q">Dosen tanya: "Ada berapa halaman dan fungsinya apa saja?"</div>
-    <div class="ans"><strong>Jawaban:</strong> "We have 5 interconnected pages: <code>home.html</code> (lore & enlistment protocol), <code>characters.html</code> (hero cards & stat meters), <code>elements.html</code> (7 elements & matrix table), <code>series.html</code> (canon timeline & watch order), and <code>contact.html</code> (cadet form & student info)."</div>
+    <div class="ans"><strong>Jawaban:</strong> "We have 5 interconnected pages kept concise under 200 lines each: <code>home.html</code> (179 lines), <code>characters.html</code> (190 lines), <code>elements.html</code> (193 lines), <code>series.html</code> (160 lines), and <code>contact.html</code> (196 lines)."</div>
   </div>
 
   <div class="card">
-    <div class="num">3. Three Methods of Using CSS</div>
+    <div class="num">4. Three Methods of Using CSS (PPT 04)</div>
     <div class="q">Dosen tanya: "Di mana 3 cara pakai CSS-nya?"</div>
     <div class="ans"><strong>Jawaban:</strong> "1. <strong>External CSS</strong> in <code>css/style.css</code> for global styles, 2. <strong>Internal CSS</strong> in <code>&lt;style&gt;</code> tags in <code>&lt;head&gt;</code> for page components, and 3. <strong>Inline CSS</strong> in <code>style='...'</code> attributes for micro-spacing and specific widths."</div>
   </div>
 
   <div class="card">
-    <div class="num">4. Four Required CSS Property Categories</div>
+    <div class="num">5. Four Required CSS Property Categories (PPT 05)</div>
     <div class="q">Dosen tanya: "Sebutkan 4 kategori CSS yang wajib di rubrik!"</div>
     <div class="ans"><strong>Jawaban:</strong> "1. <strong>Background</strong> (color, image, position, repeat, size), 2. <strong>Text/Font</strong> (family, size, weight, line-height, color), 3. <strong>Dimensions</strong> (width, min-width, max-width, height, min-height), and 4. <strong>Positioning</strong> (position, top, bottom, left, right, z-index)."</div>
   </div>
 
   <div class="card">
-    <div class="num">5. Form & Semantic Validation (contact.html)</div>
+    <div class="num">6. Form &amp; Semantic Validation (contact.html - PPT 03)</div>
     <div class="q">Dosen tanya: "Formulirnya ada apa saja dan validasinya pakai apa?"</div>
-    <div class="ans"><strong>Jawaban:</strong> "The Cadet Enlistment Form has all <strong>7 required controls</strong> (text, password, textarea, radio, checkbox, select, submit). Validation is handled purely with HTML5 attributes like <code>required</code> and <code>minlength='6'</code> with zero JavaScript."</div>
+    <div class="ans"><strong>Jawaban:</strong> "The Cadet Enlistment Form has all <strong>7 required controls</strong> from PPT 03 (text, password, textarea, radio, checkbox, select, submit). Validation is handled purely with HTML5 attributes like <code>required</code>, <code>placeholder</code>, and <code>minlength='8'</code> with zero JavaScript."</div>
   </div>
 
   <div class="card">
-    <div class="num">6. Clean Card Design & Light Ambient Shadow</div>
-    <div class="q">Dosen tanya: "Kenapa desain kotaknya rapi dan tidak berlebihan?"</div>
-    <div class="ans"><strong>Jawaban:</strong> "We used standard <strong>CSS Box Model</strong> spacing with a soft ambient shadow (<code>box-shadow: 0 2px 4px rgba(0,0,0,0.06)</code>) and crisp 1px borders, avoiding heavy artificial neon glow effects."</div>
+    <div class="num">7. Clean Box Model &amp; Responsive Design (PPT 06)</div>
+    <div class="q">Dosen tanya: "Bagaimana penerapan responsive web design-nya?"</div>
+    <div class="ans"><strong>Jawaban:</strong> "We used standard <strong>CSS Box Model</strong> spacing with universal <code>* { box-sizing: border-box; }</code>, viewport meta tag, and CSS Media Queries (<code>@media (max-width: 768px)</code>) as taught in PPT 06."</div>
   </div>
 </body>
 </html>
