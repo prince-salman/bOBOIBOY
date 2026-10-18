@@ -555,9 +555,35 @@ def build_report():
             print(f"Warning: Screenshot file not found: {img_path}")
 
     # --------------------------------------------------------------------------
-    # 9. GDRIVE SUBMISSION & EMAIL DELIVERY GUIDE
+    # 9. ALIGNMENT WITH OFFICIAL COURSE LECTURE MODULES
     # --------------------------------------------------------------------------
-    doc.add_heading("9. Google Drive Packaging & Email Submission Guide", level=1)
+    doc.add_heading("9. Alignment with Official Course Curriculum Modules", level=1)
+    
+    doc.add_paragraph(
+        "The technical engineering of this website directly mirrors the exact pedagogical principles taught across "
+        "the six official lecture modules of the Web Programming course:"
+    )
+
+    doc.add_paragraph(
+        "• Module 01 (The Web and HTML): Implemented robust DOCTYPE declarations, head metadata, semantic headings (h1–h4), "
+        "and clean HTML5 structural elements.\n"
+        "• Module 02 (HTML Media and Table): Integrated 50+ optimized image assets with 100% alt coverage, and 4 multi-column data "
+        "tables with thead, tbody, th, and td elements.\n"
+        "• Module 03 (HTML Form and Frame): Followed the exact master frame architecture (Slide 30-35) with index.html as the master page, "
+        "nav.html as the navigation frame, and main content rendered inside the designated frame (target='mainFrame' / target='main'). "
+        "Also implemented all 7 form control types (Text, Password, Textarea, Radio, Checkbox, Select, Submit) with label-for associations.\n"
+        "• Module 04 (CSS Fundamentals): Implemented all 3 methods of CSS (Inline style, Style tag in head, and Separate .css file), "
+        "utilizing ID, class, descendant, and pseudo-class selectors (:hover, :focus, :valid, :invalid).\n"
+        "• Module 05 (CSS Advanced Properties): Applied border-radius, linear and radial gradients, multi-layer box-shadow and text-shadow, "
+        "2D transforms (rotate, scale, translateY), CSS transitions, and @keyframes animations.\n"
+        "• Module 06 (CSS Responsive Web Design): Engineered fluid grid and flexbox layouts with CSS media queries (@media screen and max-width) "
+        "delivering seamless rendering across mobile (360px+), tablet (768px), and wide desktop displays without horizontal overflow."
+    )
+
+    # --------------------------------------------------------------------------
+    # 10. GDRIVE SUBMISSION & EMAIL DELIVERY GUIDE
+    # --------------------------------------------------------------------------
+    doc.add_heading("10. Google Drive Packaging & Email Submission Guide", level=1)
     
     doc.add_paragraph(
         "Per the project submission instructions, all project artifacts must be compiled into a Google Drive folder and submitted via email:\n"
