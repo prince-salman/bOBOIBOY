@@ -18,16 +18,17 @@
   <style>
     /* 1. Background Properties Demonstration */
     .portal-announcement-banner {
-      background-color: #ffffff;
-      background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
-      background-position: center top;
+      background-color: #f8fafc;
+      background-image: none;
+      background-position: left top;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: auto;
       background-attachment: scroll;
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-md);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-      padding: 1.25rem 1.75rem;
+      border: 1px solid #e2e8f0;
+      border-left: 4px solid var(--primary-orange);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
+      padding: 1.25rem 1.5rem;
       margin: 0 auto;
     }
 
@@ -159,13 +160,13 @@
         </div>
         <div class="hero-visual">
           <!-- Inline CSS Demonstration on Card -->
-          <div class="hero-badge-card glow-lightning" style="background-color: #ffffff; width: 100%; max-width: 420px; position: relative; text-align: center;">
-            <img src="images/logo.svg" alt="BoBoiBoy Galaxy Emblem" width="240" height="72">
-            <h3 class="text-orange mb-1" style="font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; color: #f97316;">
+          <div class="hero-badge-card" style="background-color: #ffffff; width: 100%; max-width: 380px; position: relative; text-align: center; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+            <img src="images/logo.svg" alt="BoBoiBoy Galaxy Emblem" width="220" height="65" style="margin: 0 auto 1.25rem auto;">
+            <h3 class="text-orange mb-1" style="font-family: var(--font-sans); font-size: 1.25rem; font-weight: 700; color: #ff5722;">
               Elemental Vanguard
             </h3>
-            <p class="text-secondary mb-3" style="font-size: 0.85rem; line-height: 1.4;">
-              7 Primal Forces &bull; Split-Clone Mastery &bull; Cosmic Defense Coalition
+            <p class="text-secondary mb-3" style="font-size: 0.88rem; line-height: 1.5;">
+              7 Primal Forces &bull; Split-Clone Mastery &bull; TAPOPS Defense
             </p>
             <div class="flex flex-center flex-wrap gap-1">
               <span class="badge badge-lightning">Tier 3 Master</span>

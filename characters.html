@@ -19,14 +19,15 @@
     /* 1. Background Properties Demonstration */
     .hero-dossier-highlight {
       background-color: #f8fafc;
-      background-image: radial-gradient(circle at 100% 0%, rgba(220, 38, 38, 0.06) 0%, transparent 50%),
-                        radial-gradient(circle at 0% 100%, rgba(2, 132, 199, 0.06) 0%, transparent 50%);
-      background-position: top center;
+      background-image: none;
+      background-position: center top;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: auto;
       background-attachment: scroll;
       border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--primary-orange);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
       padding: 1.25rem 1.5rem;
       margin-bottom: 2rem;
     }
