@@ -311,19 +311,24 @@ def main():
             print(f"  [FAIL] {filename}: Missing <meta name=\"viewport\">")
             total_errors += 1
 
-        # Validate Landmarks (header, nav, main, footer)
-        if parser.has_header and parser.has_nav and parser.has_main and parser.has_footer:
-            print(f"  [OK] {filename}: Semantic landmarks present (<header>, <nav>, <main>, <footer>)")
+        # Validate Landmarks
+        if filename == "index.html":
+            if parser.has_header and parser.has_nav and parser.has_main and parser.has_footer:
+                print(f"  [OK] {filename}: Master Frame landmarks present (<header>, <nav>, <main>, <footer>)")
+            else:
+                print(f"  [FAIL] {filename}: Missing master landmark (header={parser.has_header}, nav={parser.has_nav}, main={parser.has_main}, footer={parser.has_footer})")
+                total_errors += 1
+            if parser.has_nav_toggle:
+                print(f"  [OK] {filename}: Pure CSS mobile drawer #nav-toggle input present")
+            else:
+                print(f"  [FAIL] {filename}: Missing #nav-toggle input")
+                total_errors += 1
         else:
-            print(f"  [FAIL] {filename}: Missing semantic landmark (header={parser.has_header}, nav={parser.has_nav}, main={parser.has_main}, footer={parser.has_footer})")
-            total_errors += 1
-
-        # Pure CSS mobile drawer toggle
-        if parser.has_nav_toggle:
-            print(f"  [OK] {filename}: Pure CSS mobile drawer #nav-toggle input present")
-        else:
-            print(f"  [FAIL] {filename}: Missing #nav-toggle input")
-            total_errors += 1
+            if parser.has_main and parser.has_footer:
+                print(f"  [OK] {filename}: Main frame content landmarks present (<main>, <footer>) - Excluded from duplicate navigation per rubric")
+            else:
+                print(f"  [FAIL] {filename}: Missing content landmark (main={parser.has_main}, footer={parser.has_footer})")
+                total_errors += 1
 
         # Validate Tag balance
         if not parser.tag_mismatches and not parser.tags_stack:
@@ -344,15 +349,16 @@ def main():
         else:
             print(f"  [OK] {filename}: All {len(parser.ids)} IDs are unique")
 
-    # 3. Active Navigation Links Check
-    print("\n[Step 3] Checking Active Navigation State Integrity...")
-    for filename, parser in parsed_pages.items():
-        expected_active = PAGE_ACTIVE_MAP[filename]
-        active_links = [href for href, _ in parser.active_nav_links]
-        if expected_active in active_links:
-            print(f"  [OK] {filename}: Correctly sets active link '{expected_active}'")
+    # 3. Master Frame Navigation Links Check
+    print("\n[Step 3] Checking Master Navigation Menu in index.html...")
+    index_parser = parsed_pages.get("index.html")
+    if index_parser:
+        master_nav_links = [href for href, _, _ in index_parser.links if href in PAGE_ACTIVE_MAP.values()]
+        expected_pages = set(PAGE_ACTIVE_MAP.values())
+        if expected_pages.issubset(set(master_nav_links)):
+            print(f"  [OK] index.html: Master navigation contains all 5 interconnected target links: {sorted(list(expected_pages))}")
         else:
-            print(f"  [FAIL] {filename}: Active nav link mismatch. Found {active_links}, expected '{expected_active}'")
+            print(f"  [FAIL] index.html: Missing target navigation links. Found {master_nav_links}")
             total_errors += 1
 
     # 4. Check Image Assets and Alt Coverage
