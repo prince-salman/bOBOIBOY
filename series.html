@@ -46,17 +46,17 @@
           <span>🎬</span> Animonsta Studios Galactic Canon
         </div>
         <h1 class="hero-title" id="chronicles-title" style="max-width: 880px; margin-left: auto; margin-right: auto;">
-          The Complete <span class="highlight">BoBoiBoy Chronicles</span>
+          The Cosmic Saga: <span class="highlight">BoBoiBoy Galaxy</span>
         </h1>
         <p class="hero-subtitle" style="max-width: 780px; margin-left: auto; margin-right: auto; margin-bottom: 1.75rem;">
-          Trace the multi-era evolution of Southeast Asia's premier superhero franchise. From tranquil origins in Pulau Rintis defending cocoa stalls to interstellar TAPOPS rescue expeditions, record-shattering theatrical blockbusters, and multi-elemental cosmic fusions.
+          Jelajahi era kosmik BoBoiBoy bersama TAPOPS melintasi galaksi! Saksikan ekspedisi pencarian Power Sphera, pertarungan epik melawan kaisar purba Retak'ka, kebangkitan kuasa Elemental Fusion legendaris, hingga perjuangan membela takhta Planet Windara.
         </p>
         <div class="flex flex-center flex-wrap gap-2">
-          <span class="badge badge-year">2011–2026+ Timeline</span>
-          <span class="badge badge-lightning">5 Landmark Eras</span>
-          <span class="badge badge-fire">2 Theatrical Blockbusters</span>
-          <span class="badge badge-wind">100+ Canon Episodes</span>
-          <span class="badge badge-rating">⭐ 9.4+ Global Acclaim</span>
+          <span class="badge badge-year">2016–2026+ Era Galaxy</span>
+          <span class="badge badge-lightning">🌌 TAPOPS Space Odyssey</span>
+          <span class="badge badge-fire">🎬 Theatrical Climax: Movie 2</span>
+          <span class="badge badge-wind">🪐 Planet Windara &amp; Barisan Kesatria</span>
+          <span class="badge badge-rating">⭐ 9.5+ Global Acclaim</span>
         </div>
       </div>
     </section>
@@ -65,217 +65,104 @@
     <section class="section section-alt" id="chronicle-timeline" aria-labelledby="timeline-heading">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Release Continuum</span>
-          <h2 class="section-title" id="timeline-heading">Five Eras of Elemental Heroism</h2>
+          <span class="section-tag">Galactic Continuum</span>
+          <h2 class="section-title" id="timeline-heading">Trilogi Epik BoBoiBoy Galaxy</h2>
           <p class="section-subtitle">
-            Explore every television series and cinematic feature film arranged in chronological release order, detailing pivotal narrative arcs, high-stakes galactic conflicts, and legendary power awakenings.
+            Pilih musim di bawah untuk menjelajahi setiap era kosmik BoBoiBoy Galaxy secara interaktif, mulai dari misi rekrutmen TAPOPS, pertarungan puncak di Planet Quabaq, hingga perang di Planet Windara.
           </p>
         </div>
 
-        <!-- Pure CSS Media Filter Controls -->
-        <input type="radio" name="media-filter" id="filter-all" class="media-filter-radio" checked>
-        <input type="radio" name="media-filter" id="filter-series" class="media-filter-radio">
-        <input type="radio" name="media-filter" id="filter-movies" class="media-filter-radio">
+        <!-- Pure CSS Galaxy Filter Controls -->
+        <input type="radio" name="galaxy-filter" id="tab-galaxy-all" class="galaxy-radio" checked>
+        <input type="radio" name="galaxy-filter" id="tab-galaxy-s1" class="galaxy-radio">
+        <input type="radio" name="galaxy-filter" id="tab-galaxy-movie" class="galaxy-radio">
+        <input type="radio" name="galaxy-filter" id="tab-galaxy-s2" class="galaxy-radio">
 
-        <!-- Filter Tab Buttons -->
-        <div class="media-filter-tabs" role="tablist" aria-label="Filter series and movies">
-          <label for="filter-all" class="media-filter-btn">
-            <span class="filter-icon">🌟</span>
-            <span>All Timeline</span>
-            <span class="filter-count">5</span>
+        <!-- Season Tab Buttons -->
+        <div class="galaxy-tabs" role="tablist" aria-label="Filter BoBoiBoy Galaxy eras">
+          <label for="tab-galaxy-all" class="galaxy-tab-btn">
+            <span>🌟</span> Semua Galaxy
           </label>
-          <label for="filter-series" class="media-filter-btn">
-            <span class="filter-icon">📺</span>
-            <span>TV Animated Series</span>
-            <span class="filter-count">3</span>
+          <label for="tab-galaxy-s1" class="galaxy-tab-btn">
+            <span>🚀</span> Galaxy Musim 1
           </label>
-          <label for="filter-movies" class="media-filter-btn">
-            <span class="filter-icon">🎬</span>
-            <span>Theatrical Movies</span>
-            <span class="filter-count">2</span>
+          <label for="tab-galaxy-movie" class="galaxy-tab-btn">
+            <span>🎬</span> Movie 2 (Retak'ka)
+          </label>
+          <label for="tab-galaxy-s2" class="galaxy-tab-btn">
+            <span>🌌</span> Galaxy Musim 2
           </label>
         </div>
 
-        <!-- Filter Status Notice -->
-        <div class="filter-indicator filter-indicator-all">
-          <span>🌟</span> Displaying all <strong>5 Canon Eras</strong> (TV Series &amp; Feature Films combined in release sequence)
+        <!-- Filter Status Feedback Banner -->
+        <div class="galaxy-filter-indicator indicator-galaxy-all">
+          <span>🌟</span> Menampilkan <strong>Seluruh Saga BoBoiBoy Galaxy</strong> (Musim 1, Movie 2, dan Musim 2)
         </div>
-        <div class="filter-indicator filter-indicator-series">
-          <span>📺</span> Filtered to <strong>3 TV Animated Series</strong> (Classic, Galaxy S1, Galaxy S2)
+        <div class="galaxy-filter-indicator indicator-galaxy-s1">
+          <span>🚀</span> Menampilkan <strong>BoBoiBoy Galaxy Musim 1 (2016–2018)</strong>: Ekspedisi TAPOPS &amp; 7 Elemen Lengkap
         </div>
-        <div class="filter-indicator filter-indicator-movies">
-          <span>🎬</span> Filtered to <strong>2 Theatrical Feature Films</strong> (The Movie 1, Movie 2)
+        <div class="galaxy-filter-indicator indicator-galaxy-movie">
+          <span>🎬</span> Menampilkan <strong>BoBoiBoy Movie 2 (2019)</strong>: Kemurkaan Retak'ka &amp; Kelahiran Elemental Fusion
+        </div>
+        <div class="galaxy-filter-indicator indicator-galaxy-s2">
+          <span>🌌</span> Menampilkan <strong>BoBoiBoy Galaxy Musim 2 (2023–Sekarang)</strong>: Barisan Kesatria, Planet Windara &amp; Kuasa SORI
         </div>
 
         <!-- Vertical Timeline Container -->
         <div class="timeline">
 
-          <!-- ---------------------------------------------------------------
-               ERA 1: BoBoiBoy Classic (2011–2016)
-               --------------------------------------------------------------- -->
-          <article class="timeline-item type-series" aria-labelledby="era-classic-title">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="chronicle-card">
-              
-              <!-- Vector Banner Visual -->
-              <div class="chronicle-banner">
-                <img src="images/series/classic.jpg" alt="BoBoiBoy Classic era official poster featuring Tok Aba Kokotiam and heroes" width="640" height="240" loading="lazy">
-              </div>
 
-              <!-- Meta Badges -->
-              <div class="chronicle-meta">
-                <span class="badge badge-year">2011–2016</span>
-                <span class="badge badge-fire">TV Series</span>
-                <span class="badge badge-episodes">3 Seasons &bull; 52 Episodes</span>
-                <span class="badge badge-rating">⭐ 9.4 / 10 IMDb</span>
-              </div>
 
-              <!-- Title & Lead -->
-              <h3 class="chronicle-title" id="era-classic-title">
-                BoBoiBoy Classic: The Pulau Rintis Origins
-              </h3>
-              <p class="chronicle-lead">
-                The legendary saga begins when young city boy BoBoiBoy visits his grandfather Tok Aba in tranquil Pulau Rintis for the school holidays. After accidentally awakening Ochobot—an ancient robotic Power Sphera pursued by cocoa-obsessed alien Adu Du—BoBoiBoy receives miraculous elemental powers. Together with his classmates Yaya, Ying, Gopal, and rival-turned-brother-in-arms Fang, he forms Earth's first superhero defender cadre.
-              </p>
-
-              <!-- Plot & High-Stakes Conflict -->
-              <p class="text-secondary mb-3">
-                <strong>High-Stakes Conflict:</strong> What starts as neighborhood battles over Tok Aba's hot cocoa recipe escalates into high-stakes planetary defense when galactic warlord Ejo Jo arrives with his lethal combat titan Petai, seeking to eliminate all Power Spheras on Earth and forcing BoBoiBoy to master volatile secondary tier transformations under intense psychological pressure.
-              </p>
-
-              <!-- Key Elemental Milestones -->
-              <div class="chronicle-milestones">
-                <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Key Elemental Milestones &amp; Awakenings
-                </h4>
-                <ul class="chronicle-milestones-list">
-                  <li><strong>Primal Trio Awakening:</strong> First simultaneous mastery of Petir (Lightning), Angin (Wind), and Tanah (Earth) using the legendary <em>BoBoiBoy Kuasa Tiga</em> split technique.</li>
-                  <li><strong>Tier 2 Evolutions:</strong> Halilintar unlocked during intense trauma; Taufan sparked through joyful exuberance; Gempa forged through unwavering leadership and courage against Petai.</li>
-                  <li><strong>Emotional Elements:</strong> Accidental awakening of volatile BoBoiBoy Api (Fire) through deep frustration, followed by the tranquil balancing mastery of BoBoiBoy Air (Water).</li>
-                </ul>
-              </div>
-
-              <!-- Villains Tag List -->
-              <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Key Adversaries:</span>
-                <span class="villain-tag">Adu Du</span>
-                <span class="villain-tag">Probe</span>
-                <span class="villain-tag">Ejo Jo &amp; Petai</span>
-                <span class="villain-tag">Raksasa Tidur</span>
-                <span class="villain-tag">Rob &amp; Robert</span>
-                <span class="villain-tag">Bago Go</span>
-              </div>
-
-            </div>
-          </article>
 
           <!-- ---------------------------------------------------------------
-               ERA 2: BoBoiBoy: The Movie (2016)
+               ERA 1: BoBoiBoy Galaxy Musim 1 (2016–2018)
                --------------------------------------------------------------- -->
-          <article class="timeline-item type-movie" aria-labelledby="era-movie1-title">
+          <article class="timeline-item item-galaxy-s1" aria-labelledby="era-galaxy1-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 
               <!-- Vector Banner Visual -->
               <div class="chronicle-banner">
-                <img src="images/series/movie1.jpg" alt="BoBoiBoy The Movie 1 official poster featuring Klamkabot and BoBoiBoy Fire clash" width="640" height="240" loading="lazy">
-              </div>
-
-              <!-- Meta Badges -->
-              <div class="chronicle-meta">
-                <span class="badge badge-year">2016</span>
-                <span class="badge badge-lightning">Theatrical Feature Film</span>
-                <span class="badge badge-episodes">100 Minutes Runtime</span>
-                <span class="badge badge-rating">⭐ 8.5 / 10 IMDb &bull; RM 17.5M Box Office</span>
-              </div>
-
-              <!-- Title & Lead -->
-              <h3 class="chronicle-title" id="era-movie1-title">
-                BoBoiBoy: The Movie — The Floating Island &amp; Klamkabot
-              </h3>
-              <p class="chronicle-lead">
-                In this cinematic debut, the infamous intergalactic treasure hunters known as the Tengkotak Gang—led by the brutal warlord Captain Bora Ra—invade Earth to hunt down Klamkabot, an ancient Elder Power Sphera holding universe-altering technological secrets. When Ochobot is captured and forced to activate Klamkabot's hidden coordinate matrix on the Floating Island, BoBoiBoy and his allies launch a high-altitude rescue expedition into uncharted airspace.
-              </p>
-
-              <!-- Plot & High-Stakes Conflict -->
-              <p class="text-secondary mb-3">
-                <strong>High-Stakes Conflict:</strong> Captain Bora Ra captures the Black Hole Power Sphera and creates an unstoppable spatial singularity above the island. Facing complete existential collapse and the sacrifice of Klamkabot, BoBoiBoy must conquer his internal doubts to unleash the fiery fury of Blaze and the crystalline control of Ice.
-              </p>
-
-              <!-- Key Elemental Milestones -->
-              <div class="chronicle-milestones">
-                <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Key Elemental Milestones &amp; Awakenings
-                </h4>
-                <ul class="chronicle-milestones-list">
-                  <li><strong>BoBoiBoy Blaze (Tier 2 Fire):</strong> Awakened during the climactic brawl against Gaga Naz, turning raw destruction into focused martial combat.</li>
-                  <li><strong>BoBoiBoy Ice (Tier 2 Water):</strong> Awakened to counteract Bora Ra's catastrophic cosmic plasma and seal spatial tears with permafrost barriers.</li>
-                  <li><strong>Ochobot Generasi Baru:</strong> Klamkabot transfers his ancient core energy into Ochobot, granting him upgraded teleportation and teleportation-assisted elemental enhancements.</li>
-                </ul>
-              </div>
-
-              <!-- Villains Tag List -->
-              <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Key Adversaries:</span>
-                <span class="villain-tag">Captain Bora Ra</span>
-                <span class="villain-tag">Gaga Naz</span>
-                <span class="villain-tag">Yoyo Oo</span>
-                <span class="villain-tag">Kiki Ta</span>
-                <span class="villain-tag">Janna</span>
-              </div>
-
-            </div>
-          </article>
-
-          <!-- ---------------------------------------------------------------
-               ERA 3: BoBoiBoy Galaxy Season 1 (2016–2018)
-               --------------------------------------------------------------- -->
-          <article class="timeline-item type-series" aria-labelledby="era-galaxy1-title">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="chronicle-card">
-
-              <!-- Vector Banner Visual -->
-              <div class="chronicle-banner">
-                <img src="images/series/galaxy1.jpg" alt="BoBoiBoy Galaxy Season 1 official visual featuring TAPOPS cadet squad" width="640" height="240" loading="lazy">
+                <img src="images/series/galaxy1.jpg" alt="Poster resmi BoBoiBoy Galaxy Musim 1 menampilkan skuad kadet TAPOPS" width="640" height="240" loading="lazy">
               </div>
 
               <!-- Meta Badges -->
               <div class="chronicle-meta">
                 <span class="badge badge-year">2016–2018</span>
-                <span class="badge badge-wind">TV Series (Galactic Expansion)</span>
-                <span class="badge badge-episodes">24 Episodes</span>
+                <span class="badge badge-wind">🚀 Galaxy Musim 1</span>
+                <span class="badge badge-episodes">24 Episod &bull; Misi TAPOPS</span>
                 <span class="badge badge-rating">⭐ 9.2 / 10 IMDb</span>
               </div>
 
               <!-- Title & Lead -->
               <h3 class="chronicle-title" id="era-galaxy1-title">
-                BoBoiBoy Galaxy Season 1: The TAPOPS Space Odyssey
+                BoBoiBoy Galaxy Musim 1: Ekspedisi Angkasa TAPOPS &amp; 7 Elemen
               </h3>
               <p class="chronicle-lead">
-                Expanding far beyond Earth's atmosphere, BoBoiBoy, Gopal, Yaya, Ying, and Fang are recruited into TAPOPS (Tracker and Protector of Power Spheras) under the eccentric leadership of Commander Koko Ci and Admiral Tarung. Operating aboard cosmic vessel Sunnova, the adolescent cadetes voyage across the stars to recover stranded Power Spheras before galactic syndicates and warlords exploit their power.
+                Melangkah jauh melampaui batas atmosfer Bumi, BoBoiBoy bersama Gopal, Yaya, Ying, dan Fang direkrut menjadi kadet TAPOPS (Tracker and Protector of Power Spheras) di bawah bimbingan Komander Koko Ci dan Laksamana Tarung. Menaiki kapal angkasa Sunnova, para pahlawan muda ini menjelajah galaksi untuk menyelamatkan Power Sphera yang terlantar sebelum disalahgunakan oleh sindikat penjahat antariksa.
               </p>
 
               <!-- Plot & High-Stakes Conflict -->
               <p class="text-secondary mb-3">
-                <strong>High-Stakes Conflict:</strong> Galactic space pirate Captain Vargoba—wielding immense Dark Magnetism capable of tearing celestial fleets apart—lays siege to the primary TAPOPS Space Station. With his teammates neutralized and station defenses crumbling, BoBoiBoy stands alone in deep space, forced to synthesize his final primal element into blinding solar destruction.
+                <strong>Konflik Utama:</strong> Bajak laut angkasa Kapten Vargoba yang menguasai Magnet Gelap menyerang Stasiun Luar Angkasa TAPOPS. Dengan rekan-rekannya dilumpuhkan dan perisai stasiun hancur, BoBoiBoy harus bertarung sendirian di ruang hampa dan membangkitkan wujud puncak elemen ketujuh demi menyelamatkan galaksi.
               </p>
 
               <!-- Key Elemental Milestones -->
               <div class="chronicle-milestones">
                 <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Key Elemental Milestones &amp; Awakenings
+                  <span>⚡</span> Tonggak Elemental &amp; Pencapaian Kunci
                 </h4>
                 <ul class="chronicle-milestones-list">
-                  <li><strong>Daun &amp; Duri (Leaf &amp; Thorn):</strong> BoBoiBoy awakens the gentle restorative Leaf element on desert planet Gurunda, later evolving into thorn-whipping Duri.</li>
-                  <li><strong>Cahaya &amp; Solar (Light &amp; Solar):</strong> The 7th and final primal element Cahaya is unlocked, immediately evolving into the apex Tier 2 form <em>BoBoiBoy Solar</em> during the finale battle.</li>
-                  <li><strong>Tembakan Solar Maksima:</strong> BoBoiBoy discharges his single most devastating energy strike in the animated series, disintegrating Captain Vargoba's gravitational singularity.</li>
+                  <li><strong>Kebangkitan Daun &amp; Duri:</strong> BoBoiBoy membangkitkan elemen Daun yang lembut di Planet Gurunda, yang kemudian berevolusi menjadi cambuk berduri mematikan BoBoiBoy Duri.</li>
+                  <li><strong>Kebangkitan Cahaya &amp; Solar:</strong> Elemen ketujuh dan terakhir Cahaya berhasil dibuka, langsung berevolusi menjadi wujud puncak <em>BoBoiBoy Solar</em> di pertempuran final.</li>
+                  <li><strong>Tembakan Solar Maksima:</strong> Tembakan sinar energi paling dahsyat dalam serial TV yang sukses melenyapkan singularitas lubang hitam gravitasi Kapten Vargoba.</li>
                 </ul>
               </div>
 
               <!-- Villains Tag List -->
               <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Key Adversaries:</span>
-                <span class="villain-tag">Captain Vargoba</span>
+                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Lawan Utama:</span>
+                <span class="villain-tag">Kapten Vargoba</span>
                 <span class="villain-tag">Jugglenaut</span>
                 <span class="villain-tag">Panto</span>
                 <span class="villain-tag">Roktaroka</span>
@@ -287,55 +174,55 @@
           </article>
 
           <!-- ---------------------------------------------------------------
-               ERA 4: BoBoiBoy Movie 2 (2019)
+               ERA 2: BoBoiBoy Movie 2 (2019)
                --------------------------------------------------------------- -->
-          <article class="timeline-item type-movie" aria-labelledby="era-movie2-title">
+          <article class="timeline-item item-galaxy-movie" aria-labelledby="era-movie2-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 
               <!-- Vector Banner Visual -->
               <div class="chronicle-banner">
-                <img src="images/series/movie2.jpg" alt="BoBoiBoy Movie 2 official poster featuring Retak'ka and elemental clash" width="640" height="240" loading="lazy">
+                <img src="images/series/movie2.jpg" alt="Poster resmi BoBoiBoy Movie 2 menampilkan pertarungan puncak melawan Retak'ka" width="640" height="240" loading="lazy">
               </div>
               
               <!-- Meta Badges -->
               <div class="chronicle-meta">
                 <span class="badge badge-year">2019</span>
-                <span class="badge badge-fire">Theatrical Feature Film</span>
-                <span class="badge badge-episodes">117 Minutes Runtime</span>
-                <span class="badge badge-rating">⭐ 8.6 / 10 IMDb &bull; RM 30M Historic Record</span>
+                <span class="badge badge-fire">🎬 Jembatan Sinematik S1 &amp; S2</span>
+                <span class="badge badge-episodes">117 Menit Layar Lebar</span>
+                <span class="badge badge-rating">⭐ 8.6 / 10 IMDb &bull; Rekor RM 30 Juta</span>
               </div>
 
               <!-- Title & Lead -->
               <h3 class="chronicle-title" id="era-movie2-title">
-                BoBoiBoy Movie 2: The Wrath of Retak'ka &amp; Elemental Fusions
+                BoBoiBoy Movie 2: Kemurkaan Retak'ka &amp; Kelahiran Elemental Fusion
               </h3>
               <p class="chronicle-lead">
-                An ancient cosmic tyrant named Retak'ka—the original wielder of all seven elemental powers millennia ago—is accidentally liberated from an asteroid crystal prison. Upon discovering that his primordial powers now reside inside an Earth boy, Retak'ka launches a merciless galactic hunt to strip BoBoiBoy of his elemental abilities. After Retak'ka brutally drains Halilintar, Solar, Gempa, and Taufan, a powerless BoBoiBoy seeks sanctuary on Planet Quabaq under the mentorship of legendary martial hermit Hang Kasa.
+                Retak'ka, tiran kosmik purba dari ribuan tahun silam dan pemilik asli ketujuh kuasa elemental, terbebas dari penjara kristal asteroid. Mengetahui kekuatannya kini ada pada BoBoiBoy, Retak'ka memburu dan menyerap empat elemen inti (Halilintar, Solar, Gempa, Taufan). BoBoiBoy yang tak berdaya mengungsi ke Planet Quabaq untuk berguru pada pendekar legendaris Hang Kasa demi bangkit kembali.
               </p>
 
               <!-- Plot & High-Stakes Conflict -->
               <p class="text-secondary mb-3">
-                <strong>High-Stakes Conflict:</strong> Retak'ka reclaims five apex elements and morphs into a monstrous, god-like elemental sovereign on Planet Quabaq. To prevent the annihilation of his friends and Ochobot's destruction, BoBoiBoy transcends split-cloning limitations to achieve dual-sphere elemental fusion for the first time in cosmic history.
+                <strong>Konflik Utama:</strong> Retak'ka berevolusi menjadi raksasa elemental berkekuatan dewa di Planet Quabaq. Menghadapi kepunahan harapan dan pengorbanan Ochobot, BoBoiBoy melampaui teknik klon Kuasa Tiga untuk menciptakan teknik penggabungan dua elemen serentak (Elemental Fusion) yang belum pernah tercatat dalam sejarah kosmik.
               </p>
 
               <!-- Key Elemental Milestones -->
               <div class="chronicle-milestones">
                 <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Key Elemental Milestones &amp; Awakenings
+                  <span>⚡</span> Tonggak Elemental &amp; Pencapaian Kunci
                 </h4>
                 <ul class="chronicle-milestones-list">
-                  <li><strong>BoBoiBoy FrostFire (Fire + Ice):</strong> The historic first elemental fusion, combining scorching volcanic heat with absolute zero cryo-shockwaves.</li>
-                  <li><strong>BoBoiBoy Glacier (Ice + Earth):</strong> A titanic colossus fusion wielding colossal crystalized stone gauntlets and impenetrable glacial fortifications.</li>
-                  <li><strong>BoBoiBoy Supra (Solar + Halilintar):</strong> Reclaiming his primary stolen elements, BoBoiBoy unleashes the universe's ultimate fusion warrior, piercing Retak'ka with supersonic light lances.</li>
+                  <li><strong>BoBoiBoy FrostFire (Api + Ais):</strong> Fusi perdana dalam sejarah, memadukan ledakan lava pijar dengan gelombang kejut es beku mutlak.</li>
+                  <li><strong>BoBoiBoy Glacier (Ais + Gempa):</strong> Fusi raksasa berkekuatan kristal beku dan pelindung tektonik tak tertembus.</li>
+                  <li><strong>BoBoiBoy Supra (Solar + Halilintar):</strong> Wujud ksatria fusi terkuat yang menusuk Retak'ka dengan tombak cahaya petir berkecepatan supersonik.</li>
                 </ul>
               </div>
 
               <!-- Villains Tag List -->
               <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Key Adversaries:</span>
-                <span class="villain-tag">Retak'ka (Voltra / Gamma / Beliung)</span>
-                <span class="villain-tag">Captain Separo</span>
+                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Lawan Utama:</span>
+                <span class="villain-tag">Retak'ka (Voltra / Gamma / Beliung / Balak)</span>
+                <span class="villain-tag">Kapten Separo</span>
                 <span class="villain-tag">Mining Scavenger Guild</span>
               </div>
 
@@ -343,57 +230,57 @@
           </article>
 
           <!-- ---------------------------------------------------------------
-               ERA 5: BoBoiBoy Galaxy Season 2 (2023+)
+               ERA 3: BoBoiBoy Galaxy Musim 2 (2023–Sekarang)
                --------------------------------------------------------------- -->
-          <article class="timeline-item type-series" aria-labelledby="era-galaxy2-title">
+          <article class="timeline-item item-galaxy-s2" aria-labelledby="era-galaxy2-title">
             <div class="timeline-marker" aria-hidden="true"></div>
             <div class="chronicle-card">
 
               <!-- Vector Banner Visual -->
               <div class="chronicle-banner">
-                <img src="images/series/galaxy2.jpg" alt="BoBoiBoy Galaxy Season 2 official poster featuring Windara and SORI" width="640" height="240" loading="lazy">
+                <img src="images/series/galaxy2.jpg" alt="Poster resmi BoBoiBoy Galaxy Musim 2 menampilkan pertarungan di Planet Windara" width="640" height="240" loading="lazy">
               </div>
 
               <!-- Meta Badges -->
               <div class="chronicle-meta">
-                <span class="badge badge-year">2023–Present</span>
-                <span class="badge badge-leaf">Ongoing Series Arcs</span>
-                <span class="badge badge-episodes">Windara, SORI &amp; Gentar Arcs</span>
-                <span class="badge badge-rating">⭐ 9.5 / 10 Community Score</span>
+                <span class="badge badge-year">2023–Sekarang</span>
+                <span class="badge badge-leaf">🌌 Galaxy Musim 2</span>
+                <span class="badge badge-episodes">Ark Windara, SORI &amp; Gentar</span>
+                <span class="badge badge-rating">⭐ 9.5 / 10 Skor Komunitas</span>
               </div>
 
               <!-- Title & Lead -->
               <h3 class="chronicle-title" id="era-galaxy2-title">
-                BoBoiBoy Galaxy Season 2: Barisan Kesatria &amp; Windara
+                BoBoiBoy Galaxy Musim 2: Barisan Kesatria &amp; Planet Windara
               </h3>
               <p class="chronicle-lead">
-                In the aftermath of the Retak'ka cataclysm, the balance of power across the cosmos is fractured. Ancient elemental dynasties re-emerge to contest planetary sovereignty. In the thrilling Windara Arc, BoBoiBoy and his squad travel to Planet Windara—a magnificent realm of floating palace spires and permanent atmospheric gales—to aid the rightful monarch Empress Kuputeri in reclaiming her stolen wind power from the tyrannical usurper Emperor Reramos.
+                Pasca kekalahan Retak'ka, konstelasi kekuasaan galaksi mengalami pergeseran besar. Kerajaan-kerajaan elemental purba mulai bangkit kembali. Dalam Ark Windara, BoBoiBoy dan regunya bertolak ke Planet Windara—dunia istana terapung di atas awan badai abadi—untuk membantu permaisuri sah Kuputeri merebut kembali tahta dan kuasa Angin dari tangan tiran lalim Maharaja Reramos.
               </p>
 
               <!-- Plot & High-Stakes Conflict -->
               <p class="text-secondary mb-3">
-                <strong>High-Stakes Conflict:</strong> Emperor Reramos uses mind-controlling hypnotic pollen and synthetic wind armor to subjugate entire planetary populations, while insidious subterranean insect armies threaten to devour the celestial roots of the Windara ecosystem.
+                <strong>Konflik Utama:</strong> Maharaja Reramos mengendalikan pikiran rakyat dan prajurit dengan serbuk spora bunga hipnotis serta baju zirah angin sintesis. Sementara itu, koloni serangga raksasa bawah tanah mengancam meruntuhkan pilar akar ekosistem Planet Windara.
               </p>
 
               <!-- Key Elemental Milestones -->
               <div class="chronicle-milestones">
                 <h4 class="chronicle-milestones-title">
-                  <span>⚡</span> Key Elemental Milestones &amp; Awakenings
+                  <span>⚡</span> Tonggak Elemental &amp; Pencapaian Kunci
                 </h4>
                 <ul class="chronicle-milestones-list">
-                  <li><strong>BoBoiBoy SORI (Solar + Duri):</strong> An agile tactical fusion combining razor-sharp thorn vines with blinding solar flares, wielding a lethal spiked morning-star flail.</li>
-                  <li><strong>BoBoiBoy Gentar (Gempa + Halilintar):</strong> A seismic powerhouse fusion wielding electrified tectonic warhammers that shatter reinforced armor.</li>
-                  <li><strong>Tier 3 Wind Resonance:</strong> The initial glimpse into BoBoiBoy Beliung (Tier 3 Wind evolution) resonant with Kuputeri's royal crest.</li>
+                  <li><strong>BoBoiBoy SORI (Solar + Duri):</strong> Fusi taktis lincah bersenjatakan gada berduri (morning-star) berdaya letup surya berkecepatan tinggi.</li>
+                  <li><strong>BoBoiBoy Gentar (Gempa + Halilintar):</strong> Fusi tenaga tektonik berat bersenjatakan palu gada gempa beraliran petir tegangan tinggi.</li>
+                  <li><strong>Resonansi Tingkat Ketiga:</strong> Pintu pembuka menuju potensi BoBoiBoy Beliung (Tahap 3 Elemen Angin) yang selaras dengan lambang kebesaran Kuputeri.</li>
                 </ul>
               </div>
 
               <!-- Villains Tag List -->
               <div class="villain-list">
-                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Key Adversaries:</span>
-                <span class="villain-tag">Emperor Reramos</span>
-                <span class="villain-tag">Maripos (Initially)</span>
-                <span class="villain-tag">Insectoid Wind Legion</span>
-                <span class="villain-tag">Ancient Elemental Zealots</span>
+                <span class="text-muted" style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Lawan Utama:</span>
+                <span class="villain-tag">Maharaja Reramos</span>
+                <span class="villain-tag">Jenderal Maripos (Awalnya Rival)</span>
+                <span class="villain-tag">Pasukan Kumbang Windara</span>
+                <span class="villain-tag">Sekte Purba Kadrux</span>
               </div>
 
             </div>
