@@ -131,10 +131,12 @@ tr:hover { background-color: #fff3e0; }
 .form-control:focus { outline: none; border-color: #e65100; }
 .radio-group label, .checkbox-group label { font-weight: normal; display: inline-block; margin-right: 15px; font-size: 14px; }
 
-/* Lists (PPT 01) */
-ol.procedure { padding-left: 20px; line-height: 1.8; color: #475569; }
-ol.procedure li { margin-bottom: 6px; }
-ul.bullet-list { padding-left: 20px; line-height: 1.8; color: #475569; }
+/* Lists & Description Lists (PPT 01) */
+ol, ul { padding-left: 22px; margin-top: 6px; margin-bottom: 12px; line-height: 1.8; color: #475569; }
+li { margin-bottom: 5px; }
+dl { margin-top: 6px; margin-bottom: 12px; line-height: 1.7; color: #475569; }
+dt { font-weight: bold; color: #0f172a; margin-top: 8px; }
+dd { margin-left: 18px; margin-bottom: 6px; }
 
 /* Footer (PPT 06 Slide 32) */
 .footer { background-color: #0f172a; color: #ffffff; text-align: center; font-size: 13px; padding: 20px 15px; margin-top: 30px; }
