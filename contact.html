@@ -3,151 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Enlist as a TAPOPS space cadet, transmit dispatches to galactic command, and explore the BoBoiBoy Universe Portal.">
-  <title>TAPOPS Cadet Hub &amp; Contact | BoBoiBoy Universe</title>
+  <meta name="description" content="Send your questions and feedback about the BoBoiBoy universe. Features fan community FAQ and inquiry form.">
+  <title>Contact &amp; Fan Community | BoBoiBoy Universe Portal</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="master-header">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-brand" aria-label="BoBoiBoy Galactic Universe Home">
-        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="160" height="42">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand-link">
+        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-img" width="150" height="36">
       </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle navigation menu">
-      <label for="nav-toggle" class="nav-toggle-label"><span class="hamburger-bar"></span><span class="hamburger-bar"></span><span class="hamburger-bar"></span></label>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label">Menu</label>
       <nav class="nav-menu">
         <ul class="nav-list">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="characters.html" class="nav-link">Characters</a></li>
           <li><a href="elements.html" class="nav-link">Elements</a></li>
           <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
-          <li><a href="contact.html" class="nav-link active">Cadet Hub</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="fanhub-banner-title">
-      <div class="container text-center">
-        <h1 class="hero-title hero-title-max" id="fanhub-banner-title">TAPOPS Space Academy &amp; <span class="highlight">Cadet Hub</span></h1>
-        <p class="hero-subtitle hero-subtitle-max">Enlist as an official TAPOPS cadet, transmit dispatches to galactic command, and explore galactic defense operations.</p>
-        <div class="flex flex-center flex-wrap gap-1"><span class="badge badge-lightning">7 Elemental Disciplines</span><span class="badge badge-fire">TAPOPS Enlistment</span><span class="badge badge-earth">TAPOPS Verified</span></div>
+    <section class="hero-block">
+      <div class="container">
+        <h1 class="hero-headline">Fan Community &amp; Inquiries</h1>
+        <p class="hero-text">Have questions about character lore, upcoming seasons, or suggestions for our fan portal? Fill out the inquiry form below to share your feedback with our team.</p>
       </div>
     </section>
 
-    <section class="section" id="cadet-enlistment" aria-labelledby="enlistment-heading">
+    <section class="section">
       <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title" id="enlistment-heading">Cadet Recruitment &amp; Dispatch Terminal</h2>
-        </div>
-
-        <div class="form-center-box">
-          <div class="card" aria-labelledby="form-heading">
-            <div class="protocol-box">
-              <span class="badge badge-lightning mb-1">Official Protocol</span>
-              <h3 class="protocol-box-title">Cadet Clearance Protocol</h3>
-              <ol class="ordered-protocol-list">
-                <li><strong>Identity:</strong> Register official cadet legal name.</li>
-                <li><strong>Passcode:</strong> Create an encrypted 8+ character passcode.</li>
-                <li><strong>Affinity:</strong> Calibrate your primary elemental division.</li>
-                <li><strong>Affirmation:</strong> Swear the TAPOPS oath and transmit packet.</li>
-              </ol>
+        <h2 class="section-title" class="text-center">Send an Inquiry</h2>
+        <p class="section-desc" class="text-center">Fill out all required fields to submit your message to our fan coordination desk.</p>
+        <div class="form-box">
+          <form action="#" method="get">
+            <div class="form-group">
+              <label for="fan-name" class="form-label">Full Name <span class="mark-req">*</span></label>
+              <input type="text" id="fan-name" name="fan-name" class="form-control" placeholder="Enter your full name" required>
             </div>
-
-            <h3 id="form-heading" class="card-title mb-2">TAPOPS Enlistment Form</h3>
-            <form action="#" method="get" class="cadet-form">
-              <div class="form-group">
-                <label for="cadet-name" class="form-label">Cadet Name <span class="required">*</span></label>
-                <input type="text" id="cadet-name" name="cadet-name" class="form-input" placeholder="e.g. Nur Farhan" required>
+            <div class="form-group">
+              <label for="fan-passcode" class="form-label">Account Security PIN <span class="mark-req">*</span></label>
+              <input type="password" id="fan-passcode" name="fan-passcode" class="form-control" placeholder="Minimum 8 characters" minlength="8" required autocomplete="new-password">
+            </div>
+            <div class="form-group">
+              <label for="fav-element" class="form-label">Favorite Element / Topic <span class="mark-req">*</span></label>
+              <select id="fav-element" name="fav-element" class="form-control" required>
+                <option value="" disabled selected>-- Choose an Element or Topic --</option>
+                <option value="lightning">Lightning / Halilintar (Speed)</option>
+                <option value="wind">Wind / Taufan (Aerial Agility)</option>
+                <option value="earth">Earth / Gempa (Defense)</option>
+                <option value="fire">Fire / Blaze (Offense)</option>
+                <option value="water">Water / Ais (Cryo Sniping)</option>
+                <option value="leaf">Leaf / Duri (Nature Control)</option>
+                <option value="light">Light / Solar (Energy Blasts)</option>
+                <option value="movies">Movies &amp; Storyline Discussion</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Feedback Category <span class="mark-req">*</span></label>
+              <div class="radio-cluster">
+                <label class="check-item" for="cat-general"><input type="radio" id="cat-general" name="category" value="general" checked required> General Question</label>
+                <label class="check-item" for="cat-theory"><input type="radio" id="cat-theory" name="category" value="theory"> Lore &amp; Theories</label>
+                <label class="check-item" for="cat-feedback"><input type="radio" id="cat-feedback" name="category" value="feedback"> Portal Suggestion</label>
               </div>
-              <div class="form-group">
-                <label for="cadet-password" class="form-label">Security Passcode <span class="required">*</span></label>
-                <input type="password" id="cadet-password" name="cadet-password" class="form-input" placeholder="Min. 8 characters" minlength="8" required autocomplete="new-password">
-              </div>
-              <div class="form-group">
-                <label for="elemental-affinity" class="form-label">Elemental Affinity <span class="required">*</span></label>
-                <select id="elemental-affinity" name="elemental-affinity" class="form-select" required>
-                  <option value="" disabled selected>-- Select Affinity --</option>
-                  <option value="lightning">Lightning / Halilintar (Supersonic Speed)</option>
-                  <option value="wind">Wind / Taufan (Aerial Agility)</option>
-                  <option value="earth">Earth / Gempa (Fortress Defense)</option>
-                  <option value="fire">Fire / Blaze (Thermal Offensive)</option>
-                  <option value="water">Water / Ice (Cryo Sniping)</option>
-                  <option value="leaf">Leaf / Thorn (Bio-Entanglement)</option>
-                  <option value="solar">Light / Solar (Photonic Ray)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label">Fleet Division <span class="required">*</span></label>
-                <div class="form-radio-group">
-                  <label class="form-radio-wrap" for="div-vanguard"><input type="radio" id="div-vanguard" name="division" value="vanguard" class="form-radio" checked required><span class="form-radio-label">Vanguard</span></label>
-                  <label class="form-radio-wrap" for="div-recon"><input type="radio" id="div-recon" name="division" value="recon" class="form-radio"><span class="form-radio-label">Recon</span></label>
-                  <label class="form-radio-wrap" for="div-defense"><input type="radio" id="div-defense" name="division" value="defense" class="form-radio"><span class="form-radio-label">Defense</span></label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="transmission-message" class="form-label">Transmission Message <span class="required">*</span></label>
-                <textarea id="transmission-message" name="transmission-message" class="form-textarea" rows="3" placeholder="Message to TAPOPS Command..." required></textarea>
-              </div>
-              <div class="form-group">
-                <label class="form-checkbox-wrap" for="honor-pledge">
-                  <input type="checkbox" id="honor-pledge" name="honor-pledge" class="form-checkbox" required>
-                  <span class="form-checkbox-label">I pledge to protect Power Spheras and uphold galactic peace. <span class="required">*</span></span>
-                </label>
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-block">Transmit to TAPOPS HQ</button>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <label for="fan-message" class="form-label">Message Details <span class="mark-req">*</span></label>
+              <textarea id="fan-message" name="fan-message" class="form-control" rows="4" placeholder="Write your comments or questions here..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label class="check-item" for="community-pledge">
+                <input type="checkbox" id="community-pledge" name="community-pledge" required>
+                <span>I agree to follow fan community guidelines and keep discussions respectful. <span class="mark-req">*</span></span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit Message</button>
+          </form>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+    <section class="section section-alt">
       <div class="container">
-        <div class="section-header text-center">
-          <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
-        </div>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3 class="faq-question">What is TAPOPS?</h3>
-            <p class="faq-answer">TAPOPS (Tracker And Protector of Power Spheras) is a galactic organization dedicated to safeguarding robotic Power Spheras from evil entities across the cosmos.</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">How does BoBoiBoy command 7 elements?</h3>
-            <p class="faq-answer">BoBoiBoy was granted elemental powers by Power Sphera Ochobot. He splits into clones to master Lightning, Wind, Earth, Fire, Water, Leaf, and Light.</p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">What are Elemental Fusions?</h3>
-            <p class="faq-answer">Introduced in BoBoiBoy Movie 2, fusions combine two distinct elemental forms into a single high-tier manifestation such as FrostFire, Glacier, Supra, and SORI.</p>
-          </div>
+        <h2 class="section-title" class="text-center">Frequently Asked Questions</h2>
+        <p class="section-desc" class="text-center">Answers to common questions about the franchise and our portal.</p>
+        <div class="faq-box">
+          <article class="faq-entry">
+            <h3 class="faq-q">Who created BoBoiBoy and when did it premiere?</h3>
+            <p class="faq-a">BoBoiBoy was created by Nizam Razak and produced by Animonsta Studios (Monsta) in Malaysia. The original series premiered in March 2011.</p>
+          </article>
+          <article class="faq-entry">
+            <h3 class="faq-q">What is the difference between original BoBoiBoy and Galaxy?</h3>
+            <p class="faq-a">The original series took place primarily on Earth around Pulau Rintis. BoBoiBoy Galaxy follows the characters as teenage cadets exploring space stations and alien planets with TAPOPS.</p>
+          </article>
+          <article class="faq-entry">
+            <h3 class="faq-q">How do Elemental Fusions work?</h3>
+            <p class="faq-a">Elemental Fusions occur when BoBoiBoy synchronizes two distinct elements into a single hybrid form (e.g., Blaze and Ice into FrostFire), providing unprecedented power against high-level opponents.</p>
+          </article>
+          <article class="faq-entry">
+            <h3 class="faq-q">Where can I legally watch official BoBoiBoy episodes?</h3>
+            <p class="faq-a">Episodes and films are available on Monsta's official YouTube channel, major streaming platforms such as Netflix, and regional television networks across Southeast Asia.</p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-brand"><img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-logo" width="140" height="36"></a>
-        <p class="footer-desc">Defending the galaxy with TAPOPS and 7 primal elements.</p>
+    <div class="container footer-row">
+      <div>
+        <h4 class="footer-title">BoBoiBoy Fan Portal</h4>
+        <p>A web design showcase celebrating the animated universe created by Animonsta Studios (Monsta). Explore characters, elemental masteries, and movie chronicles.</p>
       </div>
       <div>
-        <h4 class="footer-col-title">Navigation</h4>
+        <h4 class="footer-title">Site Links</h4>
         <ul class="footer-links">
-          <li><a href="index.html" class="footer-link">Galactic Home</a></li>
-          <li><a href="characters.html" class="footer-link">Hero Roster</a></li>
-          <li><a href="elements.html" class="footer-link">Elemental Powers</a></li>
-          <li><a href="contact.html#cadet-enlistment" class="footer-link">Cadet Enlistment</a></li>
+          <li><a href="index.html">Home Overview</a></li>
+          <li><a href="characters.html">Character Profiles</a></li>
+          <li><a href="elements.html">7 Elemental Powers</a></li>
+          <li><a href="series.html">Series &amp; Movies</a></li>
+          <li><a href="contact.html">Fan Feedback</a></li>
         </ul>
       </div>
-      <div>
-        <div class="footer-quote"><p class="quote-text">"Awesome! Protect this galaxy at all costs!"</p><p class="quote-author">&mdash; BoBoiBoy</p></div>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 BoBoiBoy Universe Portal. All rights reserved.</p>
+    <div class="container copyright">
+      <p>&copy; 2026 BoBoiBoy Fan Portal. Created for Web Programming Project 1.</p>
     </div>
   </footer>
 
