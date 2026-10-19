@@ -3,138 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Send your questions and feedback about the BoBoiBoy universe. Features fan community FAQ and inquiry form.">
-  <title>Contact &amp; Fan Community | BoBoiBoy Universe Portal</title>
+  <title>Contact | BoBoiBoy Universe</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .form-box {
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a href="index.html" class="brand-link">
-        <img src="images/logo.svg" alt="BoBoiBoy Logo" class="brand-img" width="150" height="36">
-      </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
-      <label for="nav-toggle" class="nav-toggle-label">Menu</label>
-      <nav class="nav-menu">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="characters.html" class="nav-link">Characters</a></li>
-          <li><a href="elements.html" class="nav-link">Elements</a></li>
-          <li><a href="series.html" class="nav-link">Series &amp; Movies</a></li>
-          <li><a href="contact.html" class="nav-link active">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="header">
+    <div class="container">
+      <h1>BoBoiBoy Universe Portal</h1>
     </div>
-  </header>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="elements.html">Elements</a></li>
+      <li><a href="series.html">Series &amp; Movies</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 
-  <main>
-    <section class="hero-block">
-      <div class="container">
-        <h1 class="hero-headline">Fan Community &amp; Inquiries</h1>
-        <p class="hero-text">Have questions about character lore, upcoming seasons, or suggestions for our fan portal? Fill out the inquiry form below to share your feedback with our team.</p>
-      </div>
-    </section>
+  <div class="container">
+    <div class="hero">
+      <h1>Fan Community &amp; Inquiries</h1>
+      <p>Send your questions, theories, or feedback about the BoBoiBoy franchise to our fan portal desk.</p>
+    </div>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title" class="text-center">Send an Inquiry</h2>
-        <p class="section-desc" class="text-center">Fill out all required fields to submit your message to our fan coordination desk.</p>
+    <div class="row">
+      <div class="col-8 col-s-12">
         <div class="form-box">
-          <form action="#" method="get">
+          <h2>Inquiry Form</h2>
+          <form action="#" method="get" style="margin-top: 15px;">
             <div class="form-group">
-              <label for="fan-name" class="form-label">Full Name <span class="mark-req">*</span></label>
-              <input type="text" id="fan-name" name="fan-name" class="form-control" placeholder="Enter your full name" required>
+              <label for="fan-name">Full Name *</label>
+              <input type="text" id="fan-name" name="fan-name" class="form-control" placeholder="Your name" required>
             </div>
             <div class="form-group">
-              <label for="fan-passcode" class="form-label">Account Security PIN <span class="mark-req">*</span></label>
-              <input type="password" id="fan-passcode" name="fan-passcode" class="form-control" placeholder="Minimum 8 characters" minlength="8" required autocomplete="new-password">
+              <label for="fan-password">Account Passcode *</label>
+              <input type="password" id="fan-password" name="fan-password" class="form-control" placeholder="Min. 8 characters" minlength="8" required>
             </div>
             <div class="form-group">
-              <label for="fav-element" class="form-label">Favorite Element / Topic <span class="mark-req">*</span></label>
+              <label for="fav-element">Favorite Element / Topic *</label>
               <select id="fav-element" name="fav-element" class="form-control" required>
-                <option value="" disabled selected>-- Choose an Element or Topic --</option>
-                <option value="lightning">Lightning / Halilintar (Speed)</option>
-                <option value="wind">Wind / Taufan (Aerial Agility)</option>
-                <option value="earth">Earth / Gempa (Defense)</option>
-                <option value="fire">Fire / Blaze (Offense)</option>
-                <option value="water">Water / Ais (Cryo Sniping)</option>
-                <option value="leaf">Leaf / Duri (Nature Control)</option>
-                <option value="light">Light / Solar (Energy Blasts)</option>
-                <option value="movies">Movies &amp; Storyline Discussion</option>
+                <option value="" disabled selected>-- Select an Element --</option>
+                <option value="lightning">Lightning / Halilintar</option>
+                <option value="wind">Wind / Taufan</option>
+                <option value="earth">Earth / Gempa</option>
+                <option value="fire">Fire / Blaze</option>
+                <option value="water">Water / Ais</option>
+                <option value="leaf">Leaf / Duri</option>
+                <option value="solar">Light / Solar</option>
               </select>
             </div>
             <div class="form-group">
-              <label class="form-label">Feedback Category <span class="mark-req">*</span></label>
-              <div class="radio-cluster">
-                <label class="check-item" for="cat-general"><input type="radio" id="cat-general" name="category" value="general" checked required> General Question</label>
-                <label class="check-item" for="cat-theory"><input type="radio" id="cat-theory" name="category" value="theory"> Lore &amp; Theories</label>
-                <label class="check-item" for="cat-feedback"><input type="radio" id="cat-feedback" name="category" value="feedback"> Portal Suggestion</label>
+              <label>Message Category *</label>
+              <div class="radio-group">
+                <label for="cat-general"><input type="radio" id="cat-general" name="category" value="general" checked> General Question</label>
+                <label for="cat-theory"><input type="radio" id="cat-theory" name="category" value="theory"> Story Theory</label>
+                <label for="cat-feedback"><input type="radio" id="cat-feedback" name="category" value="feedback"> Site Feedback</label>
               </div>
             </div>
             <div class="form-group">
-              <label for="fan-message" class="form-label">Message Details <span class="mark-req">*</span></label>
-              <textarea id="fan-message" name="fan-message" class="form-control" rows="4" placeholder="Write your comments or questions here..." required></textarea>
+              <label for="message">Message Content *</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
             </div>
-            <div class="form-group">
-              <label class="check-item" for="community-pledge">
-                <input type="checkbox" id="community-pledge" name="community-pledge" required>
-                <span>I agree to follow fan community guidelines and keep discussions respectful. <span class="mark-req">*</span></span>
+            <div class="form-group checkbox-group">
+              <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I agree to follow community guidelines. *
               </label>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Submit Message</button>
+            <button type="submit" class="btn" style="width: 100%;">Submit Message</button>
           </form>
         </div>
       </div>
-    </section>
 
-    <section class="section section-alt">
-      <div class="container">
-        <h2 class="section-title" class="text-center">Frequently Asked Questions</h2>
-        <p class="section-desc" class="text-center">Answers to common questions about the franchise and our portal.</p>
-        <div class="faq-box">
-          <article class="faq-entry">
-            <h3 class="faq-q">Who created BoBoiBoy and when did it premiere?</h3>
-            <p class="faq-a">BoBoiBoy was created by Nizam Razak and produced by Animonsta Studios (Monsta) in Malaysia. The original series premiered in March 2011.</p>
-          </article>
-          <article class="faq-entry">
-            <h3 class="faq-q">What is the difference between original BoBoiBoy and Galaxy?</h3>
-            <p class="faq-a">The original series took place primarily on Earth around Pulau Rintis. BoBoiBoy Galaxy follows the characters as teenage cadets exploring space stations and alien planets with TAPOPS.</p>
-          </article>
-          <article class="faq-entry">
-            <h3 class="faq-q">How do Elemental Fusions work?</h3>
-            <p class="faq-a">Elemental Fusions occur when BoBoiBoy synchronizes two distinct elements into a single hybrid form (e.g., Blaze and Ice into FrostFire), providing unprecedented power against high-level opponents.</p>
-          </article>
-          <article class="faq-entry">
-            <h3 class="faq-q">Where can I legally watch official BoBoiBoy episodes?</h3>
-            <p class="faq-a">Episodes and films are available on Monsta's official YouTube channel, major streaming platforms such as Netflix, and regional television networks across Southeast Asia.</p>
-          </article>
+      <div class="col-4 col-s-12">
+        <div class="card">
+          <h3>Frequently Asked Questions</h3>
+          <p><strong>Who created BoBoiBoy?</strong><br>Created by Nizam Razak and produced by Animonsta Studios (Monsta) in Malaysia.</p>
+          <p style="margin-top: 10px;"><strong>What is TAPOPS?</strong><br>Tracker and Protector of Power Spheras, a cosmic defense agency.</p>
+          <p style="margin-top: 10px;"><strong>What are Elemental Fusions?</strong><br>Combining two elemental powers into a single form, introduced in Movie 2.</p>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <div>
-        <h4 class="footer-title">BoBoiBoy Fan Portal</h4>
-        <p>A web design showcase celebrating the animated universe created by Animonsta Studios (Monsta). Explore characters, elemental masteries, and movie chronicles.</p>
-      </div>
-      <div>
-        <h4 class="footer-title">Site Links</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home Overview</a></li>
-          <li><a href="characters.html">Character Profiles</a></li>
-          <li><a href="elements.html">7 Elemental Powers</a></li>
-          <li><a href="series.html">Series &amp; Movies</a></li>
-          <li><a href="contact.html">Fan Feedback</a></li>
-        </ul>
-      </div>
+  <div class="footer">
+    <div class="container">
+      <p>&copy; 2026 BoBoiBoy Fan Portal. Web Programming Project 1.</p>
     </div>
-    <div class="container copyright">
-      <p>&copy; 2026 BoBoiBoy Fan Portal. Created for Web Programming Project 1.</p>
-    </div>
-  </footer>
+  </div>
 
 </body>
 </html>
